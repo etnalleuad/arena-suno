@@ -1,0 +1,97 @@
+{
+  "method": "Programmatic decode via miniaudio, no auditory evaluation. Peaks/RMS in dBFS digital.",
+  "files": [
+    {
+      "name": "01_IMG-5899-vocals-2e5c2976.mp3",
+      "path": "voice_recordings/incoming_2026-09-13_shhpd/01_IMG-5899-vocals-2e5c2976.mp3",
+      "duration_s": 234.0,
+      "samplerate": 44100,
+      "channels": 2,
+      "peak_dbfs": -4.802310830679014,
+      "peak_time_s": 92.9836507936508,
+      "rms_dbfs": -23.0764171073929,
+      "frame50ms_q10_dbfs": -77.47027587890625,
+      "frame50ms_q90_dbfs": -18.68025779724121,
+      "channel_correlation": 0.9999998979594616,
+      "l_minus_r_peak": 0.00103759765625,
+      "peak_region_bands": {
+        "0-80Hz_percent": 6.819361959665379e-07,
+        "80-200Hz_percent": 1.309356190806951e-06,
+        "200-2000Hz_percent": 99.57549826549676,
+        "2000-6000Hz_percent": 0.42439659701577587,
+        "6000-16000Hz_percent": 0.00010308500769554791
+      },
+      "bytes": 9362329,
+      "sha256": "4cc9499488f5826bfa5ef24d7256ac4261d20630cbbb06ee12c67819694424e7"
+    },
+    {
+      "name": "02_IMG_3412_mix.mp3",
+      "path": "voice_recordings/incoming_2026-09-13_shhpd/02_IMG_3412_mix.mp3",
+      "duration_s": 335.3077551020408,
+      "samplerate": 44100,
+      "channels": 2,
+      "peak_dbfs": -4.790799325776125,
+      "peak_time_s": 143.48303854875283,
+      "rms_dbfs": -25.039951269902723,
+      "frame50ms_q10_dbfs": -76.98066711425781,
+      "frame50ms_q90_dbfs": -20.762666702270508,
+      "channel_correlation": 0.7118181737918432,
+      "l_minus_r_peak": 0.693756103515625,
+      "peak_region_bands": {
+        "0-80Hz_percent": 0.0006591045262870276,
+        "80-200Hz_percent": 0.0038614599985489616,
+        "200-2000Hz_percent": 99.92778486468404,
+        "2000-6000Hz_percent": 0.06750955884118086,
+        "6000-16000Hz_percent": 0.00018483020978495298
+      },
+      "bytes": 5364924,
+      "sha256": "2f1a38c013ee12d7f4461ad8e56da04b5386192f4f72f7d378251354dfe1a62f"
+    },
+    {
+      "name": "03_Кейзерова_Toy_acapella.mp3",
+      "path": "voice_recordings/incoming_2026-09-13_shhpd/03_Кейзерова_Toy_acapella.mp3",
+      "duration_s": 173.87102040816328,
+      "samplerate": 44100,
+      "channels": 2,
+      "peak_dbfs": -1.8519512508710365,
+      "peak_time_s": 122.8218820861678,
+      "rms_dbfs": -18.262608717229803,
+      "frame50ms_q10_dbfs": -68.2670669555664,
+      "frame50ms_q90_dbfs": -13.706746101379395,
+      "channel_correlation": 0.8326670901316432,
+      "l_minus_r_peak": 0.65093994140625,
+      "peak_region_bands": {
+        "0-80Hz_percent": 4.394876857328185e-05,
+        "80-200Hz_percent": 3.9996644175745455e-05,
+        "200-2000Hz_percent": 92.83023656897005,
+        "2000-6000Hz_percent": 7.059853507530485,
+        "6000-16000Hz_percent": 0.10982592555870803
+      },
+      "bytes": 2781936,
+      "sha256": "934db3b091099da96f6420b7cae5ee1d6f012833e8556fa4ac615cbb76474f27"
+    },
+    {
+      "name": "04_IMG-1462-vocals-c0e2ac26.mp3",
+      "path": "voice_recordings/incoming_2026-09-13_shhpd/04_IMG-1462-vocals-c0e2ac26.mp3",
+      "duration_s": 55.56390022675737,
+      "samplerate": 44100,
+      "channels": 2,
+      "peak_dbfs": -0.37455603945976773,
+      "peak_time_s": 51.52519274376417,
+      "rms_dbfs": -19.356019012320772,
+      "frame50ms_q10_dbfs": -36.15410614013672,
+      "frame50ms_q90_dbfs": -14.919971466064453,
+      "channel_correlation": 0.9999999778946411,
+      "l_minus_r_peak": 0.000396728515625,
+      "peak_region_bands": {
+        "0-80Hz_percent": 0.0003661144276719479,
+        "80-200Hz_percent": 0.0014761910967287727,
+        "200-2000Hz_percent": 84.72601168697256,
+        "2000-6000Hz_percent": 14.910015538201668,
+        "6000-16000Hz_percent": 0.36213037628395306
+      },
+      "bytes": 2225676,
+      "sha256": "28558b0c0c621f3880abc3ab9bb062669d8f2405b81f6ca91b1a10a2c9125b59"
+    }
+  ]
+}
