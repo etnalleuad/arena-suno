@@ -1,0 +1,23 @@
+{
+  "purpose": "Diagnostic comparison, not finished cleanup or validated mastering. Originals unmodified.",
+  "A": "Mono and +6 dB only, with short identical edit-edge fades.",
+  "B": "Same processing plus 80 Hz second-order Butterworth high-pass, 12 dB/oct.",
+  "no_denoise_gate_deesser_compression": true,
+  "duration_s": 17.0,
+  "segments": [
+    {
+      "output_start_s": 0,
+      "source_name": "проверка.wav",
+      "source_start_s": 18.5,
+      "source_end_s": 26.5
+    },
+    {
+      "output_start_s": 8.5,
+      "source_name": "кукла на полке.wav",
+      "source_start_s": 54.5,
+      "source_end_s": 62.5
+    }
+  ],
+  "A_peak_dbfs": -5.518613646821989,
+  "B_peak_dbfs": -9.505155156878873
+}

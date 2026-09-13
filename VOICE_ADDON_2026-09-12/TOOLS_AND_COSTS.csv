@@ -1,0 +1,12 @@
+﻿tool,role,pricing_type,snapshot,important_limit,primary_url,verified_date
+Suno Voice + Studio,native own voice / editing,already paid,existing Premier,not a promise of exact identity each take,https://help.suno.com/en/articles/13924481,2026-09-12
+Applio,local train + voice conversion,free software,no provider subscription,GPU/setup/data needed; rights still apply,https://applio.org/,2026-09-12
+UVR,local separation,free software,no provider minutes,not voice cloning; ML source rights apply,https://ultimatevocalremover.com/,2026-09-12
+Audacity,record/edit/cleanup,free software,offline basic editor,not universal artifact repair,https://www.audacityteam.org/features/noise-reduction/,2026-09-12
+T-De-Esser 2,sibilance,free plugin,personal/commercial per FAQ,"requires compatible host, not Suno VST slot",https://techivation.com/t-de-esser/,2026-09-12
+Bertom Denoiser Classic,noise reduction,PWYW including zero,plugin,requires host; not a clone,https://bertomaudio.com/denoiser-classic.html,2026-09-12
+Graillon Free,pitch correction,free edition,plugin,not identity cloning,https://www.auburnsounds.com/products/Graillon.html,2026-09-12
+REAPER,DAW,trial then licence,"$60 eligible discounted / $225 commercial, taxes extra","60-day evaluation, not forever free",https://www.reaper.fm/purchase.php,2026-09-12
+Kits,cloud clone + conversion,subscription,$10 / $30 / $60 month cards,Free0downloads; models frozen and minutes lost after expiry; cloning entitlement conflict,https://www.kits.ai/pricing,2026-09-12
+Audimee,cloud singing conversion,subscription,"Starter $9/month equivalent, $108 billed yearly",Free0customslots; monthly-only rate not verified here,https://audimee.com/pricing,2026-09-12
+LALAL.AI,cloud stems and tools,subscription + top-ups,$9.99 / $19.99 monthly FAQ,Free preview only; top-up not proven permanent standalone access,https://www.lalal.ai/,2026-09-12

@@ -1,0 +1,6 @@
+﻿run,status,relative_to,change,pitch,index_rate,volume_envelope,protect,f0_method,autotune,clean_audio,formant_shifting,post_process,source_excerpt,actual_output,likeness,diction,artifacts,decision
+A,PLANNED,none,baseline 3.6.4,0,0.75,1,0.5,rmvpe,off,off,off,off,,,,,,
+B,PLANNED,A,protect only,0,0.75,1,0.33,rmvpe,off,off,off,off,,,,,,
+C,PLANNED,A,protect only,0,0.75,1,0.2,rmvpe,off,off,off,off,,,,,,
+D,PLANNED,A,index only,0,0.5,1,0.5,rmvpe,off,off,off,off,,,,,,
+E,PLANNED,A,envelope only,0,0.75,0.5,0.5,rmvpe,off,off,off,off,,,,,,

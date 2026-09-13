@@ -1,0 +1,25 @@
+{
+  "source_url": "https://transfiles.ru/zez3g",
+  "downloaded_on": "2026-09-12",
+  "page_says_delete_on": "2026-09-15 19:38",
+  "files": [
+    {
+      "original_name": "проверка.wav",
+      "saved_path": "/home/user/mic_test_raw.wav",
+      "bytes": 8713632,
+      "sha256": "6fdcab5b3774557139a3e33df78e2dab12eb7a87a0b524ac143ba7b3bbde5a38"
+    },
+    {
+      "original_name": "кукла на полке.wav",
+      "saved_path": "/home/user/voice_recordings/kukla_na_polke_raw.wav",
+      "bytes": 12409960,
+      "sha256": "3c1d8ae1fa74362ab68c7f0fb6a6b215f0d509924e0071b3b46b375de544a3f0"
+    },
+    {
+      "original_name": "метелица.wav",
+      "saved_path": "/home/user/voice_recordings/metelitsa_raw.wav",
+      "bytes": 21672344,
+      "sha256": "95680787f2c03d407e66b7249e8f4729eb3a19090a77948b8246edbc1a58e9f9"
+    }
+  ]
+}

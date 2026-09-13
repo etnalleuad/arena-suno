@@ -1,0 +1,170 @@
+{
+  "method": "Programmatic waveform/spectral measurements. Not a subjective listening evaluation. Quiet/active bins are energy-based proxies, not verified speech labels.",
+  "files": [
+    {
+      "name": "Проверка",
+      "path": "/home/user/mic_test_raw.wav",
+      "duration_s": 49.39675736961451,
+      "samplerate": 44100,
+      "channels": 2,
+      "subtype": "PCM_16",
+      "peak_dbfs": -15.32045671675938,
+      "sample_peak_time_s": 20.97607709750567,
+      "whole_rms_dbfs": -45.582596026718704,
+      "near_full_scale_samples": 0,
+      "frame50ms_rms_q10_dbfs": -72.6742599353466,
+      "frame50ms_rms_q90_dbfs": -42.460275921073304,
+      "energy_active_fraction": 0.43465045592705165,
+      "energy_active_rms_dbfs": -42.0261103334216,
+      "channel_correlation": 0.9999915947597476,
+      "l_minus_r_peak": 9.1552734375e-05,
+      "quiet_frame_hum_peaks": [
+        {
+          "hz": 50,
+          "local_excess_db": -0.7947392936316122
+        },
+        {
+          "hz": 100,
+          "local_excess_db": -1.1681653575421804
+        },
+        {
+          "hz": 150,
+          "local_excess_db": 1.5552860786784373
+        },
+        {
+          "hz": 200,
+          "local_excess_db": -0.8271488402846079
+        },
+        {
+          "hz": 250,
+          "local_excess_db": 1.6344828769724151
+        },
+        {
+          "hz": 1000,
+          "local_excess_db": 9.469140562932735
+        },
+        {
+          "hz": 8000,
+          "local_excess_db": 16.7118696807902
+        }
+      ],
+      "peak_region_bands": {
+        "0-80Hz_percent": 79.57670645413441,
+        "80-200Hz_percent": 10.273407433977388,
+        "200-2000Hz_percent": 1.6614310642243535,
+        "2000-6000Hz_percent": 0.030706479578028516,
+        "6000-16000Hz_percent": 0.08533830682906561
+      }
+    },
+    {
+      "name": "Кукла на полке",
+      "path": "/home/user/voice_recordings/kukla_na_polke_raw.wav",
+      "duration_s": 70.35099773242631,
+      "samplerate": 44100,
+      "channels": 2,
+      "subtype": "PCM_16",
+      "peak_dbfs": -11.51861364682199,
+      "sample_peak_time_s": 56.54015873015873,
+      "whole_rms_dbfs": -34.96385757049123,
+      "near_full_scale_samples": 0,
+      "frame50ms_rms_q10_dbfs": -55.36468056284938,
+      "frame50ms_rms_q90_dbfs": -30.82953584866166,
+      "energy_active_fraction": 0.31840796019900497,
+      "energy_active_rms_dbfs": -30.815565932434488,
+      "channel_correlation": 0.9999992713172933,
+      "l_minus_r_peak": 9.1552734375e-05,
+      "quiet_frame_hum_peaks": [
+        {
+          "hz": 50,
+          "local_excess_db": 1.4162437295778538
+        },
+        {
+          "hz": 100,
+          "local_excess_db": -0.8434833832223674
+        },
+        {
+          "hz": 150,
+          "local_excess_db": -0.08599337231171846
+        },
+        {
+          "hz": 200,
+          "local_excess_db": 1.8231360989530185
+        },
+        {
+          "hz": 250,
+          "local_excess_db": 3.881204081409604
+        },
+        {
+          "hz": 1000,
+          "local_excess_db": 1.2548570226440363
+        },
+        {
+          "hz": 8000,
+          "local_excess_db": 4.335107466058963
+        }
+      ],
+      "peak_region_bands": {
+        "0-80Hz_percent": 78.21744374517687,
+        "80-200Hz_percent": 10.69959648433581,
+        "200-2000Hz_percent": 7.366765900000376,
+        "2000-6000Hz_percent": 0.08454891583981318,
+        "6000-16000Hz_percent": 0.02597136186220471
+      }
+    },
+    {
+      "name": "Метелица",
+      "path": "/home/user/voice_recordings/metelitsa_raw.wav",
+      "duration_s": 122.85884353741497,
+      "samplerate": 44100,
+      "channels": 2,
+      "subtype": "PCM_16",
+      "peak_dbfs": -15.975579187991649,
+      "sample_peak_time_s": 114.03956916099773,
+      "whole_rms_dbfs": -35.846462076887136,
+      "near_full_scale_samples": 0,
+      "frame50ms_rms_q10_dbfs": -64.92093223786954,
+      "frame50ms_rms_q90_dbfs": -31.440158432801937,
+      "energy_active_fraction": 0.5722425722425722,
+      "energy_active_rms_dbfs": -33.45780039576245,
+      "channel_correlation": 0.9999991073196232,
+      "l_minus_r_peak": 9.1552734375e-05,
+      "quiet_frame_hum_peaks": [
+        {
+          "hz": 50,
+          "local_excess_db": 0.02685943824133505
+        },
+        {
+          "hz": 100,
+          "local_excess_db": -0.7014564185743161
+        },
+        {
+          "hz": 150,
+          "local_excess_db": 3.244866836551333
+        },
+        {
+          "hz": 200,
+          "local_excess_db": 1.8340917306467355
+        },
+        {
+          "hz": 250,
+          "local_excess_db": 0.8965796609532927
+        },
+        {
+          "hz": 1000,
+          "local_excess_db": 3.6385513204375703
+        },
+        {
+          "hz": 8000,
+          "local_excess_db": 12.566930910649535
+        }
+      ],
+      "peak_region_bands": {
+        "0-80Hz_percent": 0.0023432205571414485,
+        "80-200Hz_percent": 7.148561270033128e-05,
+        "200-2000Hz_percent": 99.85098404829048,
+        "2000-6000Hz_percent": 0.12611472056610418,
+        "6000-16000Hz_percent": 0.020392104113589715
+      }
+    }
+  ]
+}

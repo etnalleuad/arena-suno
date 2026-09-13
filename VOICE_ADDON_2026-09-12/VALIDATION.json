@@ -1,0 +1,12 @@
+{
+  "verified_date": "2026-09-12",
+  "knowledge_files_to_add": 1,
+  "total_existing_gem_knowledge_after_update": 7,
+  "kb_sections": 18,
+  "full_instructions_chars": 7722,
+  "code_reference": "Applio 3.6.4",
+  "audit": "Static inspection of UI definitions and protective-blend pipeline; no conversion executed",
+  "no_voice_model_or_installer_included": true,
+  "previous_music_library_changed": false,
+  "user_account_install_training_conversion_tested": false
+}

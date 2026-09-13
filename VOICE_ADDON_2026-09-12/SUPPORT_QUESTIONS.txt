@@ -1,0 +1,26 @@
+Готовые вопросы. Письма НЕ отправлены. Отправлять вручную, если выбран соответствующий сценарий.
+
+SUNO — отдельная сторонняя AI voice conversion
+Адрес поддержки: support@suno.com / официальный Help Center.
+
+I am a Premier subscriber and would like clarification on Conditions of Access and Use, clause 10.
+I want to take a permitted WAV download of a lead vocal from my own Suno project and use a third-party voice-conversion tool, such as Kits AI or locally running Applio/RVC, to render that existing vocal performance in my own voice.
+The third-party voice model would be trained only on my own real recordings. I would not use Suno Output or a Suno Voice Model as training data.
+Does your current agreement allow this inference-only, individual post-production use of my permitted Output? Does your answer differ for a local tool versus a cloud service? May I commercially release the resulting song, subject to the usual rights requirements?
+Please distinguish this from training or improving a competing model/service. I would appreciate written confirmation for this specific workflow.
+
+KITS — план, заморозка, переносимость
+Форма: https://help.kits.ai/hc/en-us/requests/new
+
+I make about one song per month and want to use a clone of my own singing voice.
+Your current Starter card lists Professional Voice Cloning, while the FAQ describes Starter with Instant Cloning and lists Professional Cloning for Producer. Which cloning methods are actually included in the current month-to-month Starter plan for my account, and what is the total monthly charge?
+I understand that custom models become unavailable and unused download minutes expire when a subscription ends. Please confirm how this applies to my account.
+Do you offer any one-time option that allows continued conversion with my own custom model without an active subscription? Can a model trained inside Kits be exported for local inference, and in what supported format? An option to upload .pth models would not by itself answer the export question.
+Please also confirm the licence that applies to the results I download while subscribed and use after cancellation.
+
+AUDIMEE — только если выбираем облачную альтернативу
+Использовать официальный contact/FAQ, не оплату по неверно понятой годовой цене.
+
+I need one custom singing-voice model for roughly one song per month. What is the current month-to-month price, without annual billing? What access to my trained voice remains after cancellation or downgrade to Free? Are there any one-time credits or model-export options that work without an active subscription?
+
+Не включать в сообщение пароли, ключи, личные документы или сами закрытые голосовые модели. При необходимости приложить только минимально нужный разрешённый пример по запросу поддержки.
