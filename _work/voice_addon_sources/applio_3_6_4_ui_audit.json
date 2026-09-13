@@ -1,0 +1,114 @@
+[
+  {
+    "names": [
+      "export_format"
+    ],
+    "line": 591,
+    "constructor": "gr.Radio",
+    "label": "i18n('Export Format')",
+    "info": "i18n('Select the format to export the audio.')",
+    "choices": [
+      "WAV",
+      "MP3",
+      "FLAC",
+      "OGG",
+      "M4A"
+    ],
+    "value": "WAV"
+  },
+  {
+    "names": [
+      "split_audio"
+    ],
+    "line": 605,
+    "constructor": "gr.Checkbox",
+    "label": "i18n('Split Audio')",
+    "info": "i18n('Split the audio into chunks for inference to obtain better results in some cases.')",
+    "value": false
+  },
+  {
+    "names": [
+      "clean_audio"
+    ],
+    "line": 654,
+    "constructor": "gr.Checkbox",
+    "label": "i18n('Clean Audio')",
+    "info": "i18n('Clean your audio output using noise detection algorithms, recommended for speaking audios.')",
+    "value": false
+  },
+  {
+    "names": [
+      "formant_shifting"
+    ],
+    "line": 674,
+    "constructor": "gr.Checkbox",
+    "label": "i18n('Formant Shifting')",
+    "info": "i18n('Enable formant shifting. Used for male to female and vice-versa convertions.')",
+    "value": false
+  },
+  {
+    "names": [
+      "pitch"
+    ],
+    "line": 1046,
+    "constructor": "gr.Slider",
+    "minimum": -24,
+    "maximum": 24,
+    "step": 1,
+    "label": "i18n('Pitch')",
+    "info": "i18n('Set the pitch of the audio, the higher the value, the higher the pitch.')",
+    "value": 0
+  },
+  {
+    "names": [
+      "index_rate"
+    ],
+    "line": 1057,
+    "constructor": "gr.Slider",
+    "minimum": 0,
+    "maximum": 1,
+    "label": "i18n('Search Feature Ratio')",
+    "info": "i18n('Influence exerted by the index file; a higher value corresponds to greater influence. However, opting for lower values can help mitigate artifacts present in the audio.')",
+    "value": 0.75
+  },
+  {
+    "names": [
+      "rms_mix_rate"
+    ],
+    "line": 1067,
+    "constructor": "gr.Slider",
+    "minimum": 0,
+    "maximum": 1,
+    "label": "i18n('Volume Envelope')",
+    "info": "i18n('Substitute or blend with the volume envelope of the output. The closer the ratio is to 1, the more the output envelope is employed.')",
+    "value": 1
+  },
+  {
+    "names": [
+      "protect"
+    ],
+    "line": 1077,
+    "constructor": "gr.Slider",
+    "minimum": 0,
+    "maximum": 0.5,
+    "label": "i18n('Protect Voiceless Consonants')",
+    "info": "i18n('Safeguard distinct consonants and breathing sounds to prevent electro-acoustic tearing and other artifacts. Pulling the parameter to its maximum value of 0.5 offers comprehensive protection. However, reducing this value might decrease the extent of protection while potentially mitigating the indexing effect.')",
+    "value": 0.5
+  },
+  {
+    "names": [
+      "f0_method"
+    ],
+    "line": 1107,
+    "constructor": "gr.Radio",
+    "label": "i18n('Pitch extraction algorithm')",
+    "info": "i18n('Pitch extraction algorithm to use for the audio conversion. The default algorithm is rmvpe, which is recommended for most cases.')",
+    "choices": [
+      "crepe",
+      "crepe-tiny",
+      "rmvpe",
+      "fcpe"
+    ],
+    "value": "rmvpe"
+  }
+]

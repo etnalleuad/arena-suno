@@ -1,0 +1,269 @@
+{
+  "date": "2026-09-12",
+  "before_bytes": 126073732,
+  "removed": [
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D01_DeepShortKick.wav",
+      "bytes": 93644,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D02_DryBodySnare.wav",
+      "bytes": 64844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D03_SkinRim.wav",
+      "bytes": 31724,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D04_ClosedSteelHat.wav",
+      "bytes": 18764,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D05_OpenDustHat.wav",
+      "bytes": 69164,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D06_SoftShake.wav",
+      "bytes": 31724,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D07_BrokenClap.wav",
+      "bytes": 54764,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D08_LowOrganicTom.wav",
+      "bytes": 86444,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D09_ThinWoodKnock.wav",
+      "bytes": 31724,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D10_MetalRimTick.wav",
+      "bytes": 36044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D11_BrushScrape.wav",
+      "bytes": 100844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/01_Drums/D12_MutedThud.wav",
+      "bytes": 64844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F01_RelayClick.wav",
+      "bytes": 28844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F02_ElectricalCrack.wav",
+      "bytes": 60524,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F03_RatchetBurst.wav",
+      "bytes": 108044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F04_WireScrape.wav",
+      "bytes": 187244,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F05_BandlimitedSpark.wav",
+      "bytes": 79244,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F06_ShortCircuitStutter.wav",
+      "bytes": 180044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F07_ReverseMetalSwell.wav",
+      "bytes": 288044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F08_CableResonance.wav",
+      "bytes": 230444,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F09_StaticDropout.wav",
+      "bytes": 201644,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F10_AirShiver.wav",
+      "bytes": 360044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F11_SubImpact_D1.wav",
+      "bytes": 172844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/02_Electric_FX/F12_TapeStopGesture.wav",
+      "bytes": 158444,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N01_Sub_D2.wav",
+      "bytes": 145484,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N02_Sub_E2.wav",
+      "bytes": 145484,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N03_Sub_Fsharp1.wav",
+      "bytes": 174284,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N04_Sub_A1.wav",
+      "bytes": 145484,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N05_Tine_D4.wav",
+      "bytes": 299564,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N06_Glass_A4.wav",
+      "bytes": 403244,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N07_MutedKey_E4.wav",
+      "bytes": 234764,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N08_MetalTone_D3.wav",
+      "bytes": 295244,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/03_Pitched_OneShots/N09_SyntheticString_E3.wav",
+      "bytes": 216044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L01_Drums_Broken_96_4bars.wav",
+      "bytes": 1440044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L02_Perc_Machine_96_4bars.wav",
+      "bytes": 2880044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L03_Sub_Dm_96_8bars.wav",
+      "bytes": 2880044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L04_Tines_Dm_96_8bars.wav",
+      "bytes": 5760044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L05_Pad_Thin_Dm_96_4bars.wav",
+      "bytes": 2880044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L06_ElectricalBed_96_4bars.wav",
+      "bytes": 2880044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L07_Drums_Organic_90_4bars.wav",
+      "bytes": 1536044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L08_Sub_Em_102_4bars.wav",
+      "bytes": 1355340,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L09_Keys_Em_102_4bars.wav",
+      "bytes": 2710634,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L10_SyntheticString_Em_102_4bars.wav",
+      "bytes": 2710634,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L11_Glass_Fsm_100_4bars.wav",
+      "bytes": 2764844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/04_Loops/L12_Perc_Omissions_100_4bars.wav",
+      "bytes": 2764844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/05_Scene_Sketches/S01_ArtPop_Dm_96_4bars.wav",
+      "bytes": 2880044,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/05_Scene_Sketches/S02_IndiePulse_Em_102_4bars.wav",
+      "bytes": 2710634,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/AUDIO/05_Scene_Sketches/S03_IndustrialGlass_Fsm_100_4bars.wav",
+      "bytes": 2764844,
+      "reason": "Exact duplicate preserved in verified PART_2_STUDIO_ASSETS.zip"
+    },
+    {
+      "path": "_work/dark_kit/preview_audio.json",
+      "bytes": 6372624,
+      "reason": "Temporary duplicate audio previews; source audio and original catalog preserved in ZIP"
+    }
+  ],
+  "rewritten": [
+    {
+      "path": "suno_gemini_kit/PART_2_STUDIO_ASSETS/BROWSE_LIBRARY.html",
+      "before_bytes": 6589757,
+      "after_bytes": 72844,
+      "reason": "Removed embedded audio duplicates; original interactive catalog remains in ZIP"
+    },
+    {
+      "path": "START_HERE_GEMINI_STUDIO.html",
+      "before_bytes": 1644658,
+      "after_bytes": 148938,
+      "reason": "Retained instructions, removed inline audio duplication"
+    }
+  ],
+  "skipped_not_archived_or_modified": [],
+  "media_archive_sha256_unchanged": "c7b919dce14053541fc344dd29cfca24bd9f791a5ce42748621671f4bd646e78",
+  "chat_archive_sha256_unchanged": "6f36b2d1dfc234b4e26f58015890cb2dc84ed5d8dfa24c46d1399f61a4cfe6d8",
+  "user_uploads_removed": false
+}

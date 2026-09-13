@@ -1,0 +1,121 @@
+[
+  {
+    "label": "LATEST PROJECT HANDOFF",
+    "file": "PROJECT_HANDOFF.md",
+    "sha256": "f17db1d1895068e1a1c6735942cc5eddda1fc338ccaffb96c5ac6ce7276a7e7d",
+    "chars": 18074,
+    "included_completely": true
+  },
+  {
+    "label": "CURRENT GEM INSTRUCTIONS",
+    "file": "GEM_SETUP/GEM_INSTRUCTIONS_CURRENT.txt",
+    "sha256": "18e2425d198e119d883e7c258a8c53f3aabec144b551bd51888c55a3bd1ca45d",
+    "chars": 7943,
+    "included_completely": true
+  },
+  {
+    "label": "01_PROFILE_AND_SUNO_V6.txt",
+    "file": "ACTIVE_KNOWLEDGE/01_PROFILE_AND_SUNO_V6.txt",
+    "sha256": "d092fb9f9f4415c7665c36b9a580f0e30b14ecbba2a3008e8a0442231f7501ba",
+    "chars": 9162,
+    "included_completely": true
+  },
+  {
+    "label": "02_PROMPTS_AND_SAMPLE_SEARCH.txt",
+    "file": "ACTIVE_KNOWLEDGE/02_PROMPTS_AND_SAMPLE_SEARCH.txt",
+    "sha256": "bc42819a1b493943be783a5731275b0d210f735eb7df96ad1dac3096d9b0fedd",
+    "chars": 27826,
+    "included_completely": true
+  },
+  {
+    "label": "03_STUDIO_AND_IMPORT.txt",
+    "file": "ACTIVE_KNOWLEDGE/03_STUDIO_AND_IMPORT.txt",
+    "sha256": "c91cf3e8c7db9cd56f497834eb70f391fdf29d46bec4814ef315df33a30d44e1",
+    "chars": 30485,
+    "included_completely": true
+  },
+  {
+    "label": "04_MY_VOICE_AND_FINISHING.txt",
+    "file": "ACTIVE_KNOWLEDGE/04_MY_VOICE_AND_FINISHING.txt",
+    "sha256": "3d2e457f154d97437277fca60dfeb70b5b49e1539cbb5457d1f56845c57ca064",
+    "chars": 14457,
+    "included_completely": true
+  },
+  {
+    "label": "05_ASSET_CATALOG_AND_RECIPES.txt",
+    "file": "ACTIVE_KNOWLEDGE/05_ASSET_CATALOG_AND_RECIPES.txt",
+    "sha256": "68937a6a5323004af83e57a118c9090eff08402aaf1d180003c322c29bc0dede",
+    "chars": 54091,
+    "included_completely": true
+  },
+  {
+    "label": "06_SESSION_PROTOCOL_AND_RIGHTS.txt",
+    "file": "ACTIVE_KNOWLEDGE/06_SESSION_PROTOCOL_AND_RIGHTS.txt",
+    "sha256": "606957a269df134feb31b98988d1ee703e630759928e3d9c366763fe4a1a001b",
+    "chars": 13576,
+    "included_completely": true
+  },
+  {
+    "label": "07_VOICE_CONVERSION_AND_EXTRA_TOOLS.txt",
+    "file": "ACTIVE_KNOWLEDGE/07_VOICE_CONVERSION_AND_EXTRA_TOOLS.txt",
+    "sha256": "ef0c9dcf7bdca1d4554cdf03bb96a6666734c89004112f0903ca7f1fd36eeb5f",
+    "chars": 40451,
+    "included_completely": true
+  },
+  {
+    "label": "CURRENT_PROFILE/MY_VOICE_SETUP_RTX3050.txt",
+    "file": "CURRENT_PROFILE/MY_VOICE_SETUP_RTX3050.txt",
+    "sha256": "cec1b37da43c23613f63a97ad96a4897747a6010d0ccf995b48cd77adde2b6f6",
+    "chars": 5440,
+    "included_completely": true
+  },
+  {
+    "label": "GEM_SETUP/SUPPORT_QUESTIONS_UNSENT.txt",
+    "file": "GEM_SETUP/SUPPORT_QUESTIONS_UNSENT.txt",
+    "sha256": "d0c3d8172fbb79cb5f91a1935c76298c4886e9b9c1d85999ec913bfb8a9083b9",
+    "chars": 2773,
+    "included_completely": true
+  },
+  {
+    "label": "TEMPLATES/SONGS/SONG_PASSPORT_TEMPLATE.md",
+    "file": "TEMPLATES/SONGS/SONG_PASSPORT_TEMPLATE.md",
+    "sha256": "95d965ae6f46b04fd5e21b3e449a6af761dd1ebcca9b5d752964b016fb7b0994",
+    "chars": 1151,
+    "included_completely": true
+  },
+  {
+    "label": "TEMPLATES/VOICE/VOICE_MODEL_PASSPORT.md",
+    "file": "TEMPLATES/VOICE/VOICE_MODEL_PASSPORT.md",
+    "sha256": "fe13eeaf74cc5d6204a568b6627f502dee03ba5970026fda2caf27b991fba0c9",
+    "chars": 1060,
+    "included_completely": true
+  },
+  {
+    "label": "TEMPLATES/VOICE/ONE_TIME_RECORDING_CHECKLIST.md",
+    "file": "TEMPLATES/VOICE/ONE_TIME_RECORDING_CHECKLIST.md",
+    "sha256": "15ebf76ea7ea8301369b30f50392334edd4dff62c825c1f07a300a0049d57a57",
+    "chars": 2021,
+    "included_completely": true
+  },
+  {
+    "label": "EXTERNAL_MEDIA_BACKUP.json",
+    "file": "EXTERNAL_MEDIA_BACKUP.json",
+    "sha256": "8f909e5f2623fa37e62aad635fd52ff7569fe363931a909efd11ef0a5aa682b8",
+    "chars": 440,
+    "included_completely": true
+  },
+  {
+    "label": "PHOTOS/PHOTO_INDEX.md",
+    "file": "PHOTOS/PHOTO_INDEX.md",
+    "sha256": "01fbee6ac181b03d6e19be16c257b6a80e86f4dd078fd5738ca0af895a61e055",
+    "chars": 580,
+    "included_completely": true
+  },
+  {
+    "label": "00_START_HERE.md",
+    "file": "00_START_HERE.md",
+    "sha256": "4cdddf17e487ad1365f48d7954a42e3b9afe069c3cd1f9227ff23cd7b8361926",
+    "chars": 3280,
+    "included_completely": true
+  }
+]

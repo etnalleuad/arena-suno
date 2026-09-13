@@ -1,0 +1,382 @@
+# KB02 — Готовые промпты, sound search и музыкальная архитектура
+VERSION:2026-09-11 | Permanent Knowledge for Gemini
+
+ГЛАВНОЕ
+Задача Gemini — писать подходящий текущему шагу готовый prompt, а не пересказывать все примеры. Шаблоны ниже — справочные авторские рецепты, не результат прослушивания Gemini. Сначала заполнить контекст песни из KB06, проверить права на sources, выбрать правильную поверхность.
+По умолчанию вокал — свой реально выбранный Verified Voice. Не менять его на arbitrary male/female singer из примера. Если профиль не выбран в UI, текст «use my voice» не является доказательством его активации.
+Все финальные метатеги и технические указания по-английски. Русский текст — только Lyrics и цитаты редактируемых слов. Не оставлять в финальном prompt незаполненные {BPM}/{KEY}/{TRACK}/{RANGE}. При неизвестном параметре использовать осмысленное Follow the existing tempo/harmony либо задать необходимый вопрос.
+
+ОПЕРАЦИИ
+Whole-song Styles: microgenre, groove, timbres, own Voice delivery, form, production.
+Simple with references: source → роль → что сохраняем → что меняем → output.
+Studio Chat: operation → selected destination/source → range → одна роль → context relation → ограничения результата.
+Wavetable patch: изменить instrument/параметры, сохранить MIDI, не генерировать новый audio.
+FX: existing audio + реальные эффекты/automation; не regenerate.
+
+ЛИМИТЫ
+В ранних v6 UI-наблюдениях Styles1000/Lyrics5000; проверять реальный счётчик. Это НЕ лимит всех сообщений Studio Chat. Лучше короткий конкретный бриф, чем всё сразу. Сложные команды Simple допустимы, но не нужны для одиночного kick.
+Для дорожек: «Instrumental» исключает вокал, а не весь ансамбль. «Keys» в имени не фиксирует физический инструмент. «Dark organic» не равно «tine electric piano».
+
+ПОРЯДОК ВЫДАЧИ
+Один основной prompt. Если пользователь просит варианты — точный A и исследовательский B с объяснением одного различия. Настройки UI отдельно, не в кодблок Style. Для Create явно отдельные Styles / Lyrics / Exclude.
+
+СЛОВАРЬ ПОД СВОЙ VOICE
+intimate Russian-language singing; clear consonants; conversational melodic phrasing; restrained vibrato; preserve the selected verified Voice; breath-led but intelligible; exposed lead vocal; tension through phrasing and silence.
+Припев не обязан быть loud belt. Не добавлять автоматически anthemic/radio-ready/powerful choir.
+
+## REF 2.4. Архитектура промпта: три разных языка задачи
+
+| Поверхность | Что писать | Пример начала |
+|---|---|---|
+| **Advanced → Styles** | Звуковую картину всей композиции | `Deconstructed dark art-pop, sparse broken drums...` |
+| **Simple с прикреплёнными входами** | Что сделать с конкретными источниками | `Use the rhythm from the first reference...` |
+| **Studio Chat** | Операцию над выбранным объектом | `Generate an isolated electric-piano part in the selected region...` |
+
+**Ошибка:** скопировать общий Style песни со списком drums, bass, guitar, vocals в запрос на одну дорожку Keys. Ты сам снова перечисляешь полный ансамбль.
+
+**ПРАКТ — общий Style:**
+
+```text
+Microgenre + rhythmic identity + dominant timbres + vocal delivery + arrangement contrast + production priorities
+```
+
+**ПРАКТ — Studio-задача:**
+
+```text
+Operation + destination + selected range + one musical role + source relationship + output boundaries
+```
+
+Это схемы составления текста, не зарезервированные ключи Suno. YAML/JSON и CAPS не превращают их в API.
+
+**Про лимиты:** HookGenius сообщает, что на live v6-интерфейсе счётчики показывали 1 000 символов Styles и 5 000 Lyrics. Это наблюдение интерфейса, а не объявленный лимит сообщений Studio Chat. Все полные Style-примеры ниже подготовлены короче 1 000 символов. [2](https://hookgenius.app/learn/suno-v6-guide/)
+
+
+
+## REF 2.5. Три готовых полных Style-промпта — только твои направления
+
+**ПРАКТ.** Это брифы для **всей песни в Advanced**, не промпты на отдельный stem. Artist names намеренно не вставлены. Вокальный тип в примерах можно заменить на нужный, одновременно согласовав Vocal Gender/Voice.
+
+#### A. Deconstructed Dark Art-Pop / Darkwave
+
+**Styles:**
+
+```text
+Deconstructed dark art-pop with coldwave atmosphere, 94 BPM, 4/4, D minor. Fractured drum patterns with deliberate gaps, a pressure-heavy mono sub, brittle glassy synth chords and sparse metallic gestures. Intimate Russian-language singing using the selected verified Voice, clear consonants, breath-led phrasing and brief fragile falsetto at phrase endings. Restrained verses open into an unsettling refrain rather than a triumphant chorus. Tension comes from silence, register shifts and displaced accents. Keep the lead close and intelligible while distorted textures occupy the background and phrase gaps.
+```
+
+**Exclude Styles:**
+
+```text
+radio dance-pop, festival EDM, rap, trap, phonk, arena belting, cheerful acoustic strumming
+```
+
+**Что сохраняет направление:** паузы, отдельные звуковые жесты, давление саба, хрупкая подача. **Что не нужно:** превращать `dark` в бесконечную кинематографическую подложку.
+
+#### B. Поэтичный альтернативный Indie / Post-Punk
+
+**Styles:**
+
+```text
+Poetic Russian-language alternative indie rock with coldwave post-punk tension, 102 BPM, 4/4, E minor. A melodic picked bass, lean dry drums, a wiry single-note electric-guitar counterline and occasional muted electric-piano chords. Intimate singing using the selected verified Voice with clear diction, conversational melodic phrasing and a slightly frayed tone. The refrain grows through a moving bassline and sharper guitar accents, not stadium volume. Leave gaps around the words. Narrow, tactile verses contrast with a modestly wider refrain; restrained saturation and a close, exposed lead vocal.
+```
+
+**Exclude Styles:**
+
+```text
+rap, trap, phonk, commercial dance-pop, stadium rock, blues guitar solos, operatic vocals
+```
+
+**Важно:** этот пример допускает гитару **на гитарной дорожке**. Если отдельно генерируешь Keys, общий список ансамбля сюда не переносится.
+
+#### C. Индустриальная органика / Trip-Hop с электрическим нервом
+
+**Styles:**
+
+```text
+Industrial organic trip-hop with an electric nervous edge, 96 BPM, 4/4, D minor. Heavy sparse kick and snare, uneven mechanical percussion, short electrical cracks, a dense sine-based sub and low dusty electric-piano voicings. Intimate Russian-language singing with restrained dynamics and precise consonants. Contrast the human voice with machine-like accents; let the groove breathe between impacts. Build tension through texture and rhythmic omissions, then strip back before the final refrain. Keep the sub centered and stable, the lead dry and close, and the distortion confined to percussion and background layers.
+```
+
+**Exclude Styles:**
+
+```text
+rap, trap hi-hat rolls, phonk, radio pop, festival EDM drops, glossy choir stacks, blues shuffle
+```
+
+**Не путать плотность с многослойностью:** плотный sub и три точных удара могут звучать тяжелее, чем двадцать одновременно играющих слоёв.
+
+
+
+## REF 2.6. Перевод твоих референсов в рабочие признаки
+
+**ПРАКТ:** это декомпозиция направления, не обещание воспроизвести конкретного артиста.
+
+| Ты описываешь | Полезные английские слова | Что указать дополнительно |
+|---|---|---|
+| Деконструкция | `fractured rhythm, negative space, displaced accents, abrupt dropouts` | Где пропускать атаки; точные пропуски потом сделать на timeline |
+| Телесность / близость | `close-miked vocal, tactile percussion, breath-led phrasing` | Какой источник должен быть близким |
+| Хлёсткий ток | `short electrical crack, hard transient, brief noisy tail` | Это FX/перкуссия, не электрогитара |
+| Механический стрекот | `relay chatter, metallic ticks, irregular ratchet-like percussion` | Изолированный ритмический слой, без мелодии |
+| Плотный саб | `sine-based mono sub, sustained weight, restrained harmonics` | Регистр и место относительно kick |
+| Нервные клавиши | `tine electric piano, short hammered attacks, uneven sparse chord stabs` | Источник — клавишный, не щипковая гитара |
+| Стеклянная хрупкость | `glassy high-register synth chords, thin attack, exposed decay` | Синтезатор или пианино: выбрать одно |
+| Мрачная органика | `dry hand percussion, wood knocks, bowed metal texture` | Не обязательно добавлять acoustic guitar |
+| Поэтичность | `conversational melodic phrasing, clear diction, room between lines` | Реальный текст важнее слова `poetic` |
+| Контролируемая грязь | `localized saturation, band-limited distortion, clean low end` | На каких дорожках грязь допустима |
+
+**Если нужен действительно кривой звук:** не проси просто «играй неправильно». The Verge в тестах v6 не добилась желаемых out-of-tune/dissonant результатов. Практически надёжнее задать интервалы в MIDI, detune на синтезаторе, микросдвиги и обрывы в монтаже. Это не утверждение, что v6 вообще неспособна на диссонанс; это выбор более управляемого метода. [1](https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help)
+
+
+
+## REF 2.7. Новые многоисточниковые промпты v6
+
+**ОФ:** в Simple можно объединять несколько входов и объяснять роль каждого. Это реальное отличие v6 workflow. **ПРАКТ:** назначай референсам роли, а не просто прикрепляй пять песен со словами `make it like these`. Загружай только материал, который вправе использовать. [3](https://help.suno.com/en/articles/13924481)
+
+**Ритм из первого, атмосфера из второго — Simple:**
+
+```text
+Use only the broken drum feel from the first attached reference and the sparse electrical atmosphere from the second. Write an original industrial-organic art-pop arrangement at 96 BPM. Keep the harmonic material original. Use the supplied Russian lyrics, with an intimate solo vocal and clear diction. The refrain should intensify through texture and silence, not a festival-style drop.
+```
+
+**Своя напевка — Simple:**
+
+```text
+Build a restrained dark art-pop arrangement around the melody and phrasing of my own attached voice memo. Keep the supplied Russian lyrics. Use sparse broken drums, a centered sub and electric-piano chords, leaving the vocal exposed. Preserve the melodic contour as closely as possible; do not turn the delivery into rap.
+```
+
+**Образ как палитра, не как повод переписать музыку — Simple:**
+
+```text
+Use the attached image only to guide the texture and atmosphere. Keep the attached audio as the reference for tempo, melodic contour and section lengths. Aim for cold metallic detail, intimate space and restrained tension. Keep the supplied Russian lyrics unchanged.
+```
+
+Это всё ещё генеративные просьбы. Если напевку нужно сохранить **в исходном аудио**, оставь её отдельной неизменяемой дорожкой Studio и строй сопровождение вокруг неё; не прогоняй сам дубль через полную генерацию.
+
+Для точного создания Keys/Drums картинки и видео обычно лишние: усложняют условия и могут увеличивать стоимость. Их рациональнее использовать на стадии поиска общей атмосферы.
+
+
+
+## REF 2.8. Exclude: точечно, а не «запретить всё»
+
+- В **Advanced Styles** отдельные нежелательные категории лучше держать в Exclude.
+- В **Studio Chat** предложение `Do not include drums in the output` — нормальная инструкция операции. Это не то же самое, что набить негативными названиями поле Style.
+- Не исключай `pop` целиком, если нужен **art-pop**; исключай `radio dance-pop`, `commercial pop polish` и конкретные нежелательные манеры.
+- Не исключай `distortion` целиком, если индустриальная окраска нужна; ограничивай её ролями.
+- `Instrumental` означает отсутствие вокала, **не** «только один инструмент».
+- Exclude не является hard mute уже существующей дорожки и не исправляет автоматически сгенерированный WAV.
+
+**НАБЛ:** HookGenius увидел, что Exclude отображается в результирующем Style как добавленные `-term`. Не путай такое отображение с доказательством, что модель самовольно переписала исходный бриф. Но и не превращай ручной `-guitar` в выдуманный универсальный командный синтаксис. [2](https://hookgenius.app/learn/suno-v6-guide/)
+
+
+
+
+## REF 3.4. Формула поканального промпта
+
+**ПРАКТ — шесть обязательных смысловых частей:**
+
+1. **Operation:** новая партия, преобразование, MIDI или FX.
+2. **Destination:** выбранная пустая дорожка либо выбранный исходный клип.
+3. **Range:** выделенный участок; при необходимости его длина в тактах.
+4. **One role:** конкретный инструмент и функция.
+5. **Context relationship:** следовать гармонии/груву, заполнять паузы, не дублировать lead.
+6. **Boundaries:** только этот элемент в выходе, остальные клипы не менять.
+
+**Слабый запрос:**
+
+```text
+Dark organic keys with electric energy, deep bass and an emotional voice.
+```
+
+Ты перечислил полный ансамбль и не определил, что должно появиться на выбранной дорожке.
+
+**Более управляемый запрос:**
+
+```text
+Generate an isolated tine electric-piano accompaniment in the selected eight-bar region on the empty audio track. Use sparse mid-register chord stabs with a hammered attack and a soft decay. Follow the existing harmony and leave gaps for the lead vocal. Return electric piano only, without guitar, bass, drums or voices. Leave all existing clips unchanged.
+```
+
+**Это повышение определённости задания, не обещание 100% успеха.** Если даже правильный краткий запрос дважды возвращает гитару, меняй маршрут, а не добавляй сорок синонимов слова `only`.
+
+
+
+## REF 3.5. Банк поканальных промптов: Drums, Bass, Keys, Vocals, FX
+
+**Все примеры — ПРАКТ, для Studio Chat.** Перед запуском выбери указанный тип объекта. `one isolated part` означает одну музыкальную роль, а не просьбу отменить стандартную выдачу двух вариантов.
+
+**Общий учебный стенд:** 96 BPM, 4/4, D minor, 8 тактов = 20 секунд. Если работаешь с готовой песней, **не навязывай ей эти цифры** — используй её реальные параметры. При доступных настройках для диагностики: v6, Variety 0, Personalize Off, Max Off; Weirdness/Style Influence сначала штатные. Не все эти переключатели обязаны быть доступны в каждой Studio-операции.
+
+#### DRUMS_MAIN — тяжёлая разреженная ритм-секция
+
+**Выделение:** 8 тактов на пустой Audio-дорожке.
+
+```text
+Generate one isolated drum-kit part in the selected eight-bar region on the empty audio track. Follow the session tempo. Use a heavy short kick, a dry snare, restrained closed hats and deliberate gaps, with a broken industrial trip-hop feel. Keep the pattern stable enough to support Russian vocal phrasing, with a small variation near the end. Return drums only, without bass, chords, guitars, synth melodies or voices. Do not modify the existing tracks.
+```
+
+**Проверка:** нет ли гармонического подслоя; совпадает ли первая атака с нужной долей; не заполнил ли генератор все паузы.
+
+**Если слишком обычный beat:** сначала удали отдельные удары монтажом или попроси один конкретный пропуск; не меняй сразу модель, жанр и все регуляторы.
+
+#### PERC_MACHINE — механический стрекот отдельно от основных drums
+
+**Выделение:** пустая Audio-дорожка, тот же диапазон.
+
+```text
+Generate an isolated mechanical-percussion layer for the selected region. Use dry relay clicks, thin metallic ticks and brief irregular rattles between the main drum hits. Follow the existing pulse but keep the density low. This is an unpitched accent layer, not a drum kit or melodic instrument. Do not include kick, snare, bass, chords or voices. Leave the existing arrangement unchanged.
+```
+
+**Если получается целая песня:** переходи к One Shot в Sounds и собирай рисунок из отдельных звуков вручную (KB03 (Sounds/FX)).
+
+#### BASS_SUB — плотный, но устойчивый низ
+
+**Предпочтительный точный путь:** MIDI → Wavetable (KB03 (MIDI/Wavetable)). Ниже — аудиовариант.
+
+```text
+Generate one isolated monophonic synth-bass part in the selected region on the empty audio track. Follow the existing chord roots and leave space around the kick attacks. Use a dense sine-based low register, restrained saturation and simple note movement. Avoid chordal playing and high-register runs. Return bass only, without drums, keys, guitar or vocals. Keep the surrounding tracks unchanged.
+```
+
+**Проверка:** нет ли двух нот одновременно, струнной атаки вместо synth bass, неправильных корней, сильного ритмического расхождения с kick.
+
+#### BASS_EDGE — электрическая фактура над сабом
+
+**Выделение:** отдельная пустая Audio-дорожка. Не заменяет BASS_SUB.
+
+```text
+Generate an isolated mid-bass texture that answers the existing sub-bass rhythm in the selected region. Use short, gritty synthesized pulses with a narrow noisy edge and a restrained low-frequency body. Keep it sparse and monophonic. This layer should add electrical tension, not a second full bassline. Do not include drums, guitar, chords or vocals. Do not change the existing sub track.
+```
+
+**Инженерный смысл:** основной sub остаётся стабильным; агрессию регулируешь отдельным фейдером. Точную частотную границу задавай EQ после генерации, не надейся на текстовое «срезать ровно 120 Hz».
+
+#### KEYS_TINES — электрическое пианино, не гитара
+
+**Выделение:** пустая Audio-дорожка. Не клади на неё гитарный stem перед этим действием.
+
+```text
+Generate an isolated tine electric-piano accompaniment in the selected eight-bar region on the empty audio track. Use sparse mid-register chord stabs, hammer-struck attacks and soft decays. Follow the existing harmony and place the chords in the gaps between lead-vocal phrases. Keep the tone intimate and slightly worn. Return electric piano only: no plucked strings, guitar, bass, drums or voices. Leave every existing clip unchanged.
+```
+
+**Проверка:** действительно ли источник слышится как клавишный, а не только называется Keys в подписи; нет ли гитарных slides/strums и повторённого аккомпанемента.
+
+#### PAD_AIR — синтетическая подложка вместо неопределённых «атмосферных keys»
+
+**Выделение:** пустая Audio-дорожка либо MIDI-дорожка с подходящим Wavetable-патчем.
+
+```text
+Generate one isolated synthesizer-pad part in the selected region. Follow the existing chords with slowly changing sustained voicings in the upper midrange. Use a glassy, thin texture with a soft attack, leaving the lead vocal exposed. Keep the low register empty. Return synth pad only, without piano attacks, guitar, percussion, bass or voices. Preserve all existing clips.
+```
+
+**Если важны ноты и точные вступления:** MIDI-патч даст больше контроля; длинный release может звучать за границей MIDI-ноты — учитывай это при построении пауз.
+
+#### VOX_LEAD — новая ведущая партия
+
+**Выделение:** пустая Audio-дорожка; нужный текст должен быть передан в доступное Lyrics-поле или явно включён в запрос. Для изменения существующего исполнения используй KB04 (локальный vocal repair), а не этот сценарий.
+
+```text
+Generate an isolated Russian lead-vocal part for the selected region using the supplied lyrics. Follow the existing accompaniment and section length. Use intimate, close-miked melodic singing, clear consonants, restrained vibrato and space between phrases. Keep the voice exposed and avoid rap delivery or theatrical belting. Return a solo lead vocal only, with no instruments, choir or backing vocals. Leave the accompaniment unchanged.
+```
+
+**Голос:** если действие реально предлагает выбор Voice/Vocal Gender, задай его там. Если не предлагает, не считай имя персонажа в тексте жёстким выбором профиля.
+
+**Если в выходе есть сопровождение:** сравни второй take; затем вокальная изоляция или короткая перегенерация. Даже официальная демонстрация Studio 2.0 показывает сценарий, где после vocal cover пришлось извлекать lead через Advanced Split. [1](https://www.youtube.com/watch?v=GZHp3WFc9Ps)
+
+#### VOX_RESPONSES — тихие ответы, а не полный хор
+
+**Выделение:** небольшой диапазон после конкретной фразы ведущего голоса.
+
+```text
+Generate a single quiet backing-vocal response in the selected gap after the lead phrase. Sing only "не трогай" in Russian, softly and close to the microphone. Keep the response shorter than the lead phrase and let it end before the next lead entry. No choir, added lyrics, lead-vocal doubling across the whole section or instrumental accompaniment. Leave the existing lead unchanged.
+```
+
+**Проверка:** конец ответа не перекрывает следующую согласную. При необходимости подвинь клип вручную. Одно и то же удачное короткое «эхо» можно повторить монтажом — не надо генерировать его заново десять раз.
+
+#### FX_ELECTRIC — отдельный электрический удар
+
+**Предпочтение:** Sounds → One Shot для самого звука, затем placement в Studio. Если генерируешь прямо на timeline — выбери пустой Audio-участок.
+
+```text
+Create one isolated short electrical crack: a hard dry transient followed by a brief sputtering noisy tail. Intimate and metallic, not cinematic. No beat, melody, bassline, voices or background ambience.
+```
+
+**Проверка:** нужная атака, длина хвоста, отсутствие музыки. Обрезка и fade — вручную. Текст `short` не фиксирует миллисекунды.
+
+#### FX_TEXTURE — редкая электрическая среда
+
+**Выделение:** отдельная Audio-дорожка, не VOX_LEAD и не весь stereo mix.
+
+```text
+Generate a sparse isolated background texture for the selected region: dry relay chatter, distant wire-like resonance and occasional electrical ticks. Leave substantial silence between events. Keep the texture unpitched and unobtrusive so the Russian lead remains clear. No drum groove, harmonic pad, bassline, guitar or voices. Do not alter any existing track.
+```
+
+**Если постоянно получается ambience-музыка:** создай 2–3 One Shot и расставь их. Для твоей эстетики пустота — полноценная часть аранжировки.
+
+#### GTR_COUNTER — дополнительная дорожка для indie/post-punk
+
+```text
+Generate one isolated electric-guitar counterline in the selected region on the empty audio track. Use wiry single notes, restrained tremolo picking and occasional short muted attacks. Follow the existing harmony and answer the lead vocal in its gaps. Keep the part lean rather than strummed or soloistic. Return guitar only, without bass, drums, keyboards or voices. Preserve the other tracks.
+```
+
+Это отдельная роль. Не пытайся одновременно получить из одного generated stem `tine piano`, `bowed guitar`, `synth pad` и «строго один инструмент».
+
+
+# SOUND_SEARCH — Splice и похожие каталоги
+
+Это способ подбирать звук, а не разрешение использовать чужой sample как AI-source. Для Splice действуют правила KB06: текущие Terms запрещают source/training use в AI, не только Custom Model training. Default — поиск/метаданные/описание + лицензированное локальное использование в DAW; не upload в Suno/Gemini без отдельного разрешения.
+
+## Разбор переданного пользователем URL
+Ссылка из запроса содержала filepath=indie+rock и два instrument/genre tags. При чтении страницы 11.09.2026 активными были «indie rock» и «synth». Это выдача синтезаторов в таком контексте, НЕ гарантия electric piano и НЕ запись выбранного sample.
+Для synth texture ссылка подходит. Если задача — конкретно keys/tine electric piano, менять/уточнять instrument filter, а не считать любой результат «клавишами». Не запоминать число результатов навсегда и не выдумывать смысл незнакомого UUID-тега.
+https://splice.com/sounds/search/samples?filepath=indie+rock&tags=d5b91338-6269-4dde-9448-e1dbc3cf1ac5&tags=25a795c8-3a2b-427f-9f4e-30c20bb39f1a
+
+## Как отвечать на «найди мне звук»
+1. Роль: kick/snare/keys/pad/sub/counterline/FX/целый loop.
+2. Нужен One Shot или Loop? One-shot обычно не надо искать по BPM. Для melodic loop важны key и гармония.
+3. Дать3–5 английских search queries от конкретного к более широкому.
+4. Предложить filters: instrument/type, One-Shot/Loop, BPM range, key при необходимости.
+5. Если есть реальный доступ к выдаче — показать до3 кандидатов с названием/URL/метаданными, статусом «не прослушано» при отсутствии audio. Не выдумывать pack, sample filename или availability.
+6. Если доступа нет — дать query/filters и попросить shortlist или описание пользователя; не притворяться, что просмотрена приватная библиотека.
+7. Пользователь штатно лицензирует/скачивает; Certified License хранит у себя. Preview не равен лицензированному источнику.
+8. Решить маршрутизацию: local DAW sample placement либо разрешённый original generative reference. При Splice не предлагать exact AI-реконструкцию sample как обход запрета.
+
+## Полезные запросы (не обещание наличия результатов)
+Keys: dry tine electric piano / sparse electric piano chords / muted keyboard stabs / felt piano sparse.
+Pads: coldwave synth pad / thin glass synth chords / darkwave analogue pad / unstable synth texture.
+Bass: mono sine sub / dark synth bass pulse / picked post punk bass / minimal bass notes.
+Drums: dry trip hop drums / sparse broken drum groove / short punchy kick / dry rim snare.
+Organic: dry wood percussion / muted hand percussion / brush scrape / tactile percussion.
+Electric: relay click / electrical crackle / short circuit / wire scrape / metallic ticks.
+Guitar: post punk single note guitar / muted electric guitar / tremolo guitar counterline / wiry guitar texture.
+Не вводить phonk/trap/rap как жанровые ориентиры. Если встречаются в выдаче — это не повод менять цель.
+
+## Metadata worksheet для кандидата
+CandidateID, URL, filename_if_visible, pack_if_visible, instrument, one-shot/loop, BPM, key/root, duration, source_of_each_fact, what_user_likes, what_user_rejects, intended_track, license_status, AI-source_permission.
+Условия audio/midi/plugin-specific проверяются отдельно. Preset для Serum/другого synth не является Suno Wavetable preset. Splice VST/AU plugin не устанавливается в Suno Studio.
+
+## Как переводить описание звука в собственный prompt
+Работать с общими музыкальными признаками, не копировать конкретный чужой sample/melody/voice.
+«Хлёсткий ток» → short dry electrical crack, hard transient, brief noisy tail.
+«Клавиши как стекло» → glassy synthetic keyboard, thin attack, sparse high-register chords.
+«Органика» → tactile dry percussion, wood-like knocks, irregular small gestures; это не обязательная guitar.
+«Плотный саб» → sine-based mono sub, stable pitch, restrained harmonics, space around kick.
+«Инди-поэзия» → clear Russian diction, conversational melodic phrasing, gaps around words.
+В промпте для одной дорожки не перечислять другие инструменты как желаемый состав.
+
+## Готовый ответ для сценария Splice без аудио
+«По ссылке вижу поиск/фильтры, не слышу выбранный sample. Для твоей роли предлагаю такие queries/filters… Если понравится конкретный звук, используй лицензированную копию локально в DAW. Для generative Suno-reference возьмём original из нашего набора либо твою запись. Из библиотеки: M01 для редактируемых keys или L04 для готового synthetic-keyboard звука».
+
+## Примеры дополнительных коротких команд
+### Сохранить настоящую исходную запись
+```text
+Generate a new accompaniment part on the selected empty track. Use my original recording only as timing and harmonic context. Do not transform or replace that recording. Return only the requested instrument and leave existing clips unchanged.
+```
+Это намерение команды; самое надёжное сохранение original — физически не выбирать его целью генерации и проверить фактическое действие.
+### Точная смена тембра MIDI
+```text
+Keep the selected MIDI notes unchanged and alter only the instrument preset. Use a restrained synthetic electric-keyboard tone with a short attack. Do not generate an audio cover or a new melody.
+```
+### FX без перегенерации
+```text
+Use effects and automation only on the selected track. Preserve its performance and timing. Do not create new audio clips or change the arrangement.
+```
+
+## Source context и negatives
+Только один источник-инструмент не гарантирует чистую генерацию: bleed и модельная интерпретация возможны. Exclude useful, но не hard audio mute. Если он недоступен в Studio-операции, допустимо явно ограничить output в sentence, не изображая скрытый переключатель.
+My Taste/Variety фиксировать при тестировании. Style Influence50 не означает50%удалённого текста. После двух неудачных пар изоляции сменить метод на MIDI, другой source, One Shot или осмысленный Split, а не удлинять prompt.

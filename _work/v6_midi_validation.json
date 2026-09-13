@@ -1,0 +1,24 @@
+[
+  {
+    "file": "KEYS_Dm_96bpm_8bars.mid",
+    "format": 1,
+    "ppq": 480,
+    "tracks": 2,
+    "notes": 48,
+    "pitch_min": 53,
+    "pitch_max": 69,
+    "seconds": 20.0,
+    "note_lifetimes_valid": true
+  },
+  {
+    "file": "BASS_Dm_96bpm_8bars.mid",
+    "format": 1,
+    "ppq": 480,
+    "tracks": 2,
+    "notes": 17,
+    "pitch_min": 31,
+    "pitch_max": 45,
+    "seconds": 20.0,
+    "note_lifetimes_valid": true
+  }
+]

@@ -1,0 +1,361 @@
+{
+  "snapshot": "2026-09-12",
+  "active_knowledge_files": 7,
+  "master_file": "ALL_CONTEXT_FOR_NEW_CHAT_2026-09-12.txt",
+  "external_media": {
+    "required_for_full_media_recovery": true,
+    "filename": "PART_2_STUDIO_ASSETS.zip",
+    "bytes": 37703704,
+    "sha256": "c7b919dce14053541fc344dd29cfca24bd9f791a5ce42748621671f4bd646e78",
+    "contents": "48 WAV + 12 MIDI + 10 recipe texts, catalogs, previews and validation",
+    "contained_in_this_chat_restore_zip": false,
+    "why": "Store/download separately. Text and catalog are included here; the full audio library is not duplicated."
+  },
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 5420,
+      "sha256": "4cdddf17e487ad1365f48d7954a42e3b9afe069c3cd1f9227ff23cd7b8361926"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/01_PROFILE_AND_SUNO_V6.txt",
+      "bytes": 14587,
+      "sha256": "d092fb9f9f4415c7665c36b9a580f0e30b14ecbba2a3008e8a0442231f7501ba"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/02_PROMPTS_AND_SAMPLE_SEARCH.txt",
+      "bytes": 37818,
+      "sha256": "bc42819a1b493943be783a5731275b0d210f735eb7df96ad1dac3096d9b0fedd"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/03_STUDIO_AND_IMPORT.txt",
+      "bytes": 46743,
+      "sha256": "c91cf3e8c7db9cd56f497834eb70f391fdf29d46bec4814ef315df33a30d44e1"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/04_MY_VOICE_AND_FINISHING.txt",
+      "bytes": 22635,
+      "sha256": "3d2e457f154d97437277fca60dfeb70b5b49e1539cbb5457d1f56845c57ca064"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/05_ASSET_CATALOG_AND_RECIPES.txt",
+      "bytes": 70378,
+      "sha256": "68937a6a5323004af83e57a118c9090eff08402aaf1d180003c322c29bc0dede"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/06_SESSION_PROTOCOL_AND_RIGHTS.txt",
+      "bytes": 20909,
+      "sha256": "606957a269df134feb31b98988d1ee703e630759928e3d9c366763fe4a1a001b"
+    },
+    {
+      "path": "ACTIVE_KNOWLEDGE/07_VOICE_CONVERSION_AND_EXTRA_TOOLS.txt",
+      "bytes": 61965,
+      "sha256": "ef0c9dcf7bdca1d4554cdf03bb96a6666734c89004112f0903ca7f1fd36eeb5f"
+    },
+    {
+      "path": "ALL_CONTEXT_FOR_NEW_CHAT_2026-09-12.txt",
+      "bytes": 349066,
+      "sha256": "dc90175f30ad1c632f26c228bc6bc721b300b171a9c7cd54cfe3fa460cabb688"
+    },
+    {
+      "path": "ARCHIVE_NOT_CURRENT/READ_THIS_FIRST.txt",
+      "bytes": 472,
+      "sha256": "ce3c7b377c28abeafa317851209ab935e3e8ee20ff51fa1b74bc1373ae567510"
+    },
+    {
+      "path": "ARCHIVE_NOT_CURRENT/suno_knowledge_base_ru_2026-09-06.html",
+      "bytes": 191603,
+      "sha256": "13f42aa202242b12db65a5ea6bf1647ec869f111da3d9126975209a2276961e1"
+    },
+    {
+      "path": "ARCHIVE_NOT_CURRENT/suno_knowledge_base_ru_2026-09-06.md",
+      "bytes": 129566,
+      "sha256": "7f1299e5eac7b87a09a20739288a8cd47d1063ef849db9196e6db26f8da9e98f"
+    },
+    {
+      "path": "BUILD_SCRIPTS/README.txt",
+      "bytes": 1534,
+      "sha256": "25343685203261290b07dae85b3f29f6418874e9c7ea03c753ae0412a980cc97"
+    },
+    {
+      "path": "BUILD_SCRIPTS/build_dark_assets.py",
+      "bytes": 26832,
+      "sha256": "a8154422aa1b5523f9b6f02675c44d5aafad253aaa250071a462a2f5045c4231"
+    },
+    {
+      "path": "BUILD_SCRIPTS/build_dark_catalog.py",
+      "bytes": 19568,
+      "sha256": "182877b24dac3fa3d054a90684752390be2963227ab5b5551528b6a8e4d7158d"
+    },
+    {
+      "path": "BUILD_SCRIPTS/build_gem_knowledge.py",
+      "bytes": 22887,
+      "sha256": "058d96bd6807a8964f2cca44470384a6cb6802ec5f58f17589f8a9c2c802fde5"
+    },
+    {
+      "path": "BUILD_SCRIPTS/build_voice_addon_files.py",
+      "bytes": 23934,
+      "sha256": "323e496eeb795ec6fdd225a2029b74ccd7a910588fe704907ce051eec3d56787"
+    },
+    {
+      "path": "BUILD_SCRIPTS/make_v6_midi.py",
+      "bytes": 7344,
+      "sha256": "e9e10e954c964be9c8a6e4c89b6d7b2adb394dd35c096cfab5a75ae3a51d86be"
+    },
+    {
+      "path": "BUILD_SCRIPTS/render_kit_guides.py",
+      "bytes": 26256,
+      "sha256": "5ab679aed1e88b9fe80495c0de84af6b1fa69ff143b006e9eec6d9f2da101c62"
+    },
+    {
+      "path": "BUILD_SCRIPTS/render_knowledge_base.py",
+      "bytes": 17859,
+      "sha256": "92e9c132dcf5af6d10fbda50783b39cf6f4cda467a794e28c9495e1e0c779675"
+    },
+    {
+      "path": "BUILD_SCRIPTS/render_v6_dark.py",
+      "bytes": 18657,
+      "sha256": "0a92cc5cb85df2f3b45f83847d4989b56a5998e7e14d3f338079b469f451610c"
+    },
+    {
+      "path": "BUILD_SCRIPTS/render_voice_addon.py",
+      "bytes": 16965,
+      "sha256": "887206d8a1e9cf7fc12008466a8e2f5faa93698f0d7be7a8820fdfa4139cb25f"
+    },
+    {
+      "path": "BUILD_SCRIPTS/validate_and_package_kit.py",
+      "bytes": 6760,
+      "sha256": "d061681ec9acdd0bc095a047ffa2c4bce1e3a7a1576d07e3614f92eea4d0eea8"
+    },
+    {
+      "path": "BUILD_SCRIPTS/write_kit_readmes.py",
+      "bytes": 27686,
+      "sha256": "95d0460b65c595d82aae84b34661ea3ec6497451fa277ed4fbab844a8fc59237"
+    },
+    {
+      "path": "CURRENT_PROFILE/MY_VOICE_SETUP_RTX3050.txt",
+      "bytes": 9210,
+      "sha256": "cec1b37da43c23613f63a97ad96a4897747a6010d0ccf995b48cd77adde2b6f6"
+    },
+    {
+      "path": "EXTERNAL_MEDIA_BACKUP.json",
+      "bytes": 440,
+      "sha256": "8f909e5f2623fa37e62aad635fd52ff7569fe363931a909efd11ef0a5aa682b8"
+    },
+    {
+      "path": "GEM_SETUP/CHECK_CORE.txt",
+      "bytes": 2405,
+      "sha256": "4c35d8f732c42e3f170afb2f94aa842aa2314904991c6389938b3fa7fa78f3bc"
+    },
+    {
+      "path": "GEM_SETUP/CHECK_VOICE_ADDON.txt",
+      "bytes": 2922,
+      "sha256": "8461d9fa648af37e14148f44112a96be4e63895f2afee039027c29ebf8d02f36"
+    },
+    {
+      "path": "GEM_SETUP/FIRST_VOICE_MESSAGE_ORIGINAL.txt",
+      "bytes": 1522,
+      "sha256": "930e461e7486a84e08ffe964003e7d5e0139101212fb68606dc48a689e7e4abf"
+    },
+    {
+      "path": "GEM_SETUP/GEM_INSTRUCTIONS_CURRENT.txt",
+      "bytes": 13427,
+      "sha256": "18e2425d198e119d883e7c258a8c53f3aabec144b551bd51888c55a3bd1ca45d"
+    },
+    {
+      "path": "GEM_SETUP/INSTALL_ORIGINAL_SIX_FILES.md",
+      "bytes": 6784,
+      "sha256": "401103dbcbc1c39e6842c66e5ad10768733708cd76ec5378ecccc440f21809b0"
+    },
+    {
+      "path": "GEM_SETUP/INSTALL_VOICE_ADDON.md",
+      "bytes": 4347,
+      "sha256": "003a5984794deb81ae47bb0a1fc328d642bd22244c182cf0f0b0771c85d1bb1e"
+    },
+    {
+      "path": "GEM_SETUP/START_NEW_SONG.txt",
+      "bytes": 1514,
+      "sha256": "672085b60aa0b253f649c9b6146934554ea3ab701b027cc34d4fe24941f97176"
+    },
+    {
+      "path": "GEM_SETUP/SUPPORT_QUESTIONS_UNSENT.txt",
+      "bytes": 3189,
+      "sha256": "d0c3d8172fbb79cb5f91a1935c76298c4886e9b9c1d85999ec913bfb8a9083b9"
+    },
+    {
+      "path": "GEM_SETUP/TOOLS_AND_COSTS_2026-09-12.csv",
+      "bytes": 1895,
+      "sha256": "f88cf9c0ab27cc8649469a49435e75bfd4cdb03f7a0b0aa02e928fc853c4d9b9"
+    },
+    {
+      "path": "MASTER_SOURCE_MAP.json",
+      "bytes": 4175,
+      "sha256": "277ceb53d7133339b8daa4fcd7dfb53839b3a03f730c1028d37117f53d5d34a2"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/ASSET_CATALOG_RU.md",
+      "bytes": 70378,
+      "sha256": "68937a6a5323004af83e57a118c9090eff08402aaf1d180003c322c29bc0dede"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/ASSET_INDEX.csv",
+      "bytes": 32213,
+      "sha256": "ea1a6ee5795d0b9389431ebee5d0b9d7f2919421eb9fb6d0d4da10cb8ed82e4f"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/ASSET_INDEX.json",
+      "bytes": 87623,
+      "sha256": "918ea3903d37321cf93fbfae334d37bf6b242fa6b2e23c76d8ffbfaf7e848cba"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/LICENSE_AND_ORIGIN.txt",
+      "bytes": 3102,
+      "sha256": "c7b272b06b78cfa693c65cb6015226e7ab6cf96f5caf2ccdf2d840d98a8ca1e9"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/SOUND_DESIGN_NOTES.md",
+      "bytes": 2098,
+      "sha256": "2d96c2f5ded805731cd2a632bbc3f0f4407eed39e462ec7ba8f642adedbe38bf"
+    },
+    {
+      "path": "MEDIA_CATALOG_ONLY/VALIDATION_REPORT.json",
+      "bytes": 9142,
+      "sha256": "e68f9a430b7a86a27d7c2f31940ccf1acf6633c5d340777e83963fb94c5d24ae"
+    },
+    {
+      "path": "ORIGINAL_DOWNLOADS/PART_1_GEMINI.zip",
+      "bytes": 79869,
+      "sha256": "57a32ae2ee73eaf449e87a83bf9ee303e0fe57cc0e4ee644907ef7f6bd5ef136"
+    },
+    {
+      "path": "ORIGINAL_DOWNLOADS/VOICE_ADDON_2026-09-12.zip",
+      "bytes": 70406,
+      "sha256": "e30a2e8caaa9555955348e0fe9f35aab97802a2ece805d4b0cf64ee75e9c034a"
+    },
+    {
+      "path": "ORIGINAL_DOWNLOADS/suno_v6_midi_starters_96bpm.zip",
+      "bytes": 2329,
+      "sha256": "3315213e53903b544451c1196f5995b591a8b6cb839ae7a910e4a756aee09e39"
+    },
+    {
+      "path": "PHOTOS/MIC_01.png",
+      "bytes": 1596528,
+      "sha256": "934e7fd4bc448a13da4e2d5768578b5f1c8d8771ae1983981ce8b5048244f38b"
+    },
+    {
+      "path": "PHOTOS/MIC_02.png",
+      "bytes": 1589844,
+      "sha256": "c924aaa7246c95bb0cf2a2876a2a4ca37f0988fb70a8d431ff3703b35f4b436b"
+    },
+    {
+      "path": "PHOTOS/MIC_03.png",
+      "bytes": 1416463,
+      "sha256": "1031d3d7d2bb3107f48e44acc6005b6960a2244375610d13ad5c18d800d49f70"
+    },
+    {
+      "path": "PHOTOS/MIC_04.png",
+      "bytes": 1457288,
+      "sha256": "ef18ebb76cdb06d257b332063b2fce629dd83c47888c13c1a324730d864f45dd"
+    },
+    {
+      "path": "PHOTOS/MIC_CONTACT_SHEET.jpg",
+      "bytes": 693611,
+      "sha256": "50143b87513ce0b3099ff86559c2616edb3ae0a9706ff485f710c021dcea477b"
+    },
+    {
+      "path": "PHOTOS/PHOTO_INDEX.md",
+      "bytes": 950,
+      "sha256": "01fbee6ac181b03d6e19be16c257b6a80e86f4dd078fd5738ca0af895a61e055"
+    },
+    {
+      "path": "PROJECT_HANDOFF.md",
+      "bytes": 29516,
+      "sha256": "f17db1d1895068e1a1c6735942cc5eddda1fc338ccaffb96c5ac6ce7276a7e7d"
+    },
+    {
+      "path": "REFERENCE_GUIDES/START_HERE_GEMINI_STUDIO.html",
+      "bytes": 1644658,
+      "sha256": "e9b14a3cb750dc4bff5b548b97f688c6b76ab3426b813f30b1dfaa1795f7fe34"
+    },
+    {
+      "path": "REFERENCE_GUIDES/VOICE_WORKFLOW_GUIDE_2026-09-12.html",
+      "bytes": 100697,
+      "sha256": "54fb85a9d85f418dc6f609f67c90df14962b3c21656de9672cd432059becb0ef"
+    },
+    {
+      "path": "REFERENCE_GUIDES/suno_v6_studio_dark_2026-09-11.html",
+      "bytes": 161925,
+      "sha256": "4a35a53a9ead928acbc0c567a9e431abb7cf1131007c7ceddef771dfe54f2c0e"
+    },
+    {
+      "path": "REFERENCE_GUIDES/suno_v6_studio_dark_2026-09-11.md",
+      "bytes": 109338,
+      "sha256": "1b8cd5bbbe5c52a6b639808400714f33955c87abe1395d7dd499162336f667b9"
+    },
+    {
+      "path": "START_NEW_CHAT.txt",
+      "bytes": 2796,
+      "sha256": "9cbafac79830db4716cd05826f7ac1b444f9ad40292322c3007599d58c6dc0e0"
+    },
+    {
+      "path": "TECHNICAL_AUDITS/README.txt",
+      "bytes": 359,
+      "sha256": "737a77e3c8b90bf8634d37348e2e2eebed529c3d19ba01362846754e2190f24f"
+    },
+    {
+      "path": "TECHNICAL_AUDITS/applio_3_6_4_ui_audit.json",
+      "bytes": 3086,
+      "sha256": "18b6231e9c3070523597f0f8ee34f6d49da72072f35e7a7963dcf48c73778f7b"
+    },
+    {
+      "path": "TECHNICAL_AUDITS/v6_midi_validation.json",
+      "bytes": 424,
+      "sha256": "0c33d69b084e69171c1e58734922a0f621539231d0ddeae171c875375e9d3a67"
+    },
+    {
+      "path": "TEMPLATES/SONGS/AB_TEST_LOG_TEMPLATE.csv",
+      "bytes": 131,
+      "sha256": "2e97b3e8598a2789cfb94bc6c0e817ba84326c141e03fb038ebd2bf351eb3005"
+    },
+    {
+      "path": "TEMPLATES/SONGS/REGISTER_MY_SAMPLE.md",
+      "bytes": 980,
+      "sha256": "ef3005ceb59ee8c77ab20e08fbbbb4a548fee79a9bfa8c4e632ab12e35142429"
+    },
+    {
+      "path": "TEMPLATES/SONGS/SONG_PASSPORT_TEMPLATE.md",
+      "bytes": 1410,
+      "sha256": "95d965ae6f46b04fd5e21b3e449a6af761dd1ebcca9b5d752964b016fb7b0994"
+    },
+    {
+      "path": "TEMPLATES/SONGS/USER_ASSETS_TEMPLATE.csv",
+      "bytes": 175,
+      "sha256": "2edb9b645ffb14f547748077c702c6100822d0abd38de3facd137a237d5ff981"
+    },
+    {
+      "path": "TEMPLATES/SONGS/VOICE_PROFILE_TEMPLATE.md",
+      "bytes": 989,
+      "sha256": "c1ed8e2e5043f753191a678cec3cc028d2559be39b921a19ef6599a00df29dbb"
+    },
+    {
+      "path": "TEMPLATES/VOICE/GPU_AND_DATASET_FORM.md",
+      "bytes": 961,
+      "sha256": "70ea0adf56b5efb8e3e6275ca0f82da601ee793af04ed6a73b3f532cd4f3ca95"
+    },
+    {
+      "path": "TEMPLATES/VOICE/ONE_TIME_RECORDING_CHECKLIST.md",
+      "bytes": 3453,
+      "sha256": "15ebf76ea7ea8301369b30f50392334edd4dff62c825c1f07a300a0049d57a57"
+    },
+    {
+      "path": "TEMPLATES/VOICE/VOICE_AB_TEST_PLAN.csv",
+      "bytes": 542,
+      "sha256": "077abdbaf9d4b6f5eb1ed2963f75c2e6eac852edc3701654a544cd268cc55f2c"
+    },
+    {
+      "path": "TEMPLATES/VOICE/VOICE_MODEL_PASSPORT.md",
+      "bytes": 1244,
+      "sha256": "fe13eeaf74cc5d6204a568b6627f502dee03ba5970026fda2caf27b991fba0c9"
+    }
+  ]
+}

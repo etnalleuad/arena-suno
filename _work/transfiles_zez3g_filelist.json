@@ -1,0 +1,37 @@
+{
+  "success": "1",
+  "flist": [
+    {
+      "id": 52538903,
+      "ex": true,
+      "name": "кукла на полке.wav",
+      "name_full": "кукла на полке.wav",
+      "size": "11.8 МБ",
+      "size_bt": "12409960",
+      "vk_image": 0,
+      "image": 0
+    },
+    {
+      "id": 52538904,
+      "ex": true,
+      "name": "метелица.wav",
+      "name_full": "метелица.wav",
+      "size": "20.7 МБ",
+      "size_bt": "21672344",
+      "vk_image": 0,
+      "image": 0
+    },
+    {
+      "id": 52538905,
+      "ex": true,
+      "name": "проверка.wav",
+      "name_full": "проверка.wav",
+      "size": "8.3 МБ",
+      "size_bt": "8713632",
+      "vk_image": 0,
+      "image": 0
+    }
+  ],
+  "vk_images": "0",
+  "images": "0"
+}

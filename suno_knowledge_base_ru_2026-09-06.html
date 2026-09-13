@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Практическая база знаний Suno: Lyrics Engineering, Style, Studio 2.0, Premier и предстоящий переход к v6. Срез 6 сентября 2026."><title>Suno — база знаний продюсера · 06.09.2026</title><style>
+:root{--ink:#242726;--muted:#68716d;--accent:#bd5032;--paper:#fffefa;--page:#f3f3ed;--line:#dedfd5;--nav:#202824;--navtext:#d7ded9;--code:#edf1eb;--soft:#e8eee5}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--page);font-size:16px;line-height:1.72}button,input{font:inherit}a{color:var(--accent);text-underline-offset:3px}button{cursor:pointer}aside{position:fixed;inset:0 auto 0 0;width:278px;background:var(--nav);color:var(--navtext);display:flex;flex-direction:column;z-index:30} .brand{padding:27px 25px 20px;border-bottom:1px solid #3b443e}.brand small{font-size:10px;letter-spacing:2px;color:#9eafa1}.brand b{display:block;font-size:33px;line-height:1.3;letter-spacing:1px;color:#fff}.brand p{margin:5px 0 0;font-size:12px;color:#bac6bd}.stamp{display:inline-block;font-size:10px;letter-spacing:.5px;margin-top:17px;padding:4px 9px;border:1px solid #526455;border-radius:4px;color:#d2e1ce}nav{padding:10px 14px 24px;overflow:auto;scrollbar-width:thin;scrollbar-color:#55635a #202824}nav a{display:block;text-decoration:none;border-radius:5px;line-height:1.5}nav a:hover,nav a:focus-visible{background:#36453a;color:white}.nav-block{font-size:13px;font-weight:700;color:#f3f6f2;padding:12px 10px 7px;margin-top:9px}.nav-block span{font-size:11px;color:#e1a47d;display:inline-block;width:27px}.nav-section{font-size:11px;color:#bac6bd;padding:6px 10px 6px 16px}.nav-section.active{background:#344439;color:#fff} .sidebar-foot{padding:15px 25px;font-size:11px;color:#92a397;border-top:1px solid #3b443e}.shell{margin-left:278px} .toolbar{position:sticky;top:0;z-index:20;background:#f3f3edf5;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 36px;display:flex;gap:8px;align-items:center}.search-group{display:flex;align-items:center;max-width:580px;width:100%;border:1px solid #c9d1c5;border-radius:6px;background:#fffefa;padding:0 12px}.search-group svg{width:17px;height:17px;flex:none;color:#6b786d}.search-group input{width:100%;border:none;background:transparent;outline:none;padding:9px 10px;font-size:13px}.key{font-size:10px;white-space:nowrap;color:#758171}.tool{border:1px solid #c9d1c5;border-radius:5px;background:#fffefa;color:#49554b;font-size:12px;padding:8px 11px;white-space:nowrap}#count{font-size:11px;color:#64725f;min-width:55px;white-space:nowrap}.mobile-nav{display:none}.hero{max-width:1100px;margin:0 auto;padding:49px 60px 35px;border-bottom:1px solid var(--line)}.eyebrow{font-size:10px;letter-spacing:2.5px;font-weight:700;color:var(--accent)}h1{font-size:clamp(33px,4vw,48px);line-height:1.13;letter-spacing:-1.4px;margin:17px 0 20px;font-weight:750}.deck{font-size:17px;max-width:750px;color:#687168;line-height:1.6;margin:0}.metrics{display:flex;gap:30px;margin-top:28px;flex-wrap:wrap}.metrics div{border-left:2px solid #c8d2c1;padding-left:12px;font-size:11px;color:#6a7667}.metrics strong{display:block;font-size:19px;color:#293b2d;font-weight:650;line-height:1.4}.article{max-width:1100px;margin:0 auto;padding:25px 60px 70px;background:var(--paper)}.article>p:first-child{font-size:14px}.article>p:nth-child(2),.article>p:nth-child(3){font-size:13px;color:#596558}.article p{margin:15px 0}.article h2{font-size:25px;line-height:1.4;letter-spacing:-.5px;padding:24px 0 18px;margin:62px 0 24px;border-top:3px solid #71856a;border-bottom:1px solid var(--line);scroll-margin-top:100px}.article h3{font-size:21px;line-height:1.4;margin:42px 0 18px;letter-spacing:-.3px;scroll-margin-top:90px}.article h4{font-size:17px;line-height:1.5;margin:27px 0 11px}.article ul,.article ol{padding-left:24px}.article li{padding-left:3px;margin:7px 0}.article li>p{margin:8px 0}strong{font-weight:680}hr{height:1px;border:0;background:var(--line);margin:36px 0}.table-wrap{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:6px}table{border-collapse:collapse;width:100%;font-size:12.5px;line-height:1.65}th,td{padding:13px 14px;vertical-align:top;text-align:left;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}th{background:#eaf0e5;color:#32482e;font-weight:680;font-size:11.5px}tr:last-child td{border-bottom:0}th:last-child,td:last-child{border-right:0}tbody tr:nth-child(even){background:#fafbf7}td:first-child{min-width:130px}td{min-width:135px}code{font-family:Consolas,SFMono-Regular,Menlo,monospace;font-size:.84em;background:#edf1e9;padding:2px 4px;border-radius:3px;overflow-wrap:anywhere}.code-wrap{position:relative;margin:21px 0}pre{background:var(--code);border-left:3px solid #8f9f80;border-radius:0 5px 5px 0;margin:0;padding:46px 20px 20px;white-space:pre-wrap;word-wrap:break-word;line-height:1.7;font-size:13px;overflow:auto}pre code{background:none;font-size:1em;padding:0;border-radius:0;overflow-wrap:anywhere}.copy{position:absolute;right:10px;top:8px;border:1px solid #bdcbb4;border-radius:4px;background:#f7f9f3;color:#54654c;font-size:10px;padding:3px 8px}.copy:hover{background:#dce7d4}.citation{font-size:10px;border:1px solid #d6ccb9;padding:1px 4px;border-radius:3px;text-decoration:none;vertical-align:super;color:#8c6448;white-space:nowrap}.citation:before{content:'↗ ';font-size:9px}mark{background:#ffe5a4;border-radius:2px;color:inherit}mark.current{background:#f4b76a;outline:2px solid #cc783a}.endnote{max-width:1100px;margin:auto;padding:25px 60px 40px;font-size:12px;color:#71806b;border-top:1px solid var(--line)}:focus-visible{outline:2px solid #b45b35;outline-offset:3px}.progress{height:2px;background:var(--accent);width:0;position:fixed;left:278px;top:0;z-index:80}#toast{position:fixed;bottom:20px;right:20px;background:#263a2a;color:white;border-radius:5px;padding:10px 17px;font-size:12px;z-index:100;opacity:0;transition:opacity .2s;pointer-events:none}#toast.visible{opacity:1}
+@media(min-width:1650px){.hero,.article,.endnote{max-width:1180px;padding-left:75px;padding-right:75px}body{font-size:17px}table{font-size:13px}}
+@media(max-width:1100px){aside{width:230px}.shell{margin-left:230px}.progress{left:230px}.hero,.article,.endnote{padding-left:32px;padding-right:32px}.toolbar{padding-left:24px;padding-right:24px}.key{display:none}.nav-section{font-size:10.5px}}
+@media(max-width:800px){aside{display:none;width:278px;box-shadow:10px 0 40px #0004}aside.open{display:flex}.shell{margin-left:0}.progress{left:0}.mobile-nav{display:inline-block}.toolbar{padding:10px 15px}.hero{padding:34px 23px 28px}.article{padding:18px 23px 50px}.endnote{padding:20px 23px}.hero h1{font-size:34px}.article h2{font-size:21px}.article h3{font-size:19px}body{font-size:15px}.print,.key{display:none}.metrics{gap:17px}.metrics strong{font-size:17px}.article table{font-size:12px}th,td{padding:11px 12px}#count{min-width:30px;font-size:10px}.tool{padding:7px 9px}.search-group{padding:0 8px}.search-group input{padding-left:7px;min-width:0;font-size:12px}}
+@media print{body{background:#fff;color:#000;font-size:10.5pt;line-height:1.55}aside,.toolbar,.copy,.progress,#toast{display:none!important}.shell{margin:0}.hero,.article,.endnote{max-width:none;padding:0;background:white}.hero{padding-bottom:20px}.hero h1{font-size:29pt}.deck{font-size:11pt}.metrics{margin-top:17px}.article h2{break-before:page;font-size:19pt;margin-top:0;padding-top:0;border-top:0}.article h3{font-size:14pt;break-after:avoid;margin-top:22px}.article h4{font-size:11pt;break-after:avoid}.article p,.article li{orphans:3;widows:3}.table-wrap{overflow:visible;border-radius:0}table{font-size:8.3pt}th,td{padding:7px;min-width:0!important}tr{break-inside:avoid}thead{display:table-header-group}pre{font-size:9pt;padding:12px;break-inside:avoid;background:#f2f5ed}a{color:#635441}.citation{font-size:7pt}.endnote{margin-top:20px}mark{background:none!important;outline:none!important}@page{size:A4;margin:17mm 14mm 18mm}}
+</style></head>
+<body><div class="progress" aria-hidden="true"></div><aside><div class="brand"><small>PRODUCER FIELD MANUAL</small><b>SUNO /</b><p>Практическая база знаний</p><span class="stamp">Срез · 06 сентября 2026</span></div><nav aria-label="Содержание"><a class="nav-block" href="#block-1"><span>01</span>Тексты и вокал</a><a class="nav-section" href="#section-1-1">1.1. Главный принцип: текст — партитура намерений, но не MIDI</a><a class="nav-section" href="#section-1-2">1.2. Пунктуация: что пробовать и чего не ожидать</a><a class="nav-section" href="#section-1-3">1.3. Пять приёмов вокальной режиссуры</a><a class="nav-section" href="#section-1-4">1.4. Мета-теги структуры: расширенный практический словарь</a><a class="nav-section" href="#section-1-5">1.5. Вокальные теги и их реальный смысл</a><a class="nav-section" href="#section-1-6">1.6. Русский язык: ударения, фонетика, кириллица</a><a class="nav-section" href="#section-1-7">1.7. Актуальные инструменты Lyrics и быстрая диагностика</a><a class="nav-block" href="#block-2"><span>02</span>Style и саунд-дизайн</a><a class="nav-section" href="#section-2-1">2.1. Layered Prompt Architecture: шесть смысловых слоёв</a><a class="nav-section" href="#section-2-2">2.2. Не путать поля и способы управления</a><a class="nav-section" href="#section-2-3">2.3. Продвинутый словарь: описывать слышимый результат</a><a class="nav-section" href="#section-2-4">2.4. BPM, тональность, метр и переходы</a><a class="nav-section" href="#section-2-5">2.5. Антипаттерны и работа с артистическими референсами</a><a class="nav-section" href="#section-2-6">2.6. Exclude / Exclude Styles: конкретные запреты вместо магического «антишум-пакета»</a><a class="nav-section" href="#section-2-7">2.7. Creative Sliders: рабочая калибровка</a><a class="nav-section" href="#section-2-8">2.8. Пять готовых Style-шаблонов</a><a class="nav-block" href="#block-3"><span>03</span>Studio, Premier и v6</a><a class="nav-section" href="#section-3-1">3.1. Что действительно актуально на 6 сентября</a><a class="nav-section" href="#section-3-2">3.2. AI Chat: управление проектом, эффекты, пресеты</a><a class="nav-section" href="#section-3-3">3.3. MIDI, Wavetable и MIDI-as-prompt</a><a class="nav-section" href="#section-3-4">3.4. Replace / Audio &amp; Lyric Inpainting: точечный ремонт</a><a class="nav-section" href="#section-3-5">3.5. Stem Separation: три режима и честные ограничения</a><a class="nav-section" href="#section-3-6">3.6. Personas vs Voices vs Custom Models: связность альбома</a><a class="nav-section" href="#section-3-7">3.7. Covers, Audio Upload и Extend</a><a class="nav-section" href="#section-3-8">3.8. Premier и экономия: две экономики, не одна</a><a class="nav-section" href="#section-3-9">3.9. v6, обновления сообществ и проверка «лайфхаков»</a></nav><div class="sidebar-foot">Официальные функции ≠ вероятностные приёмы. Проверяйте гипотезы, сохраняйте удачные дубли.</div></aside>
+<div class="shell"><div class="toolbar"><button class="tool mobile-nav" id="menu" aria-label="Открыть содержание">☰</button><div class="search-group"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" autocomplete="off" placeholder="Найти тег, функцию или приём…" aria-label="Поиск по базе знаний"><span class="key">Ctrl / ⌘ K</span></div><span id="count" aria-live="polite"></span><button class="tool" id="next" aria-label="Следующее совпадение" title="Следующее совпадение; в поле поиска — Enter">↓</button><button class="tool print" onclick="window.print()">Печать</button></div>
+<header class="hero"><div class="eyebrow">LYRICS · SOUND DESIGN · PRODUCTION</div><h1>От идеи —<br>к управляемому треку.</h1><p class="deck">Тексты, вокальная режиссура, архитектура Style и работа в Studio 2.0. Подтверждённые возможности отдельно от мифов о «секретных тегах».</p><div class="metrics"><div><strong>03 блока</strong>единая производственная система</div><div><strong>05 промптов</strong>готовые жанровые отправные точки</div><div><strong>58 источников</strong>официальные материалы и сообщества</div><div><strong>v5.5 → v6</strong>подтверждённое и предстоящее</div></div></header>
+<main class="article">
+<p><strong>Срез: 6 сентября 2026 года.</strong> Рабочая база: <strong>v5.5 + Studio 2.0 с правками от 2 сентября</strong>. В публичной тарифной таблице последняя доступная модель — v5.5. Новое поколение, обсуждаемое как <strong>v6</strong>, рассматривается отдельно как предстоящий переход, а не как уже проверенный движок. <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></p>
+<p><strong>Как читать:</strong> <strong>ОФ</strong> — функция или правило подтверждены официальными материалами; <strong>ПР</strong> — продюсерская рекомендация или вероятностный приём сообщества, требующий A/B-проверки; <strong>НЕП</strong> — надёжного подтверждения нет. Все авторские примеры ниже — стартовые настройки, а не результаты моих генераций в вашем аккаунте. Проценты успешности «секретных тегов» не выдумываются.</p>
+<p><strong>Границы ресерча:</strong> прочитаны официальные Release Notes, Help Center, блог, актуальные Terms; сопоставлены публичные материалы r/SunoAI, русскоязычных авторов, YouTube и индексируемые описания TikTok. Для части YouTube доступны транскрипты, для других — описание и главы. Закрытые каналы Discord недоступны: их содержимое не выдаётся за прочитанное. Проверка репостов и ограничений источников — в §3.9.</p>
+<hr/>
+<h2 id="block-1">БЛОК 1. ТЕКСТЫ, ПУНКТУАЦИЯ И ВОКАЛЬНАЯ РЕЖИССУРА — LYRICS ENGINEERING</h2>
+<h3 id="section-1-1">1.1. Главный принцип: текст — партитура намерений, но не MIDI</h3>
+<p><strong>Suno не документирует пунктуацию как детерминированный язык управления длительностями.</strong> В просмотренных официальных материалах нет таблицы «запятая = 250 мс», «три точки = секунда» или «CAPS = +6 dB». Есть поддержка структурных обозначений и контекста в Lyrics; музыкальные термины предлагаются как описания желаемого результата. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a> <a class="citation" href="https://help.suno.com/en/articles/5782977" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/5782977">1</a> <a class="citation" href="https://help.suno.com/en/articles/9010177" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/9010177">1</a></p>
+<p>Полезная рабочая модель:</p>
+<ol>
+<li><strong>Слова, число слогов и расположение ударений</strong> задают материал для вокальной фразы.</li>
+<li><strong>Переносы строк и пунктуация</strong> подсказывают группировку и экспрессию.</li>
+<li><strong>Структурные метки</strong> обозначают роль секции.</li>
+<li><strong>Style, Voice/Persona и аудиореференс</strong> влияют на общий характер исполнения.</li>
+<li><strong>Точные паузы, отдельные ноты, громкость и стыки</strong> доводятся редактированием, а не количеством знаков препинания.</li>
+</ol>
+<p>В обсуждении большого prompting-гайда r/SunoAI автор и комментаторы прямо расходятся по эффекту многоточия и тильды. Поэтому популярность таблицы тегов не равна верификации её механики. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/">4</a></p>
+<h3 id="section-1-2">1.2. Пунктуация: что пробовать и чего не ожидать</h3>
+<p><strong>Вся таблица — ПР.</strong> Это вероятностные подсказки, обобщённые из обсуждений фразировки; они не являются спецификацией парсера v5.5. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1l443tx/guide_to_writing_lyrics_for_suno/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1l443tx/guide_to_writing_lyrics_for_suno/">2</a> <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/">4</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Запись в Lyrics</th>
+<th>Возможный эффект</th>
+<th>Практическое применение</th>
+<th>Ограничение / риск</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Я помню, ты рядом</code></td>
+<td>Разделение фразы, небольшая цезура</td>
+<td>Место потенциального вдоха без полного завершения мысли</td>
+<td>Запятая может почти не повлиять на ритм</td>
+</tr>
+<tr>
+<td><code>Я помню. Ты рядом.</code></td>
+<td>Более законченные фразы, раздельная артикуляция</td>
+<td>Отрывистый рассказ, смысловые остановки</td>
+<td>Не гарантирует ни слышимого вдоха, ни смены высоты</td>
+</tr>
+<tr>
+<td><code>Я помню... ты рядом</code></td>
+<td>Замедление, недоговорённость, затухание или пауза</td>
+<td>Томная, сомневающаяся подача</td>
+<td>Может растянуть предыдущее слово либо быть проигнорировано</td>
+</tr>
+<tr>
+<td><code>Я помню — ты рядом</code></td>
+<td>Контраст или драматический разрыв</td>
+<td>Подчеркнуть перелом мысли</td>
+<td>Нет подтверждения, что длинное тире имеет отдельный фиксированный «таймер»</td>
+</tr>
+<tr>
+<td><code>я-я-я помню</code></td>
+<td>Повтор атаки, заикание, ритмическое дробление</td>
+<td>Осмысленный stutter</td>
+<td>Может прозвучать как лишние полноценные слоги</td>
+</tr>
+<tr>
+<td><code>по-мню</code></td>
+<td>Изменение слогового членения</td>
+<td>Локальная попытка исправить дикцию</td>
+<td>Не универсальный способ ни замедлить, ни ускорить вокал</td>
+</tr>
+<tr>
+<td><code>жду-у-у</code></td>
+<td>Попытка растянуть гласную / разделить её на ноты</td>
+<td>Длинный конец фразы</td>
+<td>Может дать три атаки вместо одной удержанной ноты</td>
+</tr>
+<tr>
+<td><code>Я помню!</code></td>
+<td>Более энергичное произнесение</td>
+<td>Акцент на ключевой реплике</td>
+<td><code>!!!!!</code> не задаёт уровень громкости и может сделать подачу грубой</td>
+</tr>
+<tr>
+<td>Одна фраза на строке</td>
+<td>Намёк на границу вокальной фразы</td>
+<td>Базовая разметка текста</td>
+<td>Одна строка не равна одному такту</td>
+</tr>
+<tr>
+<td>Пустая строка</td>
+<td>Более сильная группировка текста</td>
+<td>Разделять строфы и секции</td>
+<td>Это не гарантированный такт тишины</td>
+</tr>
+<tr>
+<td><code>(помню)</code></td>
+<td>Повтор, ответ, бэк, дополнительная вокальная фраза</td>
+<td>Текст, который действительно должен прозвучать</td>
+<td>Может исполнить основной голос; второй певец не гарантирован</td>
+</tr>
+<tr>
+<td><code>[Whispered Vocals]</code></td>
+<td>Намерение изменить манеру подачи</td>
+<td>Команда перед строкой или секцией</td>
+<td>Может не сработать; необычные длинные команды иногда попадают в вокал</td>
+</tr>
+<tr>
+<td><code>Я ПОМНЮ</code></td>
+<td>Смысловой акцент, иногда более напористая подача</td>
+<td>Выделить 1–2 значимых слова</td>
+<td>Не фейдер громкости; возможны смена артикуляции и нежелательная экспрессия</td>
+</tr>
+<tr>
+<td><code>жду~</code></td>
+<td>Экспериментальный сигнал исполнения</td>
+<td>Только отдельный тест</td>
+<td><strong>НЕП:</strong> гарантированный vibrato или sustain за тильдой не закреплён</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Правило экономии:</strong> сначала исправляйте длину и ритмику строки; только затем добавляйте дополнительные символы. Десять многоточий не спасут перегруженную фразу.</p>
+<h3 id="section-1-3">1.3. Пять приёмов вокальной режиссуры</h3>
+<h4>A. Микропауза и недоговорённость</h4>
+<p><strong>Style-фрагмент:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-0" type="button">Копировать</button><pre id="code-0"><code class="language-text">intimate close-miked vocal, unhurried phrasing, space between phrases
+</code></pre></div>
+<p><strong>Lyrics:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-1" type="button">Копировать</button><pre id="code-1"><code class="language-text">[Verse - intimate, restrained]
+Я жду... ещё один твой знак.
+Ты здесь — и всё уже не так.
+</code></pre></div>
+<p><strong>ПР:</strong> если Suno всё равно сливает фразы, перенесите вторую часть на новую строку или сократите текст. Не наращивайте число точек бесконечно.</p>
+<h4>B. Томное удержание гласной</h4>
+<p>Сначала попробуйте нормальное написание плюс описание исполнения:</p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-2" type="button">Копировать</button><pre id="code-2"><code class="language-text">[Chorus - legato, sustained vowels]
+Я жду тебя.
+</code></pre></div>
+<p>Только при необходимости — фонетический вариант:</p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-3" type="button">Копировать</button><pre id="code-3"><code class="language-text">[Chorus - legato, sustained vowels]
+Я жду-у-у тебя.
+</code></pre></div>
+<p><strong>ПР:</strong> <code>sustained vowels</code> просит длительность гласных, <code>melisma</code> — несколько нот на одном слоге. Это разные задачи. Если нужен конкретный музыкальный рисунок, напойте его или подготовьте MIDI/аудиореференс, а не пытайтесь закодировать ноты дефисами.</p>
+<h4>C. Бэк, эхо, эдлиб</h4>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-4" type="button">Копировать</button><pre id="code-4"><code class="language-text">[Chorus]
+Не отпускай меня (не отпускай)
+Пока горит заря (гореть, гореть)
+</code></pre></div>
+<ul>
+<li>В круглых скобках — <strong>произносимые слова</strong>, не техническая инструкция.</li>
+<li><code>(whisper softly)</code> может быть спето буквально.</li>
+<li>Для характера бэка добавьте <code>soft backing-vocal responses</code> в Style или <code>[Backing Vocals]</code> перед соответствующей фразой.</li>
+<li>Точное число повторов лучше написать буквально: <code>(нет, нет)</code>, а не <code>(x2)</code>.</li>
+<li>Скобочный повтор не равен настоящему delay с фиксированным временем. Для точного эха используйте Delay и автоматизацию.</li>
+</ul>
+<h4>D. Шёпот → эмоциональный припев</h4>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-5" type="button">Копировать</button><pre id="code-5"><code class="language-text">[Verse - whispered vocals, sparse arrangement]
+Я не скажу, куда ушла весна.
+
+[Pre-Chorus - rising intensity]
+Но ты услышишь, если тишина...
+
+[Chorus - belted vocals, full band]
+ОСТАНЬСЯ, пока горит заря!
+</code></pre></div>
+<p><strong>ПР:</strong> <code>breathy vocals</code> — воздушный тембр, не обязательный шёпот. <code>whispered vocals</code> — характер произнесения. <code>dry vocal</code> — мало пространственной обработки, а не «безэмоционально».</p>
+<h4>E. Сбивка и остановка перед дропом</h4>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-6" type="button">Копировать</button><pre id="code-6"><code class="language-text">[Verse - syncopated phrasing]
+Я-я-я снова на краю.
+
+[Break]
+
+[Drop]
+</code></pre></div>
+<p><strong>ПР:</strong> для рисунка пробуйте <code>syncopated phrasing</code>, <code>offbeat accents</code>, <code>staccato delivery</code>, <code>laid-back delivery</code>. <code>[Break]</code> может убрать часть инструментов, а не весь звук.</p>
+<p><strong>Точная пауза:</strong> создайте её на таймлайне. При темпе 120 BPM четверть длится <code>60 / 120 = 0,5 с</code>; такт 4/4 — <code>4 × 60 / 120 = 2 с</code>. Для полного обрыва проверьте также хвосты Reverb/Delay. Пунктуацией такие значения не фиксируются.</p>
+<h3 id="section-1-4">1.4. Мета-теги структуры: расширенный практический словарь</h3>
+<p><strong>«Полного официального списка всех работающих тегов» в просмотренной документации нет.</strong> Suno поддерживает музыкальные обозначения и свободные описания, а не опубликованный конечный набор команд. Ниже — рабочий словарь: базовые секции плюс распространённые формулировки сообщества. Наличие строки в таблице не означает гарантированного исполнения. <a class="citation" href="https://help.suno.com/en/articles/9010177" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/9010177">1</a> <a class="citation" href="https://blakecrosley.com/guides/suno" rel="noopener noreferrer" target="_blank" title="https://blakecrosley.com/guides/suno">4</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Назначение</th>
+<th>Английский синтаксис</th>
+<th>Как применять</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Вступление</td>
+<td><code>[Intro]</code></td>
+<td>Начало композиции; само по себе не запрещает вокал</td>
+</tr>
+<tr>
+<td>Инструментальное вступление</td>
+<td><code>[Instrumental Intro]</code></td>
+<td>Уточнить желаемое отсутствие слов в начале</td>
+</tr>
+<tr>
+<td>Куплет</td>
+<td><code>[Verse]</code>, <code>[Verse 1]</code>, <code>[Verse 2]</code></td>
+<td>Номер помогает организации, но не гарантирует отдельную мелодию</td>
+</tr>
+<tr>
+<td>Предприпев</td>
+<td><code>[Pre-Chorus]</code></td>
+<td>Подготовить мелодический или динамический подъём</td>
+</tr>
+<tr>
+<td>Припев</td>
+<td><code>[Chorus]</code></td>
+<td>Центральный повторяемый раздел</td>
+</tr>
+<tr>
+<td>Хук</td>
+<td><code>[Hook]</code></td>
+<td>Короткая запоминающаяся фраза; не обязательно весь припев</td>
+</tr>
+<tr>
+<td>Рефрен</td>
+<td><code>[Refrain]</code></td>
+<td>Возвращающаяся строка или небольшой фрагмент</td>
+</tr>
+<tr>
+<td>Постприпев</td>
+<td><code>[Post-Chorus]</code></td>
+<td>Дополнительный хук после припева</td>
+</tr>
+<tr>
+<td>Контрастный раздел</td>
+<td><code>[Bridge]</code></td>
+<td>Смена перспективы, плотности или гармонической окраски</td>
+</tr>
+<tr>
+<td>Интерлюдия</td>
+<td><code>[Interlude]</code></td>
+<td>Переходный эпизод между крупными секциями</td>
+</tr>
+<tr>
+<td>Инструментальная секция</td>
+<td><code>[Instrumental]</code>, <code>[Instrumental Break]</code></td>
+<td>Запрос инструментального фрагмента; это не замена переключателю Instrumental для всей песни</td>
+</tr>
+<tr>
+<td>Короткий брейк</td>
+<td><code>[Break]</code>, <code>[Drum Break]</code></td>
+<td>Редукция фактуры или фокус на ударных</td>
+</tr>
+<tr>
+<td>Разрежение / тяжёлая секция</td>
+<td><code>[Breakdown]</code></td>
+<td>Значение зависит от жанра: EDM-разгрузка и metalcore-breakdown — разные вещи</td>
+</tr>
+<tr>
+<td>Нарастание</td>
+<td><code>[Build]</code>, <code>[Build-Up]</code></td>
+<td>Подготовка кульминации</td>
+</tr>
+<tr>
+<td>Дроп</td>
+<td><code>[Drop]</code></td>
+<td>Энергетический сброс в жанрах, где он уместен</td>
+</tr>
+<tr>
+<td>Соло</td>
+<td><code>[Solo]</code></td>
+<td>Без инструмента модель сама выберет характер</td>
+</tr>
+<tr>
+<td>Соло с инструментом</td>
+<td><code>[Guitar Solo]</code>, <code>[Piano Solo]</code>, <code>[Synth Solo]</code>, <code>[Bass Solo]</code>, <code>[Drum Solo]</code></td>
+<td>Обычно понятнее, чем абстрактное «solo»</td>
+</tr>
+<tr>
+<td>Описательное соло</td>
+<td><code>[Solo: electric guitar]</code></td>
+<td>Допустимая гипотеза на естественном языке; двоеточие не является доказанным оператором API</td>
+</tr>
+<tr>
+<td>Финальный припев</td>
+<td><code>[Final Chorus]</code>, <code>[Chorus - final, full band]</code></td>
+<td>Повтор с усилением; при плохом следовании вернитесь к <code>[Chorus]</code></td>
+</tr>
+<tr>
+<td>Финал</td>
+<td><code>[Outro]</code></td>
+<td>Просьба завершить развитие</td>
+</tr>
+<tr>
+<td>Затухание</td>
+<td><code>[Fade Out]</code>, <code>[Fade to End]</code></td>
+<td>Намерение затухнуть; точный fade задавайте редактором</td>
+</tr>
+<tr>
+<td>Конец</td>
+<td><code>[End]</code></td>
+<td>Сигнал завершения, не гарантированный жёсткий stop</td>
+</tr>
+<tr>
+<td>Кода / дополнительные разделы</td>
+<td><code>[Coda]</code>, <code>[Reprise]</code>, <code>[Post-Verse]</code></td>
+<td>Экспериментальные описания, не необходимые для обычной формы</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Правила размещения — ПР:</strong></p>
+<ul>
+<li>Ставьте метку <strong>перед</strong> относящимся к ней текстом, предпочтительно на отдельной строке.</li>
+<li>Для первого теста достаточно <code>[Verse]</code>, <code>[Chorus]</code>, <code>[Bridge]</code>, <code>[Outro]</code>.</li>
+<li>Сначала функция секции, затем 1–3 локальные подсказки.</li>
+<li>Не вставляйте в Lyrics полный технический бриф на каждый такт.</li>
+<li>Не рассчитывайте, что <code>[Chorus x3]</code> исполнится ровно трижды: продублируйте сам текст.</li>
+<li>Удаляйте неподтверждённые конструкции раньше, чем меняете весь трек.</li>
+</ul>
+<p><strong>Комбинированный тег:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-7" type="button">Копировать</button><pre id="code-7"><code class="language-text">[Verse 1 - driving rhythm, dry vocal, intimate]
+</code></pre></div>
+<p><strong>Более простой вариант для A/B:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-8" type="button">Копировать</button><pre id="code-8"><code class="language-text">[Verse 1]
+[Intimate Vocals]
+</code></pre></div>
+<p>Форматы с <code>-</code>, <code>:</code> и <code>|</code> встречаются в сообществе, но <strong>нет подтверждения специальной системы весов или приоритета этих разделителей</strong>. Вложенные скобки и «программные» конструкции вроде <code>[Voice=Female; Gain=+4dB]</code> не дают настоящего управления микшером. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1mym1dm/the_guide_to_meta_tags_in_suno_ai_take_control_of/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1mym1dm/the_guide_to_meta_tags_in_suno_ai_take_control_of/">5</a></p>
+<h3 id="section-1-5">1.5. Вокальные теги и их реальный смысл</h3>
+<p><strong>ПР:</strong> это словарь описания исполнения. Даже знакомая технике вокалиста формулировка не гарантирует, что модель воспроизведёт именно физиологический приём, а не похожий тембр. Общие значения терминов есть в официальном глоссарии; расширенные комбинации — практика prompting-сообщества. <a class="citation" href="https://help.suno.com/en/articles/9010177" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/9010177">1</a> <a class="citation" href="https://blakecrosley.com/guides/suno" rel="noopener noreferrer" target="_blank" title="https://blakecrosley.com/guides/suno">4</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Цель</th>
+<th>Тег / слова для Style</th>
+<th>Ограничение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Шёпот</td>
+<td><code>[Whisper]</code>, <code>[Whispered Vocals]</code>; <code>whispered delivery</code></td>
+<td>Может перейти в тихое пение</td>
+</tr>
+<tr>
+<td>Воздушность</td>
+<td><code>[Breathy Vocals]</code>; <code>airy, breathy vocal</code></td>
+<td>Не то же самое, что шёпот</td>
+</tr>
+<tr>
+<td>Мощный чистый вокал</td>
+<td><code>[Belting]</code>, <code>[Belted Vocals]</code>; <code>powerful clean belt</code></td>
+<td>Возможны чрезмерная громкость и расплывчатые согласные</td>
+</tr>
+<tr>
+<td>Экстремальная подача</td>
+<td><code>[Screaming]</code>, <code>[Fry Scream]</code>; <code>harsh vocals, fry screams</code></td>
+<td>Нет гарантии точного типа scream</td>
+</tr>
+<tr>
+<td>Низкий экстремальный тембр</td>
+<td><code>[Growl]</code>; <code>low growls</code></td>
+<td>Может превратиться в шум или потерять дикцию</td>
+</tr>
+<tr>
+<td>Фальцет</td>
+<td><code>[Falsetto]</code>; <code>airy falsetto</code></td>
+<td>Не фиксирует диапазон и отдельные ноты</td>
+</tr>
+<tr>
+<td>Головной регистр</td>
+<td><code>[Head Voice]</code>; <code>light head voice</code></td>
+<td>Не следует считать синонимом любой фальцетной подачи</td>
+</tr>
+<tr>
+<td>Речь</td>
+<td><code>[Spoken Word]</code>; <code>spoken delivery</code></td>
+<td>Фоновая музыка может остаться</td>
+</tr>
+<tr>
+<td>Рэп</td>
+<td><code>[Rap]</code>; <code>rhythmic rap delivery</code></td>
+<td>Сам по себе не задаёт конкретный flow</td>
+</tr>
+<tr>
+<td>Быстрый рэп</td>
+<td><code>[Fast Flow Rap]</code>, <code>[Double-Time Rap]</code>; <code>rapid articulated flow</code></td>
+<td>Не исправляет перегруженный слогами текст</td>
+</tr>
+<tr>
+<td>Дуэт</td>
+<td><code>[Duet]</code>; <code>alternating male and female leads</code></td>
+<td>Роли могут смешаться; это не две закреплённые Voice-модели</td>
+</tr>
+<tr>
+<td>Обмен репликами</td>
+<td><code>[Call and Response]</code></td>
+<td>Надёжнее с короткими явно написанными ответами</td>
+</tr>
+<tr>
+<td>Тип ведущего вокала</td>
+<td><code>[Male Vocals]</code>, <code>[Female Vocals]</code>; <code>baritone, tenor, alto, soprano</code></td>
+<td>Это классы тембра, не фиксация личности</td>
+</tr>
+<tr>
+<td>Бэки и гармонии</td>
+<td><code>[Backing Vocals]</code>, <code>[Harmonies]</code>; <code>stacked harmonies</code></td>
+<td>Количество партий и интервалы могут отличаться</td>
+</tr>
+<tr>
+<td>Групповая подача</td>
+<td><code>[Group Vocals]</code>, <code>[Gang Vocals]</code>, <code>[Choir]</code></td>
+<td>Разные эстетики: скандирование не равно хору</td>
+</tr>
+<tr>
+<td>Эдлибы</td>
+<td><code>[Ad-libs]</code> + короткие слова в <code>( )</code></td>
+<td>Без написанных слов модель может придумать свои</td>
+</tr>
+<tr>
+<td>Напев без слов</td>
+<td><code>[Humming]</code>; <code>wordless vocalise</code></td>
+<td>Может появиться и без запроса; исключайте при необходимости</td>
+</tr>
+<tr>
+<td>Голос без сопровождения</td>
+<td><code>[A Cappella]</code>; <code>solo unaccompanied vocal</code></td>
+<td>Не стопроцентный способ получить сухую изолированную дорожку</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Дуэт: стартовый синтаксис, не гарантия разделения голосов:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-9" type="button">Копировать</button><pre id="code-9"><code class="language-text">[Verse 1 - male vocals]
+Я остаюсь у твоего окна.
+
+[Verse 2 - female vocals]
+Я не уйду, пока горит весна.
+
+[Chorus - duet, call and response]
+Ты слышишь? (я слышу)
+Ты рядом? (я рядом)
+</code></pre></div>
+<p>Если для релиза нужны <strong>две строго определённые личности</strong>, делайте партии раздельно и собирайте их на таймлайне. Тег <code>[Duet]</code> не заменяет кастинг и монтаж.</p>
+<h3 id="section-1-6">1.6. Русский язык: ударения, фонетика, кириллица</h3>
+<h4>Ударения: исправлять локально, от простого к инвазивному</h4>
+<p>Пользователи описывают помощь CAPS и фонетического переписывания, но встречаются и свежие сообщения о полном игнорировании таких исправлений. Старые оценки «70–90%» нельзя переносить на v5.5 как измеренную надёжность. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1f0m3z4/is_there_a_way_to_force_pronounciation_emphasis/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1f0m3z4/is_there_a_way_to_force_pronounciation_emphasis/">4</a> <a class="citation" href="https://dtf.ru/music/5143682-kak-nauchit-suno-pravilno-pet-russkiy-tekst" rel="noopener noreferrer" target="_blank" title="https://dtf.ru/music/5143682-kak-nauchit-suno-pravilno-pet-russkiy-tekst">4</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Пример</th>
+<th>Зачем</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Нормальная орфография и контекст</td>
+<td><code>На двери висит замок</code></td>
+<td>Смысл помогает снять омографию</td>
+</tr>
+<tr>
+<td>2. Писать <code>ё</code>, где она нужна</td>
+<td><code>всё</code>, <code>её</code>, <code>шёпот</code></td>
+<td>Не оставлять лишнюю неоднозначность <code>е/ё</code></td>
+</tr>
+<tr>
+<td>3. Выделить ударную гласную</td>
+<td><code>замОк</code>, <code>зАмок</code>, <code>звонИт</code></td>
+<td>Локальная подсказка, не формальная разметка ударения</td>
+</tr>
+<tr>
+<td>4. Отдельно проверить знак ударения</td>
+<td><code>замо́к</code>, <code>за́мок</code>, <code>звони́т</code></td>
+<td>Альтернативная гипотеза; может игнорироваться</td>
+</tr>
+<tr>
+<td>5. Упростить фразу / переставить слово</td>
+<td>Вместо трудного оборота — короткая разговорная фраза</td>
+<td>Часто проблема в просодии, а не в буквенной записи</td>
+</tr>
+<tr>
+<td>6. Фонетическое написание</td>
+<td><code>ничевО</code> вместо <code>ничего</code></td>
+<td>Крайний вариант для конкретного сбоя</td>
+</tr>
+<tr>
+<td>7. Локальная замена или реальный вокал</td>
+<td>Replace Section / запись дубля</td>
+<td>Когда важна точность, а не вероятность</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Техническая деталь:</strong> в <code>а́</code>, <code>о́</code>, <code>е́</code> используйте кириллическую букву + combining acute accent <strong>U+0301</strong>. Латинские <code>á</code>, <code>ó</code>, <code>é</code> — другие символы. Не подменяйте похожими латинскими буквами русский текст: это может добавить языковую неоднозначность.</p>
+<p>Не ставьте ударения и CAPS во всём куплете заранее. Сначала прослушайте нормальное написание, затем исправьте только проблемные слова. Выделение <code>звонИт</code> и крик <code>ЗВОНИТ!</code> решают разные задачи.</p>
+<h4>Фонетическое переписывание</h4>
+<p><strong>ПР: сохраняйте две версии текста</strong> — литературную для публикации и исполнительскую для генерации.</p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Исходная запись</th>
+<th>Возможная исполнительская запись</th>
+<th>Комментарий</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ничего</code></td>
+<td><code>ничевО</code></td>
+<td>Проверять только при реально неверном произношении</td>
+</tr>
+<tr>
+<td><code>солнце</code></td>
+<td><code>сонце</code></td>
+<td>Попытка убрать ошибочное озвучивание непроизносимой согласной</td>
+</tr>
+<tr>
+<td><code>Wi-Fi</code></td>
+<td><code>вай-фай</code></td>
+<td>Зафиксировать русское чтение заимствования</td>
+</tr>
+<tr>
+<td><code>24</code></td>
+<td><code>двадцать четыре</code></td>
+<td>Заранее определить, что именно и сколько слогов поётся</td>
+</tr>
+<tr>
+<td>Сложное имя</td>
+<td>Простая фонетическая запись кириллицей</td>
+<td>Согласуйте произношение с носителем имени</td>
+</tr>
+<tr>
+<td><code>троллейбус</code></td>
+<td><code>трольлейбус</code></td>
+<td>Конкретный пользовательский пример исправления мягкости; не общее правило языка</td>
+</tr>
+</tbody>
+</table></div>
+<p>Последний пример опубликован пользователем r/SunoAI; это полезная гипотеза, но не обещание для современной модели. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1kb70uk/has_anyone_tried_lyrics_and_other_languages_what/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1kb70uk/has_anyone_tried_lyrics_and_other_languages_what/">2</a></p>
+<p><strong>Не превращайте весь текст в транскрипцию.</strong> Массовое переписывание может изменить акцент, смысл, рифму и количество слогов. Для русскоязычной песни начните с кириллицы и Style-фрагмента:</p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-10" type="button">Копировать</button><pre id="code-10"><code class="language-text">Russian-language vocals, clear diction, natural Russian pronunciation
+</code></pre></div>
+<p>Это пожелание, а не переключатель языкового движка. Полная транслитерация в латиницу — не универсальное улучшение.</p>
+<h4>Слоговая сетка: считать не слова, а произносимые слоги</h4>
+<p><strong>ПР:</strong> правило «не более шести слов» слишком грубо для русского. Шесть односложных слов и шесть многосложных слов требуют совершенно разной вокальной плотности.</p>
+<p>Рабочий порядок:</p>
+<ol>
+<li>Определите, на сколько тактов рассчитана фраза.</li>
+<li>Простучите сильные доли и произнесите текст вслух.</li>
+<li>Посчитайте слоги; в обычных русских словах ориентир — число гласных.</li>
+<li>Сопоставьте ударные слоги в строках одной функции.</li>
+<li>Оставьте место для пауз, финальных согласных и протяжных нот.</li>
+<li>Лишь затем проверяйте вокальную генерацию.</li>
+</ol>
+<p><strong>Пример ровной сетки — по 8 слогов в строке:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-11" type="button">Копировать</button><pre id="code-11"><code class="language-text">[Verse]
+Ночной трамвай уходит вдаль.
+В окне дрожит холодный свет.
+И ночь хранит немой ответ.
+Никто не скажет мне прощай.
+</code></pre></div>
+<p>Здесь сопоставимо расположены основные ударения. Равное число слогов <strong>само по себе</strong> ещё не обеспечивает хороший flow: важны также затакт, синкопы, кластеры согласных и длина нот.</p>
+<p><strong>Проверка плотности:</strong> два такта 4/4 при 100 BPM занимают <code>2 × 4 × 60 / 100 = 4,8 с</code>. Восемь слогов за это время — примерно 1,7 слога/с; шестнадцать — 3,3 слога/с. Это расчёт вокальной нагрузки, не жёсткий лимит Suno.</p>
+<p><strong>Если строка «не дышит»:</strong> сократите 20–30% текста как редакторский эксперимент, разбейте смысловую фразу или отдайте ей больше музыкального времени. Простое снижение BPM не всегда поможет: модель может одновременно поменять длину фразы.</p>
+<h3 id="section-1-7">1.7. Актуальные инструменты Lyrics и быстрая диагностика</h3>
+<p><strong>ОФ, 9 июля 2026:</strong> веб-редактор Lyrics получил <strong>Lyricist</strong> на примерах ваших текстов, редактирование естественным языком, варианты/рифмы по выделению, полноэкранный режим, структурные labels и автосохранение. Lyricist относится к <strong>написанию текста</strong>, а не к закреплению голоса. Эти инструменты не следует путать с Voices и Custom Models. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Первая проверка</th>
+<th>Если не помогло</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Проглатываются слова</td>
+<td>Слоговая плотность, длинные предложения</td>
+<td>Локальный Replace с более короткой строкой</td>
+</tr>
+<tr>
+<td>Ошибочное ударение</td>
+<td><code>ё</code>, контекст, локальный CAPS / U+0301</td>
+<td>Фонетическая версия → Replace → реальный дубль</td>
+</tr>
+<tr>
+<td>Поются инструкции</td>
+<td>Технический текст в <code>( )</code> или длинная экзотическая команда</td>
+<td>Убрать инструкцию из исполняемого текста, сократить <code>[ ]</code></td>
+</tr>
+<tr>
+<td>Нет паузы</td>
+<td>Пунктуация ожидалась как точный таймер</td>
+<td>Сделать паузу на таймлайне</td>
+</tr>
+<tr>
+<td>Припев кричит</td>
+<td>CAPS, <code>!</code>, <code>belting</code>, <code>anthemic</code> в неподходящем контексте</td>
+<td><code>restrained clean vocals</code>; при необходимости Exclude <code>shouting, screaming</code></td>
+</tr>
+<tr>
+<td>Смешались роли дуэта</td>
+<td>Слишком длинные чередующиеся реплики</td>
+<td>Короткий call-and-response или раздельная запись партий</td>
+</tr>
+<tr>
+<td>Слова в карточке исправлены, звук старый</td>
+<td>Изменены только отображаемые Lyrics</td>
+<td>Нужна аудиозамена через Replace Section</td>
+</tr>
+</tbody>
+</table></div>
+<p>Последнее различие принципиально: обновление текста в метаданных не переписывает уже созданный аудиофайл. Официальный Song Editor предусматривает отдельный путь Edit Lyrics → Replace Section. <a class="citation" href="https://help.suno.com/en/articles/6141505" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/6141505">1</a></p>
+<hr/>
+<h2 id="block-2">БЛОК 2. АРХИТЕКТУРА ПРОМПТОВ — STYLE &amp; SOUND DESIGN</h2>
+<h3 id="section-2-1">2.1. Layered Prompt Architecture: шесть смысловых слоёв</h3>
+<p><strong>ПР:</strong> это удобный продюсерский шаблон, а не секретный синтаксис Suno. Официально ещё v4.5 расширила поддержку подробных, разговорно сформулированных Style-инструкций. Совет «только три слова через запятую, иначе не работает» устарел. Но подробность полезна лишь тогда, когда уточняет задачу, а не создаёт противоречия. <a class="citation" href="https://help.suno.com/en/articles/5782849" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/5782849">1</a></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-12" type="button">Копировать</button><pre id="code-12"><code class="language-text">[Microgenre / Subgenre]
++ [Era / Mood / Energy]
++ [Instrumentation / Timbres / Roles]
++ [Vocal Identity Class / Delivery]
++ [Tempo / Meter / Key]
++ [Arrangement Movement / Production Aesthetic]
+</code></pre></div>
+<p><strong>Квадратные скобки в формуле обозначают места для заполнения. В сам Style их копировать не нужно.</strong></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Слой</th>
+<th>Пример</th>
+<th>Что уточняет</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Микрожанр</td>
+<td><code>industrial midtempo bass</code></td>
+<td>Какой тип музыки должен доминировать</td>
+</tr>
+<tr>
+<td>2. Эра / ощущение</td>
+<td><code>late-night cyberpunk, ominous, restrained tension</code></td>
+<td>Эстетику и уровень энергии</td>
+</tr>
+<tr>
+<td>3. Инструменты и роли</td>
+<td><code>distorted Reese bass, metallic percussion, short synth stabs</code></td>
+<td>Не просто список, а звуковую организацию</td>
+</tr>
+<tr>
+<td>4. Вокал</td>
+<td><code>low male lead, close-miked, restrained delivery</code></td>
+<td>Регистр, тембр, артикуляцию, дистанцию</td>
+</tr>
+<tr>
+<td>5. Музыкальные координаты</td>
+<td><code>100 BPM, 4/4, D minor</code></td>
+<td>Желаемые темп, метр и тональность</td>
+</tr>
+<tr>
+<td>6. Продакшн / развитие</td>
+<td><code>tight low end, controlled saturation, sparse verse into a heavy drop</code></td>
+<td>Плотность, характер обработки и драматургию</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Собранный Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-13" type="button">Копировать</button><pre id="code-13"><code class="language-text">Industrial midtempo bass with a late-night cyberpunk atmosphere. Distorted Reese bass, metallic percussion and short synth stabs over a heavy 100 BPM groove in 4/4, D minor. Low male lead vocal, close-miked and restrained in the verses. Sparse verses build into a heavy instrumental drop. Tight low end, punchy transients and controlled saturation, with wide pads behind the centered lead.
+</code></pre></div>
+<p><strong>Удобный порядок итераций:</strong></p>
+<ol>
+<li>Сначала жанр + грув + основной тембр.</li>
+<li>Затем вокал или Instrumental.</li>
+<li>Затем один главный контраст аранжировки.</li>
+<li>Потом максимум несколько важных характеристик обработки.</li>
+<li>После прослушивания удалите слова, которые ничего полезного не изменили.</li>
+</ol>
+<p>Нет опубликованного правила «первые 20 слов имеют такой-то вес». Ставить главное в начало полезно для ясности брифа, но это не доказанная формула внимания модели.</p>
+<h3 id="section-2-2">2.2. Не путать поля и способы управления</h3>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Где задавать</th>
+<th>Что туда относится</th>
+<th>Чего туда не переносить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Style</strong></td>
+<td>Жанр, тембры, вокальная манера, общая динамика, желаемые BPM/key</td>
+<td>Полный текст песни, фиктивные параметры микшера</td>
+</tr>
+<tr>
+<td><strong>Lyrics</strong></td>
+<td>Исполняемые слова, секции, короткие локальные указания</td>
+<td>Длинный список глобальных жанров на каждой строке</td>
+</tr>
+<tr>
+<td><strong>Exclude</strong></td>
+<td>Нежелательные инструменты, жанры, вокальные манеры, фактуры</td>
+<td>Второй сложный бриф с противоречащими позитивными инструкциями</td>
+</tr>
+<tr>
+<td><strong>Voice / Persona</strong></td>
+<td>Повторное использование выбранного вокального/стилевого характера</td>
+<td>Ожидание, что слово <code>baritone</code> закрепит одного певца</td>
+</tr>
+<tr>
+<td><strong>Audio Upload / MIDI reference</strong></td>
+<td>Мелодия, ритмический рисунок, исходный музыкальный материал</td>
+<td>Ожидание неизменной побитовой копии после генерации</td>
+</tr>
+<tr>
+<td><strong>Studio Chat / ручные устройства</strong></td>
+<td>Реальные изменения проекта, MIDI, эффектов, автоматизации</td>
+<td>Ожидание, что слово <code>compressor</code> в Style создаст такой же плагин в цепочке</td>
+</tr>
+</tbody>
+</table></div>
+<p>Поддержка Exclude, реальных эффектов Studio и аудио/MIDI-путей подтверждена официально; разделение обязанностей между ними — продюсерская рекомендация. <a class="citation" href="https://help.suno.com/en/articles/3161921" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/3161921">1</a> <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a></p>
+<h3 id="section-2-3">2.3. Продвинутый словарь: описывать слышимый результат</h3>
+<p><strong>ПР:</strong> термины ниже музыкально осмысленны, но в Style они описывают результат, а не выставляют реальные значения приборов. Реальные Compressor, EQ, Delay и другие устройства существуют отдельно в Studio. <a class="citation" href="https://help.suno.com/en/articles/9010177" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/9010177">1</a> <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Термин</th>
+<th>Что желательно услышать</th>
+<th>Как уточнить / не испортить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>reverb-drenched pads</code></td>
+<td>Глубокие пространственные подложки</td>
+<td>Укажите объект: иначе реверб может залить и вокал</td>
+</tr>
+<tr>
+<td><code>dry, close-miked lead vocal</code></td>
+<td>Близкий голос, мало помещения</td>
+<td>Не обещает полностью сухого stem после разделения</td>
+</tr>
+<tr>
+<td><code>short plate reverb</code></td>
+<td>Компактный вокальный хвост</td>
+<td>Длину в секундах надёжнее выставлять в эффекте</td>
+</tr>
+<tr>
+<td><code>slapback delay</code></td>
+<td>Короткое одиночное отражение</td>
+<td>Для точного времени используйте Delay</td>
+</tr>
+<tr>
+<td><code>dotted-eighth delay</code></td>
+<td>Пунктирный ритмический рисунок эха</td>
+<td>Проверяйте соответствие фактическому темпу</td>
+</tr>
+<tr>
+<td><code>punchy 808s</code></td>
+<td>Плотный электронный низ / ударные</td>
+<td>Формулировка неоднозначна; точнее <code>short punchy kick, tuned 808 sub bass</code></td>
+</tr>
+<tr>
+<td><code>Reese bass</code></td>
+<td>Плотный движущийся детюнированный бас</td>
+<td>Для читаемости низа не перегружайте весь спектр</td>
+</tr>
+<tr>
+<td><code>FM bass stabs</code></td>
+<td>Короткие яркие, металлические басовые акценты</td>
+<td>Уточните ритмическую роль</td>
+</tr>
+<tr>
+<td><code>supersaw leads</code></td>
+<td>Широкий многоголосный synth-lead</td>
+<td>В очень плотной аранжировке может перекрыть вокал</td>
+</tr>
+<tr>
+<td><code>sidechain compression</code></td>
+<td>Пампинг / освобождение места под kick</td>
+<td>В Style — имитация эстетики; в Studio — настоящий Compressor с sidechain</td>
+</tr>
+<tr>
+<td><code>tape saturation</code></td>
+<td>Мягкое гармоническое уплотнение</td>
+<td>Не означает обязательный tape hiss или wow/flutter</td>
+</tr>
+<tr>
+<td><code>warm tube preamp</code></td>
+<td>Тёплая окраска, мягкая насыщенность</td>
+<td>Не создаёт физический предусилитель и не доказывает конкретную цепочку</td>
+</tr>
+<tr>
+<td><code>transient-rich drums</code></td>
+<td>Чёткая атака ударных</td>
+<td>Может конфликтовать с чрезмерно мягким <code>washed-out</code> звучанием</td>
+</tr>
+<tr>
+<td><code>double-tracked rhythm guitars</code></td>
+<td>Широкая плотная гитарная стена</td>
+<td>Генерация не гарантирует две независимые идеально извлекаемые партии</td>
+</tr>
+<tr>
+<td><code>vocal-forward mix</code></td>
+<td>Голос впереди аккомпанемента</td>
+<td>Лучше сочетать со <code>sparse arrangement</code> в перегруженном куплете</td>
+</tr>
+<tr>
+<td><code>tight low end</code></td>
+<td>Собранный бас без избыточного хвоста</td>
+<td>Контролировать на реальном спектре и в моно</td>
+</tr>
+<tr>
+<td><code>controlled sibilance</code></td>
+<td>Более мягкие свистящие согласные</td>
+<td>Не замена de-esser</td>
+</tr>
+<tr>
+<td><code>crisp master</code></td>
+<td>Общее пожелание ясности</td>
+<td>Слабее конкретного описания; не стандарт мастеринга</td>
+</tr>
+<tr>
+<td><code>wide pads, centered lead, mono sub bass</code></td>
+<td>Разделение ролей в стереополе</td>
+<td>Моносовместимость всё равно надо проверять</td>
+</tr>
+<tr>
+<td><code>preserved dynamics</code></td>
+<td>Меньше ощущения чрезмерного лимитирования</td>
+<td>Не устанавливает LUFS, true peak или crest factor</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Плохой бриф:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-14" type="button">Копировать</button><pre id="code-14"><code class="language-text">professional, masterpiece, perfect quality, ultra HD, 24-bit, Grammy-winning
+</code></pre></div>
+<p><strong>Более содержательный:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-15" type="button">Копировать</button><pre id="code-15"><code class="language-text">dry centered lead vocal, sparse midrange arrangement, punchy drums, tight bass, smooth high end
+</code></pre></div>
+<p><code>24-bit</code>, <code>48 kHz</code>, <code>-14 LUFS</code> в Style не управляют форматом вывода или финальной громкостью. Формат задаётся экспортом, громкость — обработкой и измерениями.</p>
+<h3 id="section-2-4">2.4. BPM, тональность, метр и переходы</h3>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Задача</th>
+<th>Формулировка</th>
+<th>Реальная степень контроля</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Желаемый темп</td>
+<td><code>100 BPM, steady pulse</code></td>
+<td>Ориентир при генерации; проверьте фактический BPM</td>
+</tr>
+<tr>
+<td>Половинное ощущение</td>
+<td><code>140 BPM, half-time drum feel</code></td>
+<td>Half-time не обязательно меняет темп проекта</td>
+</tr>
+<tr>
+<td>Быстрый речитатив</td>
+<td><code>90 BPM, double-time rap delivery</code></td>
+<td>Подача ускоряется относительно пульса, а не обязательно сам пульс</td>
+</tr>
+<tr>
+<td>Размер</td>
+<td><code>6/8 ballad</code>, <code>3/4 waltz</code>, <code>4/4 driving groove</code></td>
+<td>Текстовое пожелание, не гарантированная сетка всех атак</td>
+</tr>
+<tr>
+<td>Тональность</td>
+<td><code>D minor</code>, <code>F-sharp minor</code>, <code>A major</code></td>
+<td>Не жёсткая фиксация всех нот и гармоний</td>
+</tr>
+<tr>
+<td>Гармонический рисунок</td>
+<td><code>Am-F-C-G chord progression</code></td>
+<td>Может интерпретировать свободно; MIDI/демо конкретнее</td>
+</tr>
+<tr>
+<td>Подъём</td>
+<td><code>building into a euphoric drop</code></td>
+<td>Драматургическая подсказка</td>
+</tr>
+<tr>
+<td>Контраст</td>
+<td><code>sparse verses, full-band choruses</code></td>
+<td>Лучше, чем <code>minimal and maximal</code> без распределения по секциям</td>
+</tr>
+<tr>
+<td>Разгрузка</td>
+<td><code>strip back to voice and bass before the final chorus</code></td>
+<td>Достаточно конкретная инструкция аранжировки</td>
+</tr>
+<tr>
+<td>Точная смена темпа</td>
+<td>Задать проект/редактирование в Studio</td>
+<td>Chat научили обрабатывать tempo changes 2 сентября; проверяйте Stretch и фактический результат</td>
+</tr>
+</tbody>
+</table></div>
+<p>Последнее — документированное изменение Studio; оно <strong>не доказывает</strong>, что текстовый генератор стал безошибочно выдерживать BPM/key. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></p>
+<p><strong>Если BPM обязателен для DJ-сета:</strong> найдите реальный downbeat, проверьте дрейф по нескольким участкам, затем используйте warp. Изменение цифры project tempo само по себе не гарантирует, что любой аудиоклип правильно растянется.</p>
+<p><strong>Если обязательны ноты:</strong> MIDI → ручная правка → Wavetable/другой инструмент в вашей DAW. Генеративный cover этого MIDI — уже новая вероятностная интерпретация.</p>
+<h3 id="section-2-5">2.5. Антипаттерны и работа с артистическими референсами</h3>
+<h4>Имена артистов: описывать почерк, не маскировать имя</h4>
+<p><strong>ОФ:</strong> в августовском объяснении Suno пишет, что при упоминании артиста удаляет имя и перенаправляет запрос к описательным музыкальным признакам; Help Center также предупреждает о возможных блокировках имён известных людей и защищённых формулировок. Не следует считать, что любое имя всегда проходит или всегда отклоняется одинаково. <a class="citation" href="https://suno.com/blog/building-the-future-of-music-responsibly" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/building-the-future-of-music-responsibly">1</a> <a class="citation" href="https://help.suno.com/en/articles/3198209" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/3198209">1</a></p>
+<p><strong>ПР: декомпозиция референса на шесть признаков:</strong></p>
+<ol>
+<li>Микрожанр и эра.</li>
+<li>Тип ритм-секции.</li>
+<li>Главный инструментальный тембр.</li>
+<li>Регистр и манера вокала.</li>
+<li>Пространство / плотность продакшна.</li>
+<li>Тип кульминации.</li>
+</ol>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Вместо «сделай как конкретный артист»</th>
+<th>Самостоятельное описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ночной ретропоп с высоким мужским голосом</td>
+<td><code>1980s-influenced synthpop, syncopated synth bass, airy tenor, neon melancholy, spacious chorus</code></td>
+</tr>
+<tr>
+<td>Современный радио-dance-pop</td>
+<td><code>disco-informed dance-pop, four-on-the-floor kick, elastic bassline, confident female lead, concise melodic hook</code></td>
+</tr>
+<tr>
+<td>Мрачный русскоязычный постпанк</td>
+<td><code>coldwave post-punk, melodic bass, chorus-drenched clean guitar, detached baritone, Russian-language vocals</code></td>
+</tr>
+<tr>
+<td>Современный тяжёлый альтернативный металл</td>
+<td><code>modern metalcore, low-tuned syncopated guitars, electronic ambience, harsh verses, soaring clean chorus</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Это не восстановление конкретной записи и не копирование личности певца. Не нужны опечатки, leetspeak, подмена букв или инструкции обхода фильтров. Используйте собственные тексты/мелодии и материал, который имеете право загружать.</p>
+<h4>Prompt Bloat и конфликты</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Антипаттерн</th>
+<th>Почему плохо управляется</th>
+<th>Исправление</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>8 равноправных жанров</td>
+<td>Неясно, какой определяет форму и грув</td>
+<td>Один основной жанр, при необходимости один вторичный оттенок</td>
+</tr>
+<tr>
+<td><code>dry and reverb-drenched vocals</code></td>
+<td>Противоположные требования к одному объекту</td>
+<td><code>dry lead vocal, reverb-drenched backing vocals</code></td>
+</tr>
+<tr>
+<td><code>minimal maximal wall of sound</code></td>
+<td>Нет распределения по времени</td>
+<td><code>minimal verse, dense chorus</code></td>
+</tr>
+<tr>
+<td><code>instrumental</code> вместе с описанием певца</td>
+<td>Конфликт цели</td>
+<td>Убрать вокальные инструкции и включить Instrumental</td>
+</tr>
+<tr>
+<td><code>no drums</code> внутри длинного Style</td>
+<td>Отрицание может потеряться в позитивном описании</td>
+<td>Перенести <code>drums, percussion</code> в Exclude, если они действительно не нужны</td>
+</tr>
+<tr>
+<td>Сотни «quality tags»</td>
+<td>Не дают конкретной аранжировки</td>
+<td>Задать источник проблемы: низ, сибилянты, плотность, вокальная дистанция</td>
+</tr>
+<tr>
+<td><code>[Reverb: 30%]</code>, <code>[Bass: 80%]</code></td>
+<td>Не настоящие регуляторы</td>
+<td>Выставить параметры реальных устройств Studio</td>
+</tr>
+<tr>
+<td>Каждый A/B одновременно меняет всё</td>
+<td>Невозможно понять причину улучшения</td>
+<td>Менять одну переменную или один логический блок</td>
+</tr>
+<tr>
+<td>Повторять один descriptor десять раз</td>
+<td>Нет подтверждённого механизма суммирования весов</td>
+<td>Один ясный descriptor, затем тест</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Не путайте длину с перегрузом.</strong> Пара связных предложений с распределением ролей может быть полезнее короткого, но противоречивого списка. Универсальный лимит «не больше семи тегов» не установлен. <a class="citation" href="https://help.suno.com/en/articles/5782849" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/5782849">1</a> <a class="citation" href="https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/how-to-write-better-suno-prompts-without-random-tags" rel="noopener noreferrer" target="_blank" title="https://jackrighteous.com/en-us/blogs/guides-using-suno-ai-music-creation/how-to-write-better-suno-prompts-without-random-tags">10</a></p>
+<h3 id="section-2-6">2.6. Exclude / Exclude Styles: конкретные запреты вместо магического «антишум-пакета»</h3>
+<p><strong>ОФ:</strong> Custom Mode → Advanced Options → Exclude предназначен для нежелательных элементов. <strong>ПР:</strong> начинайте с 2–5 конкретных исключений, связанных с услышанной проблемой. Публичного рейтинга «самых эффективных стоп-слов» с воспроизводимой статистикой нет. <a class="citation" href="https://help.suno.com/en/articles/3161921" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/3161921">1</a></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Проблема</th>
+<th>Что попробовать в Exclude</th>
+<th>Важная оговорка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>В инструментале появляются голоса</td>
+<td><code>vocals, humming, spoken word, choir, vocal chops</code></td>
+<td>Сначала включить Instrumental; не полагаться только на Exclude</td>
+</tr>
+<tr>
+<td>Соло-вокал превращается в ансамбль</td>
+<td><code>duet, choir, backing vocals</code></td>
+<td>Не добавлять, если нужны гармонии в припеве</td>
+</tr>
+<tr>
+<td>Слишком крикливый голос</td>
+<td><code>shouting, screaming, aggressive belting, operatic vocals</code></td>
+<td>Сочетать с позитивным <code>restrained clean vocal</code></td>
+</tr>
+<tr>
+<td>Лишние импровизации</td>
+<td><code>ad-libs, vocal runs, wordless vocalise</code></td>
+<td>Уберите также написанные эдлибы из Lyrics</td>
+</tr>
+<tr>
+<td>Ненужная акустика</td>
+<td><code>acoustic guitar, piano</code></td>
+<td>Исключайте только реально нежелательные инструменты</td>
+</tr>
+<tr>
+<td>Жанровый занос</td>
+<td><code>reggae, ska, trap</code></td>
+<td>Выбирать по конкретному треку, а не вставлять всё подряд</td>
+</tr>
+<tr>
+<td>Стадионная атмосфера</td>
+<td><code>crowd noise, applause, live audience</code></td>
+<td>Помогает описанию сцены, не реставрации уже готового аудио</td>
+</tr>
+<tr>
+<td>Навязанный lo-fi шум</td>
+<td><code>vinyl crackle, tape hiss</code></td>
+<td>Не исключать весь <code>lo-fi</code>, если нужна сама эстетика</td>
+</tr>
+<tr>
+<td>Чрезмерно обработанный голос</td>
+<td><code>vocoder, robotic vocals, heavy autotune</code></td>
+<td>Не гарантирует натуральности и не отключает внутреннюю обработку модели</td>
+</tr>
+<tr>
+<td>Грязный микс</td>
+<td><code>muddy mix, clipping, harsh sibilance</code></td>
+<td>Самая слабая категория: не заменяет EQ, de-esser и выбор лучшего дубля</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Особенно опасный шаблон:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-16" type="button">Копировать</button><pre id="code-16"><code class="language-text">noise, distortion, saturation, reverb, bass, drums
+</code></pre></div>
+<p>Для industrial, phonk и metalcore он может удалить желаемую звуковую основу. Различайте художественный distortion и случайные артефакты. Нет стоп-слова, которое гарантированно убирает «Suno shimmer» и оставляет всю музыкальную фактуру нетронутой.</p>
+<h3 id="section-2-7">2.7. Creative Sliders: рабочая калибровка</h3>
+<p><strong>ОФ:</strong> Weirdness движется от Safe к Chaos; <strong>50% — нормальная отправная точка</strong>, а не «половина качества». Style Influence задаёт степень следования Style; Audio Influence появляется в соответствующих сценариях с аудио. Для Voices Suno рекомендует повышать Audio Influence, если узнаваемость недостаточна. <a class="citation" href="https://help.suno.com/en/articles/6141377" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/6141377">1</a> <a class="citation" href="https://help.suno.com/en/articles/11362433" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362433">2</a></p>
+<p><strong>ПР — не пресеты производителя:</strong></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Задача теста</th>
+<th style="text-align:right">Weirdness</th>
+<th style="text-align:right">Style Influence</th>
+<th style="text-align:right">Audio Influence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Понятный базовый результат</td>
+<td style="text-align:right">30–40</td>
+<td style="text-align:right">65–80</td>
+<td style="text-align:right">Не нужен без аудио</td>
+</tr>
+<tr>
+<td>Поиск необычной фактуры</td>
+<td style="text-align:right">50–65</td>
+<td style="text-align:right">50–70</td>
+<td style="text-align:right">По задаче</td>
+</tr>
+<tr>
+<td>Попытка аккуратной локальной вариации, если ползунки доступны</td>
+<td style="text-align:right">15–30</td>
+<td style="text-align:right">60–80</td>
+<td style="text-align:right">Сохранить исходный ориентир, затем менять отдельно</td>
+</tr>
+<tr>
+<td>Узнаваемость собственного Voice</td>
+<td style="text-align:right">25–40</td>
+<td style="text-align:right">60–75</td>
+<td style="text-align:right">Проверить 70–90</td>
+</tr>
+<tr>
+<td>Существенная смена стиля cover</td>
+<td style="text-align:right">25–45</td>
+<td style="text-align:right">70–85</td>
+<td style="text-align:right">Подбирать против степени изменения; универсального числа нет</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Weirdness на нуле не обещает чистого мастера или точной дикции.</li>
+<li>Style Influence 100 не устраняет противоречия в Style.</li>
+<li>Высокий Audio Influence может мешать сильной смене аранжировки.</li>
+<li>Наличие конкретного ползунка зависит от операции; не все формы редактирования показывают одинаковые настройки.</li>
+<li>Для честного A/B сохраняйте <strong>итоговый текст</strong> после Magic Wand. My Taste персонализирует Style Augmentation, поэтому повторное нажатие палочки может изменить условие эксперимента. <a class="citation" href="https://help.suno.com/en/articles/11362561" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362561">1</a></li>
+</ul>
+<h3 id="section-2-8">2.8. Пять готовых Style-шаблонов</h3>
+<p><strong>Авторские стартовые промпты для v5.5, не «гарантированные хиты».</strong> Все Style-блоки короче 1 000 символов. Это проверка длины шаблонов, не обещание одинакового лимита во всех интерфейсах. Английские блоки вставляются в соответствующие поля; русские пояснения — нет.</p>
+<p>Для первого сравнения можно использовать общую отправную точку <strong>Weirdness 35 / Style Influence 70</strong>. Если используете сохранённый Voice/Persona, не меняйте его между тестами. Тональность и BPM в шаблонах — желаемые, не измеренные выходные параметры.</p>
+<h4>1. Dark Cyberpunk / Midtempo</h4>
+<p><strong>Режим:</strong> Instrumental. Цель — тяжёлый электронный грув, а не случайный EDM-мэшап.</p>
+<p><strong>Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-17" type="button">Копировать</button><pre id="code-17"><code class="language-text">Industrial midtempo bass, dark cyberpunk atmosphere, 100 BPM, 4/4, D minor. Heavy half-time-feeling drums over a steady pulse, distorted Reese bass, metallic percussion, short FM synth stabs and ominous analog pads. Instrumental. A sparse tension-building intro opens into a heavy bass drop; the breakdown strips back to pulse and ambience before the final drop. Punchy transients, controlled saturation, tight sub bass and wide background textures.
+</code></pre></div>
+<p><strong>Exclude:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-18" type="button">Копировать</button><pre id="code-18"><code class="language-text">vocals, humming, acoustic guitar, festival big-room house, cheerful melodies
+</code></pre></div>
+<p><strong>Если промах:</strong> если получается слишком «фестивально», сначала уберите широкие euphoric-дескрипторы и усилите <code>industrial midtempo bass</code>. Если низ расплывается — тестируйте <code>shorter bass notes, dry punchy kick</code>, затем правьте kick/bass отдельно.</p>
+<h4>2. Radio Dance-Pop</h4>
+<p><strong>Режим:</strong> вокальный; вставьте собственный русский текст. Цель — короткий хук и ясная ведущая партия.</p>
+<p><strong>Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-19" type="button">Копировать</button><pre id="code-19"><code class="language-text">Contemporary radio dance-pop with disco-inspired groove, 122 BPM, 4/4, B minor, bittersweet but uplifting. Four-on-the-floor kick, elastic synth bass, bright piano stabs and glossy synth layers. Confident female lead singing in Russian, clear diction, intimate verses and an open melodic chorus with light backing harmonies. Short intro, concise verse, rising pre-chorus, memorable chorus and a stripped bridge before the final lift. Vocal-forward mix, tight low end, smooth highs and controlled sidechain pumping.
+</code></pre></div>
+<p><strong>Exclude:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-20" type="button">Копировать</button><pre id="code-20"><code class="language-text">screaming, aggressive rap, festival big-room drops, crowd noise, long guitar solos
+</code></pre></div>
+<p><strong>Локальная режиссура:</strong> <code>[Verse - intimate]</code> → <code>[Pre-Chorus - rising intensity]</code> → <code>[Chorus - open clean vocals]</code>.</p>
+<p><strong>Если промах:</strong> не исправляйте слабый хук десятью production-тегами. Сначала сократите припев до одной ясной идеи и повторяемой мелодической фразы.</p>
+<h4>3. Melodic Phonk</h4>
+<p><strong>Режим:</strong> Instrumental. Здесь выбран электронный melodic/drift-направленный вариант, а не весь исторический спектр phonk.</p>
+<p><strong>Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-21" type="button">Копировать</button><pre id="code-21"><code class="language-text">Melodic drift phonk, nocturnal and melancholic, 150 BPM with a half-time feel, 4/4, F-sharp minor. A memorable cowbell lead motif, tuned 808 sub bass, clipped drum-machine hits, tight hi-hats and spacious minor-key synth pads. Instrumental, melody-led rather than vocal-led. Introduce the motif early, add bass and drums for the main section, create a sparse atmospheric break, then return with a fuller melody layer. Gritty but controlled saturation, firm kick-bass separation and clear lead definition.
+</code></pre></div>
+<p><strong>Exclude:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-22" type="button">Копировать</button><pre id="code-22"><code class="language-text">rap vocals, vocal chops, choir, acoustic guitar, Brazilian funk
+</code></pre></div>
+<p><strong>Если промах:</strong> если cowbell становится раздражающим, замените <code>cowbell lead motif</code> на <code>soft bell-like lead motif</code>. Не исключайте <code>distortion</code> целиком, если нужна phonk-фактура.</p>
+<h4>4. Russian Indie / Post-Punk</h4>
+<p><strong>Режим:</strong> вокальный, кириллица. Цель — басовая мелодика и сдержанный русский вокал.</p>
+<p><strong>Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-23" type="button">Копировать</button><pre id="code-23"><code class="language-text">Russian-language indie post-punk with coldwave textures and a late-1980s rehearsal-room atmosphere, 148 BPM, 4/4, E minor. Melodic picked electric bass drives the song, supported by straight dry drums, chorus-drenched clean guitar arpeggios and a restrained analog synth pad. Detached low male baritone, conversational phrasing and clear Russian diction, opening slightly in the chorus without shouting. Lean verses, a memorable restrained chorus and a short instrumental interlude. Raw intimate production, controlled tape warmth and bass-forward balance.
+</code></pre></div>
+<p><strong>Exclude:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-24" type="button">Копировать</button><pre id="code-24"><code class="language-text">EDM drops, trap hi-hats, metal growls, operatic vocals, arena-rock belting
+</code></pre></div>
+<p><strong>Локальная режиссура:</strong> <code>[Verse - detached baritone]</code> → <code>[Chorus - restrained intensity]</code> → <code>[Instrumental Interlude]</code>.</p>
+<p><strong>Если промах:</strong> если получился стадионный рок, уберите <code>anthemic</code>, <code>epic</code>, <code>huge chorus</code>, если они добавились через Persona/Magic Wand. Не заменяйте атмосферу одним словом <code>Russian</code>: оно не описывает инструментальный почерк.</p>
+<h4>5. Modern Metalcore</h4>
+<p><strong>Режим:</strong> вокальный. Цель — различимые harsh-куплет и clean-припев, а не непрерывный шум.</p>
+<p><strong>Style:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-25" type="button">Копировать</button><pre id="code-25"><code class="language-text">Modern melodic metalcore, 160 BPM, 4/4, C minor. Low-tuned seven-string guitars with tight palm-muted syncopated riffs, punchy acoustic drums, precise double-kick patterns and dark electronic ambience. Male harsh fry-scream delivery in the verses, a soaring clean melodic chorus, and brief gang-vocal accents in the breakdown. A tense intro builds into the verse, the chorus opens wide, and a half-time breakdown leads to the final chorus. Tight stops, double-tracked rhythm guitars, clear bass definition and controlled cymbal brightness.
+</code></pre></div>
+<p><strong>Exclude:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-26" type="button">Копировать</button><pre id="code-26"><code class="language-text">blues shuffle, country, acoustic ballad, lo-fi tape hiss, operatic choir
+</code></pre></div>
+<p><strong>Локальная режиссура:</strong> <code>[Verse - harsh vocals]</code> → <code>[Chorus - clean belting]</code> → <code>[Breakdown - half-time, gang vocals]</code>.</p>
+<p><strong>Если промах:</strong> не ставьте <code>clean vocals</code> в Exclude, если чистый припев необходим. Если harsh-вокал теряет согласные, уменьшите слоговую плотность; «ещё больше screaming» проблему дикции обычно не решает.</p>
+<hr/>
+<h2 id="block-3">БЛОК 3. SUNO STUDIO 2.0, PREMIER, КРЕДИТЫ И ПЕРЕХОД К v6</h2>
+<h3 id="section-3-1">3.1. Что действительно актуально на 6 сентября</h3>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Дата / состояние</th>
+<th>Подтверждённое изменение</th>
+<th>Практическое следствие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>26 марта 2026</td>
+<td>v5.5: Voices, Custom Models, My Taste</td>
+<td>Персонализация голоса, каталожного стиля и Style Augmentation</td>
+</tr>
+<tr>
+<td>11 июня</td>
+<td>Обновлённая система трёх stem-режимов</td>
+<td>Выбирать метод под задачу, учитывать пересоздание частей</td>
+</tr>
+<tr>
+<td>9 июля</td>
+<td>Новый веб-инструментарий Lyrics</td>
+<td>Lyricist, правки естественным языком, labels, автосохранение</td>
+</tr>
+<tr>
+<td>20 июля</td>
+<td>Duration slider для v5.5 на Web</td>
+<td>Длительность теперь задаётся и отдельным контролом; не нужно полагаться только на текст</td>
+</tr>
+<tr>
+<td>7 августа</td>
+<td>Voices на iOS/Android, бесплатная проба</td>
+<td>Старое «Voices только платно и только Web» уже неполно</td>
+</tr>
+<tr>
+<td>13 августа</td>
+<td>Studio 2.0 для Premier</td>
+<td>MIDI, Wavetable, эффекты, собственные плагины, automation, Chat</td>
+</tr>
+<tr>
+<td>2 сентября</td>
+<td>BPM-aware Chat, улучшения Wavetable, копирование плагинов, исправления экспорта</td>
+<td>Не переносить часть августовских багов в список неизменных ограничений</td>
+</tr>
+<tr>
+<td>3 сентября</td>
+<td>Новые download limits и Terms</td>
+<td>Кредиты генерации и разрешённые скачивания — разные ресурсы</td>
+</tr>
+<tr>
+<td>Проверенный публичный каталог</td>
+<td>Последняя перечисленная модель — v5.5</td>
+<td>Не выдавать инструкции для v6 за проверенные</td>
+</tr>
+</tbody>
+</table></div>
+<p>Источники хронологии: официальные Release Notes, pricing и обновление Terms. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a> <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://suno.com/blog/suno-updates-tos" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/suno-updates-tos">2</a></p>
+<p><strong>Studio — среда производства, v5.5 — модель генерации.</strong> Выход Studio 2.0 не означает выход новой модели 6.</p>
+<p><strong>Условия работы Studio:</strong> Premier; desktop/laptop/tablet, ширина экрана от 768 px; мобильные телефоны не поддерживаются. Suno рекомендует Chrome, а Web MIDI в Safari не поддерживается. Прямой синхронизации с внешней DAW и хостинга VST/AU нет. <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a></p>
+<h3 id="section-3-2">3.2. AI Chat: управление проектом, эффекты, пресеты</h3>
+<p><strong>ОФ:</strong> Chat Bar находится в beta, видит выбранный трек/клип и контекст проекта; может читать настройки, редактировать дорожки, генерировать MIDI и аудио, создавать эффекты. Изменения обратимы через Undo; история чата сохраняется в проекте. Открыть можно через значок или Enter при выбранном объекте. <a class="citation" href="https://help.suno.com/en/articles/13670721" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670721">1</a></p>
+<p><strong>Поправки от 2 сентября:</strong> Chat стал учитывать BPM и обрабатывать смену темпа; улучшены ответы и отмена правок промпта. Плагины теперь можно переносить/копировать drag-and-drop и дублировать через Cmd-D/Ctrl-D. Исправлены пропадавшие в некоторых экспортах MIDI/MP3 и зависающие MIDI-ноты; улучшены скорость работы и высокочастотное поведение Wavetable. Это <strong>не</strong> заявление об устранении всех артефактов генератора песен. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></p>
+<p><strong>ПР — примеры запросов, вводить по одному после выбора нужного объекта:</strong></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Задача</th>
+<th>Запрос в Chat</th>
+<th>Что проверить после выполнения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Установить темп</td>
+<td><code>Set the project tempo to 100 BPM.</code></td>
+<td>Цифру BPM, Stretch аудиоклипов, попадание в сетку</td>
+</tr>
+<tr>
+<td>Изменить громкость, а не музыку</td>
+<td><code>Lower the selected vocal track by 2 dB. Do not generate new audio.</code></td>
+<td>Фейдер / automation, отсутствие ненужной генерации</td>
+</tr>
+<tr>
+<td>Добавить партию</td>
+<td><code>Generate a muted electric guitar part for the selected four-bar region. Keep the existing tracks unchanged.</code></td>
+<td>Выбранный диапазон, новые takes, гармонию и timing</td>
+</tr>
+<tr>
+<td>Сделать эффект</td>
+<td><code>Create a warm tape-saturation effect with subtle wow and flutter. Include Drive, Tone, Wow Rate, Wow Depth, Mix and Output controls.</code></td>
+<td>Работу контролов, уровень выхода, устойчивость и bypass</td>
+</tr>
+<tr>
+<td>Создать тембр</td>
+<td><code>Create a monophonic Reese bass preset with slow filter movement and a short release.</code></td>
+<td>Патч Wavetable, mono/glide, конфликт с kick</td>
+</tr>
+<tr>
+<td>Разобрать сессию</td>
+<td><code>List the tracks and identify which contain audio, MIDI or muted clips.</code></td>
+<td>Что Chat действительно прочитал, а не предположил</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Как не тратить лишнее:</strong> сначала конкретизируйте операцию — «изменить громкость» или «перегенерировать». <code>Make it better</code> оставляет слишком много свободы. Undo возвращает проект, но не следует считать его механизмом возврата кредитов.</p>
+<h4>Реальные эффекты и плагины</h4>
+<p><strong>ОФ: семь штатных эффектов:</strong> <code>Compressor</code>, <code>Convolution</code>, <code>Delay</code>, <code>Distortion</code>, <code>EQ</code>, <code>Gate</code>, <code>Reverb</code>. Compressor поддерживает sidechain. Эффекты работают в реальном времени; порядок в цепочке важен; можно сохранять пресеты. Chat-built plugins сохраняются в личной библиотеке и поддерживают automation/MIDI Learn. <strong>VST и Audio Units не загружаются.</strong> <a class="citation" href="https://help.suno.com/en/articles/13670785" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670785">1</a></p>
+<p><strong>Порядок создания эффекта:</strong> выберите трек → опишите эффект в Chat → подтвердите построение, если предложено <code>Build It!</code> → добавьте готовый эффект через <code>Add to track</code> → проверьте его место в цепочке → сохраните/переиспользуйте. Изменение существующего патча Wavetable — другая операция: выберите MIDI-дорожку, опишите тембр, затем сохраните патч через меню пресетов (<code>save preset</code>). Создать preset не означает создать новый движок синтезатора. <a class="citation" href="https://help.suno.com/en/articles/13670785" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670785">1</a> <a class="citation" href="https://help.suno.com/en/articles/13670657" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670657">1</a></p>
+<p><strong>ПР:</strong> сгенерированный плагин сначала испытывайте на копии трека при умеренной громкости. Сравнивайте bypass при близком уровне: «громче» легко перепутать с «лучше». Не считайте созданный по описанию эффект сертифицированной копией конкретного коммерческого прибора.</p>
+<p><strong>ОФ:</strong> на старте Studio 2.0 создание новых плагинов не требовало кредитов; Suno прямо оставила возможность будущей тарификации. Формулировка «бесплатно навсегда» неверна. <a class="citation" href="https://suno.com/blog/studio-2" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/studio-2">4</a></p>
+<h3 id="section-3-3">3.3. MIDI, Wavetable и MIDI-as-prompt</h3>
+<h4>Три разные операции</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Операция</th>
+<th>Что происходит</th>
+<th>Что сохраняется точно</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MIDI → Wavetable</td>
+<td>Синтезатор исполняет заданные ноты</td>
+<td>События MIDI; звук зависит от патча, envelopes, legato и эффектов</td>
+</tr>
+<tr>
+<td>Audio → MIDI</td>
+<td>Модель распознаёт ноты из аудио</td>
+<td>Ничего не обещается побитово: возможны ошибки pitch, rhythm, polyphony</td>
+</tr>
+<tr>
+<td>MIDI → generated audio</td>
+<td>Генератор делает музыкальную интерпретацию референса</td>
+<td>Точное повторение каждой ноты и артикуляции не гарантировано</td>
+</tr>
+</tbody>
+</table></div>
+<p>Наличие всех этих направлений, включая MIDI как промпт, подтверждено материалами Studio 2.0. Их не следует смешивать с редактированием нот внутри уже записанного WAV. <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a> <a class="citation" href="https://suno.com/blog/studio-2" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/studio-2">4</a></p>
+<h4>Порядок работы</h4>
+<ol>
+<li>Импортируйте MIDI на таймлайн или создайте дорожку: <strong>+ Track → MIDI</strong>.</li>
+<li>На новой MIDI-дорожке автоматически загружается <strong>Wavetable</strong>.</li>
+<li>Откройте piano roll двойным кликом по MIDI-клипу.</li>
+<li>Исправьте высоты, длительности и velocities; при необходимости Quantize.</li>
+<li>Для живого ввода используйте контроллер с Web MIDI либо Musical Typing; запись — Shift-R.</li>
+<li>Для <strong>точных нот</strong> оставьте MIDI и играющий его инструмент.</li>
+<li>Для <strong>новой интерпретации</strong> выберите клип и попросите Chat использовать его как музыкальный референс.</li>
+</ol>
+<p>Официальная инструкция MIDI описывает создание дорожек, piano roll, quantize, velocities, Musical Typing и MIDI Learn. <a class="citation" href="https://help.suno.com/en/articles/13670593" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670593">1</a></p>
+<p><strong>ПР — запрос для MIDI-as-prompt:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-27" type="button">Копировать</button><pre id="code-27"><code class="language-text">Use the selected MIDI clip as the musical reference. Generate a clean electric guitar performance, preserving the melody and rhythm as closely as possible. Keep the accompaniment sparse.
+</code></pre></div>
+<p>После генерации сравните контур мелодии, начало нот, длительности и гармонию. Если beta-Chat не распознал путь, проверьте выбор клипа; запасной вариант — сначала рендер MIDI в аудиореференс. Это не эквивалент гарантированного note-lock.</p>
+<h4>Что умеет Wavetable</h4>
+<p><strong>ОФ:</strong> два wavetable-осциллятора, sub oscillator, warp/unison/spread, multimode filter, envelopes, LFO, modulation matrix, mono/poly, glide и пользовательские пресеты. Можно <strong>загрузить свои wavetables</strong> или захватить материал с таймлайна как playable wavetable. Это синтезатор Suno, а не встроенная лицензия на одноимённый прибор Ableton. <a class="citation" href="https://help.suno.com/en/articles/13670657" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670657">1</a></p>
+<p><strong>ПР — три полезных патча:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-28" type="button">Копировать</button><pre id="code-28"><code class="language-text">A short plucky bass with a fast attack, low-pass filter envelope and minimal release.
+</code></pre></div>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-29" type="button">Копировать</button><pre id="code-29"><code class="language-text">A wide glassy pad with a slow attack, gentle wavetable motion and restrained high frequencies.
+</code></pre></div>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-30" type="button">Копировать</button><pre id="code-30"><code class="language-text">A mono acid-style bass with resonant filter movement, short notes and subtle glide.
+</code></pre></div>
+<p><strong>Automation:</strong> right-click на параметре → Automate → точки/кривые на таймлайне. Автоматизировать можно volume, pan и многие параметры устройств. Автоматизация попадает в экспорт, в том числе экспортируемые stems; поэтому «экспорт stem» не означает автоматически необработанную дорожку. <a class="citation" href="https://help.suno.com/en/articles/13674305" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13674305">1</a></p>
+<h3 id="section-3-4">3.4. Replace / Audio &amp; Lyric Inpainting: точечный ремонт</h3>
+<p><strong>ОФ:</strong> Replace Section доступен Pro и Premier. В Song Editor можно выделить диапазон, изменить Lyrics/описание, получить альтернативы, прослушать и собрать новую версию песни. В Studio замены и генерации хранятся в <strong>Take Lanes</strong>, прежний материал остаётся восстановимым. <a class="citation" href="https://help.suno.com/en/articles/3271873" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/3271873">1</a> <a class="citation" href="https://help.suno.com/en/articles/6141505" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/6141505">1</a> <a class="citation" href="https://help.suno.com/en/articles/13670913" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670913">1</a></p>
+<p><strong>Это пересинтез выбранного участка, а не хирургическая замена одной фонемы с гарантией неизменности всего остального.</strong></p>
+<h4>Алгоритм ремонта слова — ПР</h4>
+<ol>
+<li><strong>Сохраните исходную версию</strong> и запишите проблемный таймкод.</li>
+<li>Откройте Replace Section / Song Editor либо работайте с выделением и заменой в Studio.</li>
+<li>Выделите <strong>целую вокальную фразу</strong>, включая атаку и окончание. Не начинайте с микроскопического кусочка внутри согласной; соблюдайте минимальный диапазон, который позволяет текущий UI.</li>
+<li>Исправьте только проблемную запись. По возможности сохраните число слогов и расположение ударений.</li>
+<li>Оставьте тот же основной Style и исходный вокальный контекст. Не просите одновременно новый жанр, певца и темп.</li>
+<li>Получите альтернативы; слушайте <strong>с соседними фразами</strong>, а не только solo.</li>
+<li>Проверьте оба стыка: тембр, реверб, фоновые инструменты, kick/snare, повтор или пропуск слога.</li>
+<li>Подвиньте границы перехода / сделайте монтажный crossfade, если нужно; commit только после сравнения.</li>
+<li>Если несколько попыток не улучшают результат, измените размер выделения или перейдите к вокальному stem / реальному дублю, а не продолжайте ту же неудачную операцию бесконечно.</li>
+</ol>
+<p><strong>Короткая инструкция к замене:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-31" type="button">Копировать</button><pre id="code-31"><code class="language-text">Keep the existing vocal character, melody and rhythm as closely as possible. Correct only the pronunciation in this phrase. Preserve the surrounding arrangement.
+</code></pre></div>
+<p>Просьба <code>correct only</code> обозначает намерение — не гарантирует локальность каждого изменения.</p>
+<h4>Если проблема — фальшивая нота</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Где ошибка</th>
+<th>Рациональный способ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>В MIDI</td>
+<td>Исправить ноту в piano roll: точный путь</td>
+</tr>
+<tr>
+<td>В высоте всего аудиоклипа</td>
+<td>Pitch/transpose клипа; проверить formant</td>
+</tr>
+<tr>
+<td>В одной ноте хорошего вокального аудио</td>
+<td>Выделенный вокал → Melodyne, NewTone, Flex Pitch или аналогичный pitch-editor</td>
+</tr>
+<tr>
+<td>Во всей фразе вместе с плохой дикцией</td>
+<td>Replace фразы</td>
+</tr>
+<tr>
+<td>В единственном неприемлемом слоге, где точность критична</td>
+<td>Перезаписать / смонтировать реальный вокальный дубль</td>
+</tr>
+</tbody>
+</table></div>
+<p>Официальный редактор аудиоклипа Studio описывает Pitch, Formant, Stretch, warp и speed, но это <strong>не документированный Melodyne-подобный редактор каждой вокальной ноты</strong>. <a class="citation" href="https://help.suno.com/en/articles/13670977" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670977">1</a></p>
+<h3 id="section-3-5">3.5. Stem Separation: три режима и честные ограничения</h3>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Режим</th>
+<th>Что получаете</th>
+<th>Доступ</th>
+<th>Опубликованная стоимость / единица</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto Split</strong></td>
+<td>До 12 широких категорий: drums, bass, guitar, keys и др.</td>
+<td>Pro / Premier</td>
+<td>50 credits за extraction</td>
+</tr>
+<tr>
+<td><strong>Split from Mix</strong></td>
+<td>Выбранный инструмент/голос + complement, то есть остальной микс без него</td>
+<td>Pro / Premier</td>
+<td>Help: 10 за extraction, <strong>20 за оба создаваемых stem</strong></td>
+</tr>
+<tr>
+<td><strong>Advanced Split</strong></td>
+<td>Выбранные целевые инструменты из списка почти 100; альтернативные результаты</td>
+<td>Premier</td>
+<td>Help: 10 за результат; указывается <strong>20 за два результата на выбранный stem</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Источник тарифных формулировок — официальный Help Center. В коротких видео и обзорах часто звучит просто «10 credits». <strong>Перед запуском сверяйте итоговую цену в UI: «результат», «пара» и «операция» — не одна единица.</strong> Извлечение отсутствующего инструмента тоже может расходовать кредиты без полезного результата. <a class="citation" href="https://help.suno.com/en/articles/12702337" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/12702337">1</a></p>
+<h4>Главная поправка: чистый stem может быть новой интерпретацией</h4>
+<p><strong>ОФ:</strong> Suno объясняет новый подход как прослушивание исходного трека и <strong>regeneration from scratch</strong> отдельных частей. В официальном walkthrough этот механизм особенно явно показан для Advanced Split; Auto Split назван классическим методом. <a class="citation" href="https://suno.com/blog/stem-separation-updates" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/stem-separation-updates">1</a></p>
+<p><strong>Практические следствия:</strong></p>
+<ul>
+<li>Advanced stem — не обязательно исходная «скрытая студийная дорожка».</li>
+<li>Тембр, детали нот, атак и артикуляции могут отличаться.</li>
+<li>Несколько целевых запросов могут пересекаться по содержимому.</li>
+<li>Сумма стемов не обязана точно восстановить исходный микс или пройти null-test.</li>
+<li>Заявление «artifact-free» в анонсе — не гарантия отсутствия дефектов в каждом результате.</li>
+<li>Если требуется сохранить <strong>именно исходное исполнение</strong>, сравните Auto Split / другой метод разделения с Advanced, а не автоматически выбирайте самый новый режим.</li>
+</ul>
+<p>Официальный YouTube-транскрипт также предупреждает о пересечении, например, synth и piano, и о незавершённости некоторых детальных вариантов вроде kick/snare. <a class="citation" href="https://www.youtube.com/watch?v=DqYuA_Wpkac" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/watch?v=DqYuA_Wpkac">1</a></p>
+<p><strong>ПР — выбор режима:</strong></p>
+<ul>
+<li>Нужна минусовка для певца → сначала <strong>Split from Mix: vocal</strong>.</li>
+<li>Нужны все основные группы → сначала <strong>Auto Split</strong>.</li>
+<li>Нужна самостоятельная чистая партия одного инструмента для переработки → <strong>Advanced Split</strong>.</li>
+<li>Нужна точная оригинальная акустическая гитара без изменений исполнения → не считать генеративный stem заведомо лучшим вариантом.</li>
+</ul>
+<h4>Тайм-алайн экспорт в FL Studio / Ableton / Logic</h4>
+<p><strong>ОФ:</strong> в Studio <code>Right-click clip → Split Stems → mode</code>; части появляются на timing-aligned дорожках. Если они заменяют исходник, <strong>mute исходный микс</strong>, иначе получите удвоение. Premier-экспорт multitracks/stems заявлен в <strong>32-bit / 48 kHz</strong>, без лимита скачиваний Studio. <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a> <a class="citation" href="https://suno.com/blog/studio-2" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/studio-2">4</a></p>
+<p><strong>ПР — правильная передача проекта:</strong></p>
+<ol>
+<li>Сохраните исходный stereo mix как референс.</li>
+<li>Отберите стемы, проверьте их в solo и в сумме.</li>
+<li>Определите единый старт/конец экспорта; оставьте начальную тишину и хвосты.</li>
+<li>Предпочтите <strong>Multitrack export</strong> отдельному ручному обрезанию каждого файла.</li>
+<li>Зафиксируйте BPM, meter, положение первой доли и применённый warp.</li>
+<li>Импортируйте WAV-файлы в DAW с одинаковой позиции; не допускайте независимого auto-warp каждого stem без проверки.</li>
+<li>Выровняйте уровни, убедитесь, что исходный stereo mix не играет вместе со всеми его частями.</li>
+<li>Проверьте начало, середину и конец трека: общий старт не гарантирует отсутствие локального timing drift.</li>
+<li>Сохраните версии <code>raw/reference</code> и <code>processed</code>, если дальнейшее сведение будет в другой DAW.</li>
+</ol>
+<p>Suno сама признаёт, что новые генерации Studio иногда попадают чуть раньше/позже доли, и рекомендует проверять метрономом. Поэтому <strong>time-aligned</strong> и <strong>ритмически безупречный</strong> — разные свойства. <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a></p>
+<h4>Очистка артефактов — ПР</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Артефакт</th>
+<th>Что делать</th>
+<th>Чего избегать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Шипящие / резкий верх</td>
+<td>Локальный de-esser, динамический EQ, умеренная обработка</td>
+<td>Глухой low-pass всего микса без диагностики</td>
+</tr>
+<tr>
+<td>Постоянный шум</td>
+<td>Осторожный denoise на нужном stem</td>
+<td>Сильная редукция с «водянистыми» хвостами</td>
+</tr>
+<tr>
+<td>Лишняя реверберация</td>
+<td>Сравнить Remove FX с оригиналом</td>
+<td>Предполагать, что dry-версия обязательно сохранит все детали</td>
+</tr>
+<tr>
+<td>Щелчок на стыке</td>
+<td>Короткий fade/crossfade, корректная граница</td>
+<td>Перегенерация всей песни ради одного щелчка</td>
+</tr>
+<tr>
+<td>Нестабильный бас</td>
+<td>MIDI-реконструкция / новая басовая партия</td>
+<td>Усиление EQ участка, в котором сама нота неверна</td>
+</tr>
+<tr>
+<td>Дрейф ударных</td>
+<td>Warp/transient alignment, иногда замена партии</td>
+<td>Независимый случайный stretch всех stems</td>
+</tr>
+<tr>
+<td>«Металлический» хвост вокала</td>
+<td>Другой take, локальная правка, реальная перезапись</td>
+<td>Обещание удалить его одним Exclude-словом</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>ОФ:</strong> Remove FX / Get Dry вызывается правым кликом по header аудиоклипа, создаёт новую take lane и позволяет прослушать/commit. Это AI-обработка уже встроенных эффектов, не извлечение настоящего pre-FX мастера из прошлого. <a class="citation" href="https://help.suno.com/en/articles/13671105" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13671105">1</a></p>
+<p><strong>32-bit WAV не восстанавливает потерянное качество генерации</strong> и не гарантирует больший фактический динамический диапазон исходного материала. Это удобный формат производственной передачи, а не оценка чистоты звука.</p>
+<h3 id="section-3-6">3.6. Personas vs Voices vs Custom Models: связность альбома</h3>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>На что ориентируется</th>
+<th>Подходящая задача</th>
+<th>Чего не обещает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Style Persona / прежние Personas</strong></td>
+<td>Характер выбранной песни: style, вокал и общий vibe</td>
+<td>Повторять узнаваемое направление удачной генерации</td>
+<td>Неизменную личность певца и одинаковый микс на любом жанре</td>
+</tr>
+<tr>
+<td><strong>Verified Voice</strong></td>
+<td>Проверенный образец вашего собственного голоса</td>
+<td>Генерации с узнаваемым вокальным характером</td>
+<td>Использование нетронутой исходной записи или точное воспроизведение всех интонаций</td>
+</tr>
+<tr>
+<td><strong>Custom Model</strong></td>
+<td>Каталог ваших треков</td>
+<td>Повторяемую инструментальную/аранжировочную эстетику</td>
+<td>Жёсткую фиксацию мелодии, каждого тембра и исполнения</td>
+</tr>
+<tr>
+<td><strong>My Taste</strong></td>
+<td>Предпочтения и история использования</td>
+<td>Персонализированный Style при Magic Wand</td>
+<td>Отдельно натренированную личную вокальную модель</td>
+</tr>
+<tr>
+<td><strong>Lyricist</strong></td>
+<td>Примеры ваших текстов</td>
+<td>Стилистическую связность новых Lyrics</td>
+<td>Сходство голоса или сведение альбома</td>
+</tr>
+</tbody>
+</table></div>
+<p>Personas не просто исчезли: Voices заменили кнопку в Create, но Style Personas остаются внутри Voices. Прежний способ создать характер из песни также сохранён. <a class="citation" href="https://help.suno.com/en/articles/11362433" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362433">2</a> <a class="citation" href="https://help.suno.com/en/articles/3484161" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/3484161">1</a></p>
+<h4>Verified Voice — официальный порядок</h4>
+<ol>
+<li>Create → Add Voice / Create Voice.</li>
+<li>Запись, загрузка или подходящая песня из библиотеки с вашим голосом.</li>
+<li>Текущая Help-инструкция: исходник <strong>15 секунд–4 минуты</strong>, из него выбирается до <strong>2 минут</strong>.</li>
+<li>Прочитать предложенную фразу: система проверяет совпадение личности и текста.</li>
+<li>Сохранить профиль и выбрать v5.5.</li>
+<li>Добавить Lyrics/Style, проверить Audio Influence.</li>
+</ol>
+<p>Лучше чистая акапелла в тихом помещении. Suno советует по возможности записать <strong>хотя бы минуту</strong>; голос, близкий по манере целевому жанру, полезнее случайного образца. Возраст — 18+; возможны региональные ограничения. <a class="citation" href="https://help.suno.com/en/articles/11362369" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362369">1</a> <a class="citation" href="https://help.suno.com/en/articles/11362433" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362433">2</a> <a class="citation" href="https://suno.com/blog/6-tips-for-voices" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/6-tips-for-voices">1</a></p>
+<p><strong>Важно:</strong> мартовский видеоролик говорит о минимуме 30 секунд, более поздняя Help-статья — о 15 секундах. Для инструкции выше выбран более поздний официальный текст, а не старое ограничение из ролика.</p>
+<p>С 7 августа Voices доступны на мобильных платформах и бесплатны для пробы; полноценная работа зависит от плана и доступности функции. <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></p>
+<p><strong>Не только «есть согласие»:</strong> текущие Terms разрешают создавать Voice Model <strong>своего</strong> голоса, а не голоса другого человека. Согласие приглашённого вокалиста само по себе не отменяет это ограничение аккаунтного Voice-пути. Для чужого исполнителя используйте разрешённый процесс с его участием либо обычную запись/монтаж, а не выдавайте чужой голос за свой при верификации. <a class="citation" href="https://suno.com/terms-of-service" rel="noopener noreferrer" target="_blank" title="https://suno.com/terms-of-service">1</a></p>
+<p><strong>Приватность:</strong> собственный Voice приватен, но опубликованная/расшаренная песня с включённым Remix/Cover может позволить голосу появиться в чужих производных работах. Проверяйте Publish permissions до публикации. <a class="citation" href="https://help.suno.com/en/articles/11362433" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362433">2</a></p>
+<h4>Custom Models — официальный порядок</h4>
+<ul>
+<li><strong>Pro и Premier</strong>, не эксклюзив Premier.</li>
+<li>До <strong>трёх</strong> моделей.</li>
+<li>От <strong>шести</strong> ваших треков; доступен Bulk Upload.</li>
+<li>Create → model dropdown → <strong>Create Custom Model</strong>.</li>
+<li>Ориентир ожидания из Help — <strong>2–5 минут</strong>, не SLA.</li>
+<li>Модель появляется в model picker.</li>
+<li>Модели приватны и не предназначены для передачи другим пользователям. <a class="citation" href="https://help.suno.com/en/articles/11362497" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/11362497">1</a></li>
+</ul>
+<p><strong>ПР — подготовка каталога:</strong></p>
+<ul>
+<li>Разделяйте несовместимые проекты: акустический indie и industrial лучше не складывать в одну обучающую подборку без художественной причины.</li>
+<li>Выбирайте материал с нужной эстетикой, а не просто максимальное число файлов.</li>
+<li>Не загружайте демо с шумом и случайными голосами, если не хотите, чтобы именно эта фактура определяла ориентир.</li>
+<li>Сохраните исходники и подтверждения прав. Приватность модели не равна обещанию отсутствия любых прав платформы на использование загрузок: действуют Terms.</li>
+<li>Тестируйте модель на новых текстах/идеях, не только на повторении исходного материала.</li>
+<li>Не называйте этот сервис локальным обучением LoRA и не обещайте экспорт весов: такой возможности в рассмотренных инструкциях нет.</li>
+</ul>
+<h4>Практическая «библия альбома» — ПР</h4>
+<p>Зафиксируйте:</p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-32" type="button">Копировать</button><pre id="code-32"><code class="language-text">Project / artist identity
+Model version and date
+Voice / Persona source
+Custom Model and source-catalog version, if used
+Core genre and instrumentation
+Lead vocal range and delivery
+BPM / key plan per song
+Mix reference
+Style + Exclude + final Lyrics
+Slider values
+Approved source takes and edit history
+</code></pre></div>
+<p>Один голос не делает альбом связным автоматически. Держите похожую дистанцию вокала, плотность аранжировок, пространство и спектральный баланс. Совместимость конкретных Voice/Custom Model/редакторских режимов проверяйте в UI; не исходите из того, что все функции можно одновременно наложить в любом действии.</p>
+<h3 id="section-3-7">3.7. Covers, Audio Upload и Extend</h3>
+<h4>Covers / Audio Upload</h4>
+<p><strong>ОФ:</strong> смысл Cover — переосмыслить стиль, сохраняя мелодическую основу. Сама Suno предупреждала, что результат требует попыток. Это не неизменяемый melody lock. <a class="citation" href="https://help.suno.com/en/articles/2872257" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/2872257">1</a></p>
+<p><strong>Актуальная поправка лимитов:</strong> публичный pricing сейчас указывает <strong>до 8 минут загрузки на Free и до 30 минут на Pro/Premier</strong>. Старый Help-текст с «60 секунд / 8 минут» не следует использовать как текущую тарифную таблицу. Лимиты Voice sample из §3.6 — отдельные. Максимальная длина upload также не означает, что любая операция использует все 30 минут как единый prompt. <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://help.suno.com/en/articles/6141569" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/6141569">1</a></p>
+<p><strong>ПР — из напевки в аранжировку:</strong></p>
+<ol>
+<li>Запишите собственную мелодию в устойчивом темпе, без клиппинга и лишних разговоров.</li>
+<li>Если важна форма, запишите больше одного случайного такта: пусть референс содержит понятную фразу/раздел.</li>
+<li>Загрузите материал, выберите Cover/доступный путь переработки.</li>
+<li>Оставьте Lyrics стабильными, если проверяете именно смену звука.</li>
+<li>В Style задайте целевую аранжировку; не перегружайте его пожеланиями изменить саму мелодию.</li>
+<li>Меняйте Audio Influence отдельно от Style Influence.</li>
+<li>Сравните не только тембр: прослушайте интервалы, начало фраз, ритм и порядок секций.</li>
+<li>Если нужна абсолютная сохранность мелодии или исходного певческого дубля — сохраните/используйте саму запись в Studio, а генератору отдайте сопровождение.</li>
+</ol>
+<p><strong>Загрузка референса ≠ право на релиз.</strong> Используйте свой материал или материал с достаточными правами. Разрешённый Remix чужой песни внутри Suno и коммерческий релиз — не одно и то же; новые Terms отдельно ограничивают коммерческое использование совместных Remix. <a class="citation" href="https://suno.com/terms-of-service" rel="noopener noreferrer" target="_blank" title="https://suno.com/terms-of-service">1</a></p>
+<h4>Extend: выбор точки стыковки</h4>
+<p><strong>ОФ:</strong> Extend позволяет выбрать, сколько исходного аудио оставить, задать новый текст/стиль и сгенерировать продолжение. <strong>Get Whole Song</strong> соединяет выбранное продолжение с исходной частью. <a class="citation" href="https://help.suno.com/en/articles/2409601" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/2409601">1</a></p>
+<p><strong>ПР — выбирать музыкальную границу, а не красивую цифру таймкода:</strong></p>
+<ul>
+<li>Для естественного продолжения — конец фразы/секции, с понятным ритмическим и гармоническим контекстом.</li>
+<li>Для замены плохого финала — точка <strong>до</strong> его проблемного затухания/сбоя.</li>
+<li>Не резать внутри согласной, длинного мелизма или значимой атаки.</li>
+<li>Первый тег продолжения должен описывать следующий раздел: <code>[Verse 2]</code>, <code>[Bridge]</code>, <code>[Chorus]</code> или <code>[Outro]</code>.</li>
+<li>В продолжение вставлять нужный последующий текст, а не бездумно всю песню с начала.</li>
+<li>Для резкой смены жанра создайте переходный bridge/break и проверяйте гармонию; произвольная смена Style посреди вокальной фразы увеличивает риск шва.</li>
+</ul>
+<p><strong>Условные примеры таймкодов — не универсальные точки для чужой песни:</strong></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Ситуация</th>
+<th>Что выбрать</th>
+<th>Что получится</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Трек длится 03:10; неудачный финал начинается около 02:45; последняя хорошая граница — 02:40</td>
+<td>Extend от <strong>02:40</strong>, а не от 03:10</td>
+<td>Сохраняете начало 00:00–02:40 и создаёте новую последующую часть</td>
+</tr>
+<tr>
+<td>Нужно изменить вторую половину на границе около 01:36</td>
+<td>Проверить фразу и атаку ударных на <strong>01:36</strong>, затем продолжать оттуда</td>
+<td>Старое начало + новый bridge / финальный раздел</td>
+</tr>
+</tbody>
+</table></div>
+<p>При 100 BPM один такт 4/4 = 2,4 секунды; 40 тактов = <strong>01:36</strong> только при первой доле на 00:00 и стабильном темпе. Затакт, свободное вступление и timing drift сдвигают реальную границу. Выбирайте точку в waveform, прослушивая окончания слов; не вводите таймкод как мета-тег Lyrics.</p>
+<p><strong>Пример смены второй половины — Style для продолжения:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-33" type="button">Копировать</button><pre id="code-33"><code class="language-text">Keep the established tempo and tonal center. Transition through a sparse atmospheric bridge, then introduce a heavier industrial rhythm section and distorted synth bass for the final chorus. Preserve the existing lead vocal character as closely as possible.
+</code></pre></div>
+<p><strong>Lyrics для продолжения:</strong></p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-34" type="button">Копировать</button><pre id="code-34"><code class="language-text">[Bridge - sparse, atmospheric]
+Я слышу город сквозь стекло.
+Ещё не поздно, не прошло.
+
+[Chorus - heavier rhythm, full band]
+Пока горит последний свет,
+Я возвращаю твой ответ.
+
+[Outro]
+[End]
+</code></pre></div>
+<p>Extend не гарантирует неизменный голос и seamless-стык. Выбирайте лучший участок как новый источник только после проверки — цепочка неудачных перегенераций может увести всё дальше от исходного характера.</p>
+<h3 id="section-3-8">3.8. Premier и экономия: две экономики, не одна</h3>
+<h4>Планы и скачивания</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th style="text-align:right">Pro</th>
+<th style="text-align:right">Premier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Обычная месячная цена в USD, без налогов</td>
+<td style="text-align:right">$10</td>
+<td style="text-align:right">$30</td>
+</tr>
+<tr>
+<td>Эквивалент при годовой оплате</td>
+<td style="text-align:right">$8/мес.</td>
+<td style="text-align:right">$24/мес.</td>
+</tr>
+<tr>
+<td>Годовой платёж</td>
+<td style="text-align:right">$96</td>
+<td style="text-align:right">$288</td>
+</tr>
+<tr>
+<td>Кредиты генерации в месяц</td>
+<td style="text-align:right">2 500</td>
+<td style="text-align:right">10 000</td>
+</tr>
+<tr>
+<td>Обычные song downloads в месяц с 3 сентября</td>
+<td style="text-align:right">20</td>
+<td style="text-align:right">60</td>
+</tr>
+<tr>
+<td>Studio 2.0</td>
+<td style="text-align:right">Нет</td>
+<td style="text-align:right">Да</td>
+</tr>
+<tr>
+<td>Advanced Split</td>
+<td style="text-align:right">Нет</td>
+<td style="text-align:right">Да</td>
+</tr>
+<tr>
+<td>Voices / Custom Models</td>
+<td style="text-align:right">Да, с условиями доступности</td>
+<td style="text-align:right">Да, с условиями доступности</td>
+</tr>
+</tbody>
+</table></div>
+<p>Pricing показывает годовой эквивалент по умолчанию; налоги рассчитываются при оплате. Фактическую валюту, акции и конечную цену смотрите на checkout. Главное преимущество Premier — Studio, Advanced Split и объём ресурсов; из тарифов не следует наличие отдельной «более качественной v5.5» исключительно для Premier. <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://suno.com/" rel="noopener noreferrer" target="_blank" title="https://suno.com/">4</a></p>
+<p><strong>ОФ — механика download limits:</strong></p>
+<ul>
+<li>Лимит относится к скачиванию файлов, а не к прослушиванию/шарингу внутри Suno.</li>
+<li>Одна песня считается один раз; повторные скачивания в другом формате не добавляют ещё единицу.</li>
+<li>Стемы той же песни входят в её один download, а не считаются по одному за каждый WAV.</li>
+<li>Неудавшееся/прерванное скачивание не засчитывается.</li>
+<li>Неиспользованный месячный лимит не переносится; сброс привязан к billing date.</li>
+<li>Правила применяются и к скачиванию старых песен после 3 сентября.</li>
+<li><strong>Профессиональный экспорт из Studio не ограничен стандартной квотой 60.</strong> Это объявленный путь, не необходимость обходить лимиты.</li>
+<li>Для Free, зарегистрированных до 3 сентября, предусмотрено до 7 lifetime trial downloads; новым Free-пользователям после этой даты семь скачиваний не обещаны автоматически. <a class="citation" href="https://help.suno.com/en/articles/13614785" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13614785">5</a> <a class="citation" href="https://suno.com/blog/suno-updates-tos" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/suno-updates-tos">2</a></li>
+</ul>
+<h4>Кредиты: что известно, что проверять</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Действие</th>
+<th>Как планировать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Обычная генерация пары</td>
+<td>Тарифная арифметика «до 500 песен / 2 500 credits» соответствует 5 за песню, обычно 10 за пару; конкретные режимы могут отличаться</td>
+</tr>
+<tr>
+<td>Replace / Extend / Cover / AI-обработка</td>
+<td>Проверять цену именно выбранной операции, не приравнивать всё к обычной генерации</td>
+</tr>
+<tr>
+<td>Auto Split</td>
+<td>В справке 50 credits</td>
+</tr>
+<tr>
+<td>Split from Mix / Advanced Split</td>
+<td>Учитывать пару результатов и выбранные цели, см. §3.5</td>
+</tr>
+<tr>
+<td>Генерация плагина</td>
+<td>На старте Studio 2.0 без credits; бессрочность не обещана</td>
+</tr>
+<tr>
+<td>Монтаж, фейдер, обычные эффекты, MIDI-редактирование</td>
+<td>Не требуют новой музыкальной генерации; это предпочтительный путь для чисто редакторских задач</td>
+</tr>
+<tr>
+<td>Скачивание</td>
+<td>Отдельная квота; не путать с generation credits</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Не закладывайте в текущую смету старые beta-акции</strong>: бесплатные первые Covers из ранней документации или мартовские Voices по 4 credits per creation не равны постоянному тарифу сентября. Проверяйте цену у действия. <a class="citation" href="https://help.suno.com/en/articles/2872257" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/2872257">1</a> <a class="citation" href="https://www.youtube.com/watch?v=eVlFcpX1VGA" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/watch?v=eVlFcpX1VGA">1</a></p>
+<p><strong>ОФ:</strong> включённые в подписку credits не переносятся между расчётными периодами. Купленные top-up credits не истекают, но требуют активной подписки. После исчерпания месячных credits Help описывает выдачу 50 daily credits до конца цикла, начиная со следующего дня. Это резерв, а не рациональная причина сжигать месячный пакет. <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://help.suno.com/en/articles/2643713" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/2643713">1</a></p>
+<h4>Экономичный production pipeline — ПР</h4>
+<p><strong>Этап 1 — определить критерий.</strong> Не «сделать лучше», а, например, «убрать wordless intro», «получить более тихий baritone», «исправить ударение в одном слове».</p>
+<p><strong>Этап 2 — дешёвая разведка.</strong> Проверить 2–3 варианта одной идеи при одинаковых Lyrics, Voice, модели и ползунках. Слушать обе версии каждой пары. Duration slider может сократить время прослушивания, но <strong>короткий результат не гарантирует меньшую стоимость операции</strong>.</p>
+<p><strong>Этап 3 — выбрать основу.</strong> Если удачны хук, голос и грув, сохранить этот take. Не выкидывать всё из-за плохой концовки.</p>
+<p><strong>Этап 4 — ремонт по масштабу.</strong> Ошибка в слове → Replace; в конце → Extend; в уровне → фейдер; в одной MIDI-ноте → piano roll; в балансе → stems. Не лечить любой дефект полным Create.</p>
+<p><strong>Этап 5 — разделять только выбранное.</strong> Не извлекать 12 stems у каждого черновика. Сначала утвердить основу; затем решить, нужны все группы или одна партия.</p>
+<p><strong>Этап 6 — доведение без нового синтеза.</strong> Comping, fades, editing, EQ, automation и ручная MIDI-правка вместо очередного «попробуем ещё».</p>
+<p><strong>Этап 7 — разрешённый экспорт и архив.</strong> Сохранить master, stems, MIDI, промпты, настройки и права на исходники.</p>
+<p><strong>Иллюстративный бюджет, не тарифная гарантия:</strong></p>
+<ul>
+<li>3 условия × 2 запуска × 10 credits за пару = <strong>60</strong>.</li>
+<li>3 локальные правки <strong>при показанной UI цене 10</strong> = <strong>30</strong>.</li>
+<li>Один Auto Split = <strong>50</strong>.</li>
+<li>Итого в этом сценарии <strong>140 credits</strong>, без других платных действий.</li>
+</ul>
+<p>Сравнивать следует не цену одного черновика, а:</p>
+<div class="code-wrap"><button aria-label="Копировать пример" class="copy" data-code="code-35" type="button">Копировать</button><pre id="code-35"><code class="language-text">Cost per usable result = total credits spent / number of accepted results
+</code></pre></div>
+<p><strong>Stop rule:</strong> если несколько последовательных попыток не дают улучшения, меняйте метод или гипотезу. Бесконечный reroll одного неудачного запроса — не исследование.</p>
+<p><strong>Мини-журнал:</strong></p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Run</th>
+<th>Model/date</th>
+<th>Voice/reference</th>
+<th>Единственное изменение</th>
+<th style="text-align:right">Credits</th>
+<th>Что улучшилось</th>
+<th>Решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1/A2</td>
+<td>v5.5 / дата</td>
+<td>фиксированный</td>
+<td>baseline</td>
+<td style="text-align:right">По UI</td>
+<td>—</td>
+<td>Keep / Retry</td>
+</tr>
+<tr>
+<td>B1/B2</td>
+<td>те же</td>
+<td>тот же</td>
+<td><code>restrained</code> вместо <code>belted</code></td>
+<td style="text-align:right">По UI</td>
+<td>Сравнить экспрессию/дикцию</td>
+<td>Keep / Reject</td>
+</tr>
+<tr>
+<td>C1/C2</td>
+<td>те же</td>
+<td>тот же</td>
+<td>одна фонетическая правка</td>
+<td style="text-align:right">По UI</td>
+<td>Сравнить слово и соседние слоги</td>
+<td>Replace / Rework</td>
+</tr>
+</tbody>
+</table></div>
+<p>Пары без фиксированного seed не являются строго контролируемым экспериментом. Повторения нужны, чтобы не принять случайно удачный дубль за доказательство «магии» символа.</p>
+<h4>Коммерческое использование после 3 сентября</h4>
+<p><strong>ОФ:</strong> новые Terms связывают допустимое коммерческое использование Output с <strong>разрешённым скачиванием через предоставленный Suno канал</strong>. Полученные права на такой Download не исчезают из-за последующего окончания подписки. Отдельно оговорено, что это не снимает ограничение на коммерческое использование совместных Remix чужих Outputs. <a class="citation" href="https://suno.com/terms-of-service" rel="noopener noreferrer" target="_blank" title="https://suno.com/terms-of-service">1</a></p>
+<p>Практически:</p>
+<ul>
+<li>Не приравнивайте «песня лежит в Library» к полностью оформленному коммерческому пути.</li>
+<li>Сохраняйте подтверждение плана, создания, разрешённого скачивания и права на загрузки.</li>
+<li>Не обещайте ретроактивную коммерческую лицензию на старые Free-генерации: старая Help-статья её не гарантирует, а новые формулировки о downloads требуют внимательного согласования для спорных случаев. Запрашивайте подтверждение Suno для конкретного материала. <a class="citation" href="https://help.suno.com/en/articles/2425729" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/2425729">4</a></li>
+<li>Не используйте stream ripping / запись потока вместо разрешённого скачивания: Terms это прямо запрещают.</li>
+<li>Обычное редактирование разрешённого материала не равно разрешению скрывать его происхождение: удаление watermarks/fingerprints/metadata с целью сокрытия отдельно запрещено.</li>
+<li>Разрешение платформы на коммерческое использование <strong>не гарантирует возникновение авторского права</strong>, эксклюзивность музыки или её приём дистрибьютором. Это прямо отделено в Terms. <a class="citation" href="https://suno.com/terms-of-service" rel="noopener noreferrer" target="_blank" title="https://suno.com/terms-of-service">1</a></li>
+</ul>
+<p>Это производственная памятка, а не индивидуальное юридическое заключение.</p>
+<h3 id="section-3-9">3.9. v6, обновления сообществ и проверка «лайфхаков»</h3>
+<h4>Статус v6: три уровня достоверности</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Уровень</th>
+<th>Что можно утверждать на дату среза</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ОФ: публично доступный продукт</strong></td>
+<td>В проверенной таблице моделей последней перечислена v5.5; в Release Notes последняя найденная техническая запись — правки Studio от 2 сентября. <a class="citation" href="https://suno.com/pricing" rel="noopener noreferrer" target="_blank" title="https://suno.com/pricing">1</a> <a class="citation" href="https://suno.com/release-notes" rel="noopener noreferrer" target="_blank" title="https://suno.com/release-notes">3</a></td>
+</tr>
+<tr>
+<td><strong>ОФ: предстоящий переход</strong></td>
+<td>Suno объявила новое поколение моделей, разработанное с музыкальной индустрией. При его запуске прежние модели будут retired; старые песни остаются в Library. <a class="citation" href="https://suno.com/blog/suno-updates-tos" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/suno-updates-tos">2</a></td>
+</tr>
+<tr>
+<td><strong>ОФ: последствия для старых проектов</strong></td>
+<td>Extensions, covers и remixes старых песен будут выполняться новыми моделями; результат может звучать иначе, оригинал не изменяется. <a class="citation" href="https://help.suno.com/en/articles/13614785" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13614785">5</a></td>
+</tr>
+<tr>
+<td><strong>Свежий сигнал, не релиз</strong></td>
+<td>Официальный @suno 4 сентября опубликовал тизер <code>Soon enough, you’ll hear it all.</code> Он не содержит доступной текстовой спецификации или даты запуска. <a class="citation" href="https://x.com/suno/status/2095898322061918563" rel="noopener noreferrer" target="_blank" title="https://x.com/suno/status/2095898322061918563">1</a></td>
+</tr>
+<tr>
+<td><strong>Публичный репост</strong></td>
+<td>В сообществе Thomas Foster опубликована перепечатка предполагаемого письма Suno с <code>v6 is coming soon</code>. Оригинал письма/его подлинность независимо не проверены. Поэтому категоричное «Suno никогда не использует имя v6» здесь также не утверждается. <a class="citation" href="https://www.skool.com/thomas-foster-academy-5057/suno-v6?p=b97f3321" rel="noopener noreferrer" target="_blank" title="https://www.skool.com/thomas-foster-academy-5057/suno-v6?p=b97f3321">2</a></td>
+</tr>
+<tr>
+<td><strong>НЕП</strong></td>
+<td>Точная дата общего доступа, полный набор функций/тегов, цена операций, поведение русского вокала, совместимость старых Custom Models/Voices и любые гарантии качества будущей версии</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>3 сентября — дата изменения Terms/download rules, не доказанная дата релиза v6.</strong> В публичном посте о «v6 и v6-Mini» автор прямо обозначает срок запуска как свою догадку. Такие сообщения, анонимные A/B-пары и ранние впечатления не подменяют спецификацию общедоступной модели. <a class="citation" href="https://x.com/koltregaskes/status/2095389071426322731" rel="noopener noreferrer" target="_blank" title="https://x.com/koltregaskes/status/2095389071426322731">1</a></p>
+<p>Слова Suno о большей скорости, fidelity и контроле будущего поколения — <strong>заявления производителя по ранним тестам</strong>, а не независимые измерения и не гарантия сохранения вашего конкретного тембра. <a class="citation" href="https://suno.com/blog/suno-updates-tos" rel="noopener noreferrer" target="_blank" title="https://suno.com/blog/suno-updates-tos">2</a></p>
+<h4>Подготовка к v6 без гадания — ПР</h4>
+<ol>
+<li>Доведите важные незавершённые Extend/Cover-цепочки, которым критичен старый характер модели.</li>
+<li>Экспортируйте разрешённым способом master, нужные stems, dry-версии и MIDI.</li>
+<li>Сохраните литературные и исполнительские Lyrics отдельно.</li>
+<li>Зафиксируйте Style, Exclude, ползунки, модель, даты, источники Persona/Voice и исходный каталог Custom Model.</li>
+<li>Не рассчитывайте на побитовую или тембрально идентичную миграцию персонализации без отдельного подтверждения.</li>
+<li>Подготовьте контрольный набор: русский текст с омографами, инструментал без humming, плотный припев, простой MIDI-мотив, Extend через границу фразы.</li>
+<li>После общего релиза сравните новые результаты с <strong>сохранёнными</strong> старыми: дикция, узнаваемость, timing, музыка, артефакты, стоимость полезного дубля.</li>
+<li>Не покупайте годовой план на основании предполагаемых возможностей ещё не проверенной версии.</li>
+</ol>
+<p>Отдельно от моделей, Help ожидала отключение <strong>Studio 1.x в начале сентября</strong>. Старые проекты можно открывать в 2.0 с созданием новой версии; новые MIDI/FX/automation-изменения назад в 1.x не переносятся. Это план из документации, а не подтверждение доступности старого переключателя в каждом аккаунте 6 сентября. <a class="citation" href="https://help.suno.com/en/articles/13670529" rel="noopener noreferrer" target="_blank" title="https://help.suno.com/en/articles/13670529">2</a></p>
+<h4>Что удалось извлечь из сообществ, а что нельзя выдавать за факт</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Источник / тип материала</th>
+<th>Полезный вывод</th>
+<th>Оценка</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>r/SunoAI, guide to writing lyrics</td>
+<td>Переносы, короткие фразы, написанные повторы <code>( )</code> дают понятные гипотезы для phrasing</td>
+<td><strong>ПР</strong>, не точная карта пауз. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1l443tx/guide_to_writing_lyrics_for_suno/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1l443tx/guide_to_writing_lyrics_for_suno/">2</a></td>
+</tr>
+<tr>
+<td>r/SunoAI, master prompting doc</td>
+<td>Большая коллекция тегов полезна как словарь; в комментариях оспариваются эффекты <code>~</code> и длинных многоточий</td>
+<td>Не использовать рекламные «high reliability» без тестов. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1ryouzb/updated_my_master_prompting_doc/">4</a></td>
+</tr>
+<tr>
+<td>r/SunoAI, Studio 2.0</td>
+<td>Пользователи обсуждают границы audio/MIDI-редактирования и ответы beta-Chat</td>
+<td>Ответ самого Chat о возможностях не надёжнее продуктовой документации. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1vnesak/introducing_studio_20/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1vnesak/introducing_studio_20/">1</a></td>
+</tr>
+<tr>
+<td>Русскоязычный практический опыт, июнь 2026</td>
+<td>Капитализация ударения иногда не помогает даже после большого числа попыток</td>
+<td>Нет «идеальной кириллицы одной правкой». <a class="citation" href="https://dtf.ru/music/5143682-kak-nauchit-suno-pravilno-pet-russkiy-tekst" rel="noopener noreferrer" target="_blank" title="https://dtf.ru/music/5143682-kak-nauchit-suno-pravilno-pet-russkiy-tekst">4</a></td>
+</tr>
+<tr>
+<td>TikTok, Samori Coles, Tip 12</td>
+<td><code>close-miked</code>, <code>up front</code> и разреженный аккомпанемент как старт против нечёткого вокала</td>
+<td>Разумная <strong>ПР</strong>, не de-mumble-инструмент. Проверено индексируемое описание; видеодорожка недоступна. <a class="citation" href="https://www.tiktok.com/@samoricoles/video/7637605853033401613" rel="noopener noreferrer" target="_blank" title="https://www.tiktok.com/@samoricoles/video/7637605853033401613">2</a></td>
+</tr>
+<tr>
+<td>TikTok, Samori Coles, Tip 13</td>
+<td>Replace Section вместо перегенерации всей песни</td>
+<td>Функция подтверждена Help; «исправить одно слово» не обещает неизменность остальных звуков. Видео напрямую недоступно, использовано описание. <a class="citation" href="https://www.tiktok.com/@samoricoles/video/7638740051731451150" rel="noopener noreferrer" target="_blank" title="https://www.tiktok.com/@samoricoles/video/7638740051731451150">1</a></td>
+</tr>
+<tr>
+<td>YouTube Shorts, JG BeatsLab, 13 апреля</td>
+<td>Пунктуацию предлагают использовать как режиссуру</td>
+<td>Формулы «tilde holds a note» и «hyphens create staccato» остаются вероятностными; описание не доказывает стабильность. <a class="citation" href="https://www.youtube.com/shorts/MC3sNKozJgc" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/shorts/MC3sNKozJgc">3</a></td>
+</tr>
+<tr>
+<td>Официальный Discord</td>
+<td>Подходящий канал для новых объявлений и воспроизводимых bug reports</td>
+<td>Проверена публичная страница приглашения, <strong>внутренние каналы не прочитаны</strong>. Пересказы «модератор сказал» не считаются подтверждением. <a class="citation" href="https://discord.com/invite/suno" rel="noopener noreferrer" target="_blank" title="https://discord.com/invite/suno">1</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Показательный случай: в Reddit-посте о будущих моделях автор сначала ссылался на якобы подтверждённое сохранение v5, затем признал ошибку после предъявления официального текста о retirement всех прежних моделей. Поэтому ссылка на «Discord-инсайд» без самого сообщения — недостаточна. <a class="citation" href="https://www.reddit.com/r/SunoAI/comments/1vl0gvf/the_truth_about_the_suno_update_lets_separate/" rel="noopener noreferrer" target="_blank" title="https://www.reddit.com/r/SunoAI/comments/1vl0gvf/the_truth_about_the_suno_update_lets_separate/">2</a></p>
+<h4>Какие официальные YouTube-туториалы смотреть предметно</h4>
+<p>Ниже — главы, заявленные в описаниях роликов; это навигация, не заявление о покадровом просмотре.</p>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Ролик</th>
+<th>Нужные точки</th>
+<th>Для чего</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Introducing Suno Studio 2.0</strong>, 13.08.2026, 21:34</td>
+<td>01:13 Chat; 02:55 MIDI; 06:29 запись/latency; 08:07 audio conversion; 09:54 stems; 11:03 Remove FX; 11:46 effects; 16:08 plugins</td>
+<td>Основной актуальный walkthrough. <a class="citation" href="https://www.youtube.com/watch?v=GZHp3WFc9Ps" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/watch?v=GZHp3WFc9Ps">1</a></td>
+</tr>
+<tr>
+<td><strong>How to Use Advanced Stem Separation on Suno</strong>, 12.06.2026, 05:44</td>
+<td>00:26 Auto; 01:18 Advanced; 02:39 сравнение violin; 03:40 Regenerate; 03:58 Split from Mix</td>
+<td>Разобраться в разнице методов и альтернативных stems. Транскрипт доступен. <a class="citation" href="https://www.youtube.com/watch?v=DqYuA_Wpkac" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/watch?v=DqYuA_Wpkac">1</a></td>
+</tr>
+<tr>
+<td><strong>Suno v5.5 is Here: Make Music With YOUR Voice &amp; Custom Models!</strong>, 26.03.2026, 12:45</td>
+<td>01:11 capture; 02:57 verification; 06:28 Custom Models; 07:05 training; 11:04 My Taste; 11:48 Personas</td>
+<td>Персонализация. Учитывайте более поздние изменения лимитов и бесплатной пробы. Транскрипт доступен. <a class="citation" href="https://www.youtube.com/watch?v=eVlFcpX1VGA" rel="noopener noreferrer" target="_blank" title="https://www.youtube.com/watch?v=eVlFcpX1VGA">1</a></td>
+</tr>
+</tbody>
+</table></div>
+<h4>Итоговая шпаргалка: что чем решать</h4>
+<div aria-label="Таблица — можно прокрутить по горизонтали" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Требование</th>
+<th>Основной инструмент</th>
+<th>Не подменять его</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Понятная русская дикция</td>
+<td>Ритмичный текст → локальная фонетика → Replace / запись</td>
+<td>CAPS во всех словах</td>
+</tr>
+<tr>
+<td>Выразительная фразировка</td>
+<td>Lyrics + короткие направления исполнения</td>
+<td>«Точным таймером» из многоточий</td>
+</tr>
+<tr>
+<td>Определённый звук</td>
+<td>Согласованный Style + выбор дубля</td>
+<td>Сотней quality-тегов</td>
+</tr>
+<tr>
+<td>Узнаваемый свой голос</td>
+<td>Verified Voice + хороший образец</td>
+<td>Тегом <code>[Male Vocals]</code></td>
+</tr>
+<tr>
+<td>Связная эстетика каталога</td>
+<td>Custom Model / Persona + производственная дисциплина</td>
+<td>Ожиданием автоматического альбомного мастеринга</td>
+</tr>
+<tr>
+<td>Конкретные ноты</td>
+<td>MIDI + синтезатор / DAW</td>
+<td>Текстом <code>play exactly</code></td>
+</tr>
+<tr>
+<td>Пауза заданной длины</td>
+<td>Таймлайн, fades, automation</td>
+<td>Пустыми строками</td>
+</tr>
+<tr>
+<td>Починка одной фразы</td>
+<td>Replace / comping</td>
+<td>Полной перегенерацией песни</td>
+</tr>
+<tr>
+<td>Точный EQ/sidechain/reverb</td>
+<td>Реальные устройства Studio / DAW</td>
+<td>Продакшн-словами в Style</td>
+</tr>
+<tr>
+<td>Чистые отдельные партии</td>
+<td>Выбор подходящего Split + проверка результата</td>
+<td>Предположением, что Advanced всегда сохраняет оригинал</td>
+</tr>
+<tr>
+<td>Экономия</td>
+<td>Отбор → локальная правка → нужные stems → монтаж</td>
+<td>Бесконечным reroll</td>
+</tr>
+<tr>
+<td>Готовность к v6</td>
+<td>Архив + контрольные примеры + проверка официального релиза</td>
+<td>Слухами о новых тегах, ценах и гарантированной дикции</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Финальный принцип:</strong> музыкальное намерение задавайте текстом; точность — референсом, MIDI и монтажом; повторяемость — сохранёнными настройками и версиями; коммерческий путь — разрешённым экспортом и документами. Это полезнее любого «god mode»-набора тегов и не зависит от обещаний будущего номера модели.</p>
+</main><footer class="endnote">Документальный ресерч · 6 сентября 2026. Страница самодостаточна: поиск, содержание и примеры работают без внешних библиотек. Ссылки на источники требуют доступа к сети. Для переноса в базу знаний используйте сопровождающий Markdown-файл.</footer></div><div id="toast" role="status"></div><script>
+const main=document.querySelector('.article');
+const toast=document.getElementById('toast');
+let toastTimer;
+function notify(t){toast.textContent=t;toast.classList.add('visible');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove('visible'),2200);}
+document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{const el=document.getElementById(btn.dataset.code);const text=el.querySelector('code').textContent;let copied=false;try{await navigator.clipboard.writeText(text);copied=true;}catch(e){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{copied=document.execCommand('copy');}catch(e){}t.remove();}if(copied){btn.textContent='Скопировано';setTimeout(()=>btn.textContent='Копировать',1600);notify('Текст примера скопирован');}else{const r=document.createRange();r.selectNodeContents(el);const s=window.getSelection();s.removeAllRanges();s.addRange(r);notify('Пример выделен — нажмите Ctrl+C / Cmd+C');}}));
+const input=document.getElementById('search');let found=[],current=-1,timer;
+function clearMarks(){main.querySelectorAll('mark').forEach(m=>m.replaceWith(document.createTextNode(m.textContent)));main.normalize();found=[];current=-1;}
+function highlight(){clearMarks();const q=input.value.trim().toLowerCase();if(q.length<2){document.getElementById('count').textContent='';return;}const w=document.createTreeWalker(main,NodeFilter.SHOW_TEXT);const nodes=[];while(w.nextNode()){const n=w.currentNode;if(n.parentElement.closest('button,script,style'))continue;if(n.nodeValue.toLowerCase().includes(q))nodes.push(n);}for(const n of nodes){const v=n.nodeValue,low=v.toLowerCase();let pos=0,idx=low.indexOf(q);const f=document.createDocumentFragment();while(idx!==-1){f.append(document.createTextNode(v.slice(pos,idx)));const m=document.createElement('mark');m.textContent=v.slice(idx,idx+q.length);f.append(m);pos=idx+q.length;idx=low.indexOf(q,pos);}f.append(document.createTextNode(v.slice(pos)));n.replaceWith(f);}found=[...main.querySelectorAll('mark')];document.getElementById('count').textContent=found.length?'0 / '+found.length:'0';}
+function moveMatch(delta=1){if(!found.length)return;if(current>=0)found[current].classList.remove('current');current=(current+delta+found.length)%found.length;found[current].classList.add('current');found[current].scrollIntoView({behavior:'smooth',block:'center'});document.getElementById('count').textContent=(current+1)+' / '+found.length;}
+input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(highlight,180);});input.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();clearTimeout(timer);if(!found.length)highlight();moveMatch(e.shiftKey?-1:1);}if(e.key==='Escape'){input.value='';clearMarks();document.getElementById('count').textContent='';input.blur();}});document.getElementById('next').addEventListener('click',()=>moveMatch(1));document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();input.focus();input.select();}});
+document.getElementById('menu').addEventListener('click',()=>document.querySelector('aside').classList.toggle('open'));document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>{if(window.innerWidth<801)document.querySelector('aside').classList.remove('open');}));
+document.addEventListener('click',e=>{if(window.innerWidth<801&&!e.target.closest('aside')&&!e.target.closest('#menu'))document.querySelector('aside').classList.remove('open');});
+const headings=[...main.querySelectorAll('h3')];function progress(){const available=document.documentElement.scrollHeight-window.innerHeight;const frac=available?Math.min(1,window.scrollY/available):0;const offset=window.innerWidth<801?0:(window.innerWidth<=1100?230:278);document.querySelector('.progress').style.width=((window.innerWidth-offset)*frac)+'px';let selected;for(const h of headings){if(h.getBoundingClientRect().top<150)selected=h;}document.querySelectorAll('.nav-section').forEach(a=>a.classList.toggle('active',!!selected&&a.getAttribute('href')==='#'+selected.id));}window.addEventListener('scroll',progress,{passive:true});window.addEventListener('resize',progress);progress();
+</script></body></html>

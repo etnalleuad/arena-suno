@@ -1,0 +1,9 @@
+{
+  "required_for_full_media_recovery": true,
+  "filename": "PART_2_STUDIO_ASSETS.zip",
+  "bytes": 37703704,
+  "sha256": "c7b919dce14053541fc344dd29cfca24bd9f791a5ce42748621671f4bd646e78",
+  "contents": "48 WAV + 12 MIDI + 10 recipe texts, catalogs, previews and validation",
+  "contained_in_this_chat_restore_zip": false,
+  "why": "Store/download separately. Text and catalog are included here; the full audio library is not duplicated."
+}

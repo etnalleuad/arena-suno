@@ -1,0 +1,445 @@
+{
+  "version": "2026-09-11",
+  "knowledge_files": 6,
+  "gem_instruction_characters": 6704,
+  "wav": 48,
+  "midi": 12,
+  "recipes": 10,
+  "asset_total": 70,
+  "verified": [
+    "WAV encoding/length/finite samples/no digital clipping",
+    "4x true-peak estimates in index",
+    "MIDI structure, note lifetimes, monophonic bass, drum routing metadata",
+    "catalog paths and SHA256",
+    "knowledge catalog matches actual library",
+    "HTML local links, embedded audio refs and copy targets"
+  ],
+  "not_verified": [
+    "Import in user Suno account",
+    "Gemini custom Gem behavior in user account",
+    "Perceptual suitability in user song",
+    "Perfect artifact removal"
+  ],
+  "media": [
+    {
+      "id": "D01",
+      "format": "WAV PCM24/48000",
+      "samples": 31200,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D02",
+      "format": "WAV PCM24/48000",
+      "samples": 21600,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D03",
+      "format": "WAV PCM24/48000",
+      "samples": 10560,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D04",
+      "format": "WAV PCM24/48000",
+      "samples": 6240,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D05",
+      "format": "WAV PCM24/48000",
+      "samples": 23040,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D06",
+      "format": "WAV PCM24/48000",
+      "samples": 10560,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D07",
+      "format": "WAV PCM24/48000",
+      "samples": 18240,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D08",
+      "format": "WAV PCM24/48000",
+      "samples": 28800,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D09",
+      "format": "WAV PCM24/48000",
+      "samples": 10560,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D10",
+      "format": "WAV PCM24/48000",
+      "samples": 12000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D11",
+      "format": "WAV PCM24/48000",
+      "samples": 33600,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "D12",
+      "format": "WAV PCM24/48000",
+      "samples": 21600,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F01",
+      "format": "WAV PCM24/48000",
+      "samples": 9600,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F02",
+      "format": "WAV PCM24/48000",
+      "samples": 20160,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F03",
+      "format": "WAV PCM24/48000",
+      "samples": 36000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F04",
+      "format": "WAV PCM24/48000",
+      "samples": 62400,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F05",
+      "format": "WAV PCM24/48000",
+      "samples": 26400,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F06",
+      "format": "WAV PCM24/48000",
+      "samples": 60000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F07",
+      "format": "WAV PCM24/48000",
+      "samples": 96000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F08",
+      "format": "WAV PCM24/48000",
+      "samples": 76800,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F09",
+      "format": "WAV PCM24/48000",
+      "samples": 67200,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F10",
+      "format": "WAV PCM24/48000",
+      "samples": 120000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F11",
+      "format": "WAV PCM24/48000",
+      "samples": 57600,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "F12",
+      "format": "WAV PCM24/48000",
+      "samples": 52800,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L01",
+      "format": "WAV PCM24/48000",
+      "samples": 480000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L02",
+      "format": "WAV PCM24/48000",
+      "samples": 480000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L03",
+      "format": "WAV PCM24/48000",
+      "samples": 960000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L04",
+      "format": "WAV PCM24/48000",
+      "samples": 960000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L05",
+      "format": "WAV PCM24/48000",
+      "samples": 480000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L06",
+      "format": "WAV PCM24/48000",
+      "samples": 480000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L07",
+      "format": "WAV PCM24/48000",
+      "samples": 512000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L08",
+      "format": "WAV PCM24/48000",
+      "samples": 451765,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L09",
+      "format": "WAV PCM24/48000",
+      "samples": 451765,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L10",
+      "format": "WAV PCM24/48000",
+      "samples": 451765,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L11",
+      "format": "WAV PCM24/48000",
+      "samples": 460800,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "L12",
+      "format": "WAV PCM24/48000",
+      "samples": 460800,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "M01",
+      "note_ons": 48,
+      "max_polyphony": 4,
+      "duration_s": 20.0,
+      "valid": true
+    },
+    {
+      "id": "M02",
+      "note_ons": 17,
+      "max_polyphony": 1,
+      "duration_s": 20.0,
+      "valid": true
+    },
+    {
+      "id": "M03",
+      "note_ons": 16,
+      "max_polyphony": 4,
+      "duration_s": 9.41176,
+      "valid": true
+    },
+    {
+      "id": "M04",
+      "note_ons": 8,
+      "max_polyphony": 1,
+      "duration_s": 9.41176,
+      "valid": true
+    },
+    {
+      "id": "M05",
+      "note_ons": 16,
+      "max_polyphony": 4,
+      "duration_s": 9.6,
+      "valid": true
+    },
+    {
+      "id": "M06",
+      "note_ons": 16,
+      "max_polyphony": 4,
+      "duration_s": 10.0,
+      "valid": true
+    },
+    {
+      "id": "M07",
+      "note_ons": 12,
+      "max_polyphony": 1,
+      "duration_s": 9.41176,
+      "valid": true
+    },
+    {
+      "id": "M08",
+      "note_ons": 12,
+      "max_polyphony": 1,
+      "duration_s": 10.0,
+      "valid": true
+    },
+    {
+      "id": "M09",
+      "note_ons": 34,
+      "max_polyphony": 2,
+      "duration_s": 10.0,
+      "valid": true
+    },
+    {
+      "id": "M10",
+      "note_ons": 15,
+      "max_polyphony": 1,
+      "duration_s": 10.0,
+      "valid": true
+    },
+    {
+      "id": "M11",
+      "note_ons": 8,
+      "max_polyphony": 1,
+      "duration_s": 9.6,
+      "valid": true
+    },
+    {
+      "id": "M12",
+      "note_ons": 16,
+      "max_polyphony": 1,
+      "duration_s": 10.0,
+      "valid": true
+    },
+    {
+      "id": "N01",
+      "format": "WAV PCM24/48000",
+      "samples": 48480,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N02",
+      "format": "WAV PCM24/48000",
+      "samples": 48480,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N03",
+      "format": "WAV PCM24/48000",
+      "samples": 58080,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N04",
+      "format": "WAV PCM24/48000",
+      "samples": 48480,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N05",
+      "format": "WAV PCM24/48000",
+      "samples": 99840,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N06",
+      "format": "WAV PCM24/48000",
+      "samples": 134400,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N07",
+      "format": "WAV PCM24/48000",
+      "samples": 78240,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N08",
+      "format": "WAV PCM24/48000",
+      "samples": 98400,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "N09",
+      "format": "WAV PCM24/48000",
+      "samples": 72000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "S01",
+      "format": "WAV PCM24/48000",
+      "samples": 480000,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "S02",
+      "format": "WAV PCM24/48000",
+      "samples": 451765,
+      "digital_clipping": false,
+      "valid": true
+    },
+    {
+      "id": "S03",
+      "format": "WAV PCM24/48000",
+      "samples": 460800,
+      "digital_clipping": false,
+      "valid": true
+    }
+  ]
+}
